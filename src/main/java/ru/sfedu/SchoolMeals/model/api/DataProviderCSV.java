@@ -1,4 +1,4 @@
-package ru.sfedu.SchoolMeals.api;
+package ru.sfedu.SchoolMeals.model.api;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
@@ -10,7 +10,7 @@ import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.sfedu.SchoolMeals.bean.Customer;
+import ru.sfedu.SchoolMeals.model.bean.Customer;
 import ru.sfedu.SchoolMeals.utils.ConfigurationUtil;
 
 import java.io.FileReader;

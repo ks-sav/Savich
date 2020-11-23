@@ -1,9 +1,9 @@
-package ru.sfedu.SchoolMeals.bean;
+package ru.sfedu.SchoolMeals.model.bean;
 
 /**
  * Class Staff
  */
-public class Staff {
+public class Staff extends Customer {
 
   //
   // Fields

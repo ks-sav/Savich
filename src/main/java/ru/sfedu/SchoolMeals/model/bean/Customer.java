@@ -1,6 +1,8 @@
-package ru.sfedu.SchoolMeals.bean;
+package ru.sfedu.SchoolMeals.model.bean;
 
 import com.opencsv.bean.CsvBindByName;
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Element;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -9,10 +11,11 @@ import java.util.Objects;
  */
 
 public class Customer implements Serializable {
-
+    @Attribute
     @CsvBindByName
     private long id;
 
+    @Element
     @CsvBindByName
     private String name;
 
@@ -48,26 +51,35 @@ public class Customer implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Customer user = (Customer) o;
-        return id == user.id &&
-                name.equals(user.name);
+    public int hashCode() {
+        int hash = 3;
+        return hash;
     }
 
     @Override
-    public int hashCode() {
-// int hash = 3;
-// return hash;
-        return Objects.hash(id, name);
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Customer other = (Customer) obj;
+        if (this.id != other.id) {
+            return false;
+        }
+        if (!Objects.equals(this.name, other.name)) {
+            return false;
+        }
+        return true;
     }
 
     @Override
     public String toString() {
-        return "Customer{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+        return "Customer{" + "id=" + id + ", name=" + name + '}';
     }
+
 }

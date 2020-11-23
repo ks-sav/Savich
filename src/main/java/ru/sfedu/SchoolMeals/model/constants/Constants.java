@@ -1,4 +1,4 @@
-package ru.sfedu.SchoolMeals;
+package ru.sfedu.SchoolMeals.model.constants;
 
 public class Constants {
     static public final String ENV_CONST="source";

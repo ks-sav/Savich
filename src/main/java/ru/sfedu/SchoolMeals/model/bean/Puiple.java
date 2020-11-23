@@ -1,15 +1,15 @@
-package ru.sfedu.SchoolMeals.bean;
+package ru.sfedu.SchoolMeals.model.bean;
 
 /**
  * Class Puiple
  */
-public class Puiple {
+public class Puiple extends Customer{
 
   //
   // Fields
   //
 
-  private String class;
+  private String nclass;
   private Boolean freeMeals;
   
   //
@@ -30,16 +30,16 @@ public class Puiple {
    * Set the value of class
    * @param newVar the new value of class
    */
-  public void setClass (String newVar) {
-    class = newVar;
+  public void setNClass (String newVar) {
+    nclass = newVar;
   }
 
   /**
    * Get the value of class
    * @return the value of class
    */
-  public String getClass () {
-    return class;
+  public String getNClass () {
+    return nclass;
   }
 
   /**

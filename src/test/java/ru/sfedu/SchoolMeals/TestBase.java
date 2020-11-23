@@ -1,11 +1,11 @@
 package ru.sfedu.SchoolMeals;
 
-import ru.sfedu.SchoolMeals.bean.User;
+import ru.sfedu.SchoolMeals.model.bean.Customer;
 
 public class TestBase {
 
-    public User createUser(long id, String name) {
-        User user = new User();
+    public Customer createCustomer(long id, String name) {
+        Customer user = new Customer();
         user.setId(id);
         user.setName(name);
         return user;

@@ -1,4 +1,4 @@
-package ru.sfedu.SchoolMeals.bean;
+package ru.sfedu.SchoolMeals.model.bean;
 
 /**
  * Class FoodItem

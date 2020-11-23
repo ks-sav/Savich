@@ -522,3 +522,4 @@
 2020-11-14 15:56:45 INFO  SchoolClient:52 - 88937
 2020-11-14 17:55:00 ERROR DataProviderCSV:55 - java.util.NoSuchElementException: No value present
 2020-11-14 18:26:51 ERROR DataProviderCSV:49 - java.util.NoSuchElementException: No value present
+2020-11-22 21:07:38 ERROR DataProviderXML:67 - java.util.NoSuchElementException: No value present

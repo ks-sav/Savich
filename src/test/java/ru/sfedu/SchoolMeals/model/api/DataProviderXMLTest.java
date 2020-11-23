@@ -1,15 +1,10 @@
-package ru.sfedu.SchoolMeals.api;
+package ru.sfedu.SchoolMeals.model.api;
 
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.jupiter.api.Test;
 import ru.sfedu.SchoolMeals.TestBase;
 import ru.sfedu.SchoolMeals.model.bean.Customer;
-import ru.sfedu.SchoolMeals.model.api.DataProviderCSV;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -17,29 +12,13 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DataProviderCSVTest extends TestBase {
-
-    @BeforeClass
-    public static void setUpClass() {
-    }
-
-    @AfterClass
-    public static void tearDownClass() {
-    }
-
-    @Before
-    public void setUp() {
-    }
-
-    @After
-    public void tearDown() {
-    }
+class DataProviderXMLTest extends TestBase {
 
     @Test
-    void insertCustomerSuccess() throws CsvRequiredFieldEmptyException, IOException, CsvDataTypeMismatchException {
+    void insertCustomerSuccess() throws Exception {
         System.out.println("insertCustomerSuccess");
         List<Customer> listCustomer = new ArrayList<>();
-        DataProviderCSV instance=new DataProviderCSV();
+        DataProviderXML instance=new DataProviderXML();
         Customer user1=createCustomer(1,"Name1");
         Customer user2=createCustomer(2,"Name 2");
         Customer user3=createCustomer(3,"Name3");
@@ -50,10 +29,10 @@ class DataProviderCSVTest extends TestBase {
         assertEquals(user1,instance.getCustomerById(1));
     }
     @Test
-    void insertCustomerFail() throws CsvRequiredFieldEmptyException, IOException, CsvDataTypeMismatchException {
+    void insertCustomerFail() throws Exception {
         System.out.println("insertCustomerFail");
         List<Customer> listCustomer = new ArrayList<>();
-        DataProviderCSV instance=new DataProviderCSV();
+        DataProviderXML instance=new DataProviderXML();
         Customer user1=createCustomer(1,"Name1");
         Customer user2=createCustomer(2,"Name 2");
         Customer user3=createCustomer(3,"Name3");
@@ -65,9 +44,13 @@ class DataProviderCSVTest extends TestBase {
     }
 
     @Test
-    public void testGetByIdCustomer() throws IOException {
+    public void testGetByIdCustomer() throws Exception {
         System.out.println("testGetByIdCustomer");
-        DataProviderCSV instance = new DataProviderCSV();
+        DataProviderXML instance=new DataProviderXML();;
         System.out.println(instance.getCustomerById(2));
+    }
+
+    @Test
+    void select() {
     }
 }
