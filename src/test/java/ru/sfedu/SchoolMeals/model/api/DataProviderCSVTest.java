@@ -1,4 +1,4 @@
-package ru.sfedu.SchoolMeals.api;
+package ru.sfedu.SchoolMeals.model.api;
 
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
@@ -40,26 +40,26 @@ class DataProviderCSVTest extends TestBase {
         System.out.println("insertCustomerSuccess");
         List<Customer> listCustomer = new ArrayList<>();
         DataProviderCSV instance=new DataProviderCSV();
-        Customer user1=createCustomer(1,"Name1");
-        Customer user2=createCustomer(2,"Name 2");
-        Customer user3=createCustomer(3,"Name3");
-        listCustomer.add(user1);
-        listCustomer.add(user2);
-        listCustomer.add(user3);
+        Customer customer1=createCustomer(1,"Name1");
+        Customer customer2=createCustomer(2,"Name 2");
+        Customer customer3=createCustomer(3,"Name3");
+        listCustomer.add(customer1);
+        listCustomer.add(customer2);
+        listCustomer.add(customer3);
         instance.insertCustomer(listCustomer);
-        assertEquals(user1,instance.getCustomerById(1));
+        assertEquals(customer1,instance.getCustomerById(1));
     }
     @Test
     void insertCustomerFail() throws CsvRequiredFieldEmptyException, IOException, CsvDataTypeMismatchException {
         System.out.println("insertCustomerFail");
         List<Customer> listCustomer = new ArrayList<>();
         DataProviderCSV instance=new DataProviderCSV();
-        Customer user1=createCustomer(1,"Name1");
-        Customer user2=createCustomer(2,"Name 2");
-        Customer user3=createCustomer(3,"Name3");
-        listCustomer.add(user1);
-        listCustomer.add(user2);
-        listCustomer.add(user3);
+        Customer customer1=createCustomer(1,"Name1");
+        Customer customer2=createCustomer(2,"Name 2");
+        Customer customer3=createCustomer(3,"Name3");
+        listCustomer.add(customer1);
+        listCustomer.add(customer2);
+        listCustomer.add(customer3);
         instance.insertCustomer(listCustomer);
         assertNull(instance.getCustomerById(4));
     }
