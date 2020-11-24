@@ -50,6 +50,7 @@ public class DataProviderXML {
             
             //Записываем в файл
             serializer.write(xml, writer);
+            writer.close();
         }catch(IndexOutOfBoundsException e){
             log.error(e);
         }
