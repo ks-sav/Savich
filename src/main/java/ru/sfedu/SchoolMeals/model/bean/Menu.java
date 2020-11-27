@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Class Menu
  */
-public class Menu {
+public class Menu implements WithId{
 
   //
   // Fields
@@ -41,6 +41,11 @@ public class Menu {
    */
   public List<FoodItem> getFoodList () {
     return FoodList;
+  }
+
+  @Override
+  public long getId() {
+    return 0;
   }
 
   //

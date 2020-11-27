@@ -10,54 +10,110 @@ import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.sfedu.SchoolMeals.model.bean.Customer;
+import ru.sfedu.SchoolMeals.model.api.ConverterCSV.*;
+import ru.sfedu.SchoolMeals.model.bean.*;
 import ru.sfedu.SchoolMeals.utils.ConfigurationUtil;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.stream.Collectors;
 
 public class DataProviderCSV {
     private final String PATH = "csv_path";
     private final String FILE_EXTENSION = "csv";
     private static Logger log = LogManager.getLogger(DataProviderCSV.class);
 
-    public void insertCustomer(List<Customer> listCustomer) throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
+    private <T> List<T> readFile(String file, Converter<T> converter) {
+        Reader reader = null;
         try {
-            FileWriter writer = new FileWriter(ConfigurationUtil.getConfigurationEntry(PATH) + listCustomer.get(0).getClass().getSimpleName().toLowerCase() + ConfigurationUtil.getConfigurationEntry(FILE_EXTENSION));
-            CSVWriter csvWriter = new CSVWriter(writer);
-            StatefulBeanToCsv<Customer> beanToCsv = new StatefulBeanToCsvBuilder<Customer>(csvWriter)
-                    .withApplyQuotesToAll(false)
-                    .build();
-            beanToCsv.write(listCustomer);
-            csvWriter.close();
-        } catch (IndexOutOfBoundsException e) {
-            log.error(e);
+            reader = new FileReader(file);
+            CSVReader csvReader = new CSVReader(reader);
+            List<T> ans = csvReader.readAll()
+                    .stream()
+                    .map(converter::fromCsv)
+                    .collect(Collectors.toList());
+            reader.close();
+            return ans;
+        } catch (Exception e) {
+            log.error("Error reading file " + file);
+            return new ArrayList<>();
         }
     }
 
-        public Customer getCustomerById(long id) throws IOException {
-            List<Customer> customerList = select(Customer.class);
-            try {
-                Customer customer = customerList.stream()
-                        .filter(el->el.getId()==id)
-                        .findFirst().get();
-                return customer;
-            }catch (NoSuchElementException e){
-                log.error(e);
-                return null;
+    private <T> void writeFile(String file, List<T> data, Converter<T> converter) {
+        try {
+            Writer writer = new FileWriter(file, false);
+            CSVWriter csvWriter = new CSVWriter(writer);
+            csvWriter.writeAll(data.stream().map(converter::toCsv).collect(Collectors.toList()));
+            writer.close();
+        } catch (IOException e) {
+            log.error("Error writing file " + file);
         }
     }
-    public <T> List<T> select (Class c1) throws IOException {
-        FileReader fileReader = new FileReader(ConfigurationUtil.getConfigurationEntry(PATH) + c1.getSimpleName().toLowerCase() + ConfigurationUtil.getConfigurationEntry(FILE_EXTENSION));
-        CSVReader csvReader = new CSVReader(fileReader);
-        CsvToBean<T> csvToBean = new CsvToBeanBuilder<Customer>(csvReader)
-                .withType(c1)
-                .withIgnoreLeadingWhiteSpace(true)
-                .build();
-        List<T> list = csvToBean.parse();
-        return list;
+
+    private String getFileName(Class<?> aClass){
+        String propertyName = "cinema."+aClass.getSimpleName()+"_csv";
+        String fileName = System.getProperty(propertyName);
+        if (fileName == null) {
+            log.fatal("Unable to initialize, no property: " + propertyName);
+            System.exit(1);
+        }
+        return fileName;
+    }
+
+    public Converter getConverter(Class tClass){
+        if (tClass == Order.class) {
+            return new OrderConverterCSV();
+        } else if (tClass == Puiple.class) {
+            return new OrderConverterCSV();
+        } else if (tClass == FoodCategory.class) {
+            return new FoodCategoryConverterCSV();
+        } else if (tClass == FoodItem.class) {
+            return new FoodItemConverterCSV();
+        } else if (tClass == ComboMeals.class) {
+            return new ComboMealsConverterCSV();
+        } else {
+            log.fatal("Unknown class");
+            System.exit(1);
+            return null;
+        }
+    }
+
+    @Override
+    public void initDataSource() {
+        List<Class<?>> classes = new ArrayList<>();
+        classes.add(Order.class);
+        classes.add(Staff.class);
+        classes.add(Puiple.class);
+        classes.add(FoodCategory.class);
+        classes.add(FoodItem.class);
+        classes.add(ComboMeals.class);
+
+        classes.forEach(aClass -> {
+            String fileName = getFileName(aClass);
+            File f = new File(fileName);
+            try {
+                if (f.createNewFile()) log.info("File " + f + " created");
+            } catch (IOException e) {
+                log.fatal("Cannot create file " + fileName);
+                System.exit(1);
+            }
+        });
+    }
+
+    @Override
+    protected <T extends WithId> List<T> getAll(Class<T> tClass) {
+        String fileName = getFileName(tClass);
+        Converter<T> converter = getConverter(tClass);
+        return readFile(fileName, converter);
+    }
+
+    @Override
+    protected <T extends WithId> void writeAll(Class<T> tClass, List<T> data) {
+        String fileName = getFileName(tClass);
+        Converter<T> converter = getConverter(tClass);
+        writeFile(fileName, data, converter);
     }
 }

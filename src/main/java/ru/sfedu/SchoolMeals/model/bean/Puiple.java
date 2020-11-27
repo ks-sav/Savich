@@ -3,7 +3,7 @@ package ru.sfedu.SchoolMeals.model.bean;
 /**
  * Class Puiple
  */
-public class Puiple extends Customer{
+public class Puiple extends Customer implements WithId{
 
   //
   // Fields
@@ -16,8 +16,11 @@ public class Puiple extends Customer{
   // Constructors
   //
   public Puiple () { };
-  
-  //
+
+    public Puiple(long parseLong, String csvDatum, String csvDatum1, long parseLong1, Boolean valueOf) {
+    }
+
+    //
   // Methods
   //
 

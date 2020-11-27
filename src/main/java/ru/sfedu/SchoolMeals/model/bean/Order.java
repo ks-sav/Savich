@@ -1,14 +1,16 @@
 package ru.sfedu.SchoolMeals.model.bean;
 
+import java.sql.Timestamp;
+
 /**
  * Class Order
  */
-public class Order {
+public class Order implements WithId{
 
   //
   // Fields
   //
-
+  private Integer id;
   private Integer pupilId;
   private String date;
   private OrderStatus status;
@@ -18,7 +20,11 @@ public class Order {
   // Constructors
   //
   public Order () { };
-  
+
+
+  public Order(long parseLong, long parseLong1, Timestamp valueOf, String csvDatum, double parseDouble) {
+  }
+
   //
   // Methods
   //
@@ -27,7 +33,21 @@ public class Order {
   //
   // Accessor methods
   //
+  /**
+   * Set the value of id
+   * @param newVar the new value of id
+   */
+  public void setId (Integer newVar) {
+    id = newVar;
+  }
 
+  /**
+   * Get the value of id
+   * @return the value of id
+   */
+  public Integer getId () {
+    return id;
+  }
   /**
    * Set the value of pupilId
    * @param newVar the new value of pupilId

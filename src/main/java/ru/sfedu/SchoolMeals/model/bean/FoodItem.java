@@ -3,7 +3,7 @@ package ru.sfedu.SchoolMeals.model.bean;
 /**
  * Class FoodItem
  */
-public class FoodItem {
+public class FoodItem implements WithId{
 
   //
   // Fields
@@ -11,17 +11,19 @@ public class FoodItem {
 
   private Integer id;
   private String itemName_;
-  private Long price;
+  private Double price;
   private String description;
   private FoodCategory category;
   private Boolean inStock;
-  private Boolean inCombo;
   
   //
   // Constructors
   //
   public FoodItem () { };
-  
+
+  public FoodItem(long parseLong, String csvDatum, double parseDouble, String csvDatum1, long parseLong1, Boolean valueOf) {
+  }
+
   //
   // Methods
   //
@@ -67,7 +69,7 @@ public class FoodItem {
    * Set the value of price
    * @param newVar the new value of price
    */
-  public void setPrice (Long newVar) {
+  public void setPrice (Double newVar) {
     price = newVar;
   }
 
@@ -75,7 +77,7 @@ public class FoodItem {
    * Get the value of price
    * @return the value of price
    */
-  public Long getPrice () {
+  public Double getPrice () {
     return price;
   }
 
@@ -127,21 +129,6 @@ public class FoodItem {
     return inStock;
   }
 
-  /**
-   * Set the value of inCombo
-   * @param newVar the new value of inCombo
-   */
-  public void setInCombo (Boolean newVar) {
-    inCombo = newVar;
-  }
-
-  /**
-   * Get the value of inCombo
-   * @return the value of inCombo
-   */
-  public Boolean getInCombo () {
-    return inCombo;
-  }
 
   //
   // Other methods

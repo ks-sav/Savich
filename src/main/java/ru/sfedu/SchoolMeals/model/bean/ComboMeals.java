@@ -1,16 +1,17 @@
 package ru.sfedu.SchoolMeals.model.bean;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 /**
  * Class ComboMeals
  */
-public class ComboMeals {
+public class ComboMeals implements WithId {
 
   //
   // Fields
   //
-
+  private Integer idCombo;
   private String date;
   private List<FoodItem> menu;
   private Long price;
@@ -19,7 +20,10 @@ public class ComboMeals {
   // Constructors
   //
   public ComboMeals () { };
-  
+
+  public ComboMeals(long parseLong, Timestamp valueOf, List<FoodItem> csvDatum, Double valueOf1) {
+  }
+
   //
   // Methods
   //
@@ -28,7 +32,21 @@ public class ComboMeals {
   //
   // Accessor methods
   //
+  /**
+   * Set the value of id
+   * @param newVar the new value of id
+   */
+  public void setIdCombo (Integer newVar) {
+    idCombo = newVar;
+  }
 
+  /**
+   * Get the value of id
+   * @return the value of id
+   */
+  public Integer getIdCombo () {
+    return idCombo;
+  }
   /**
    * Set the value of date
    * @param newVar the new value of date
@@ -75,6 +93,11 @@ public class ComboMeals {
    */
   public Long getPrice () {
     return price;
+  }
+
+  @Override
+  public long getId() {
+    return 0;
   }
 
   //
