@@ -1,5 +1,7 @@
 package ru.sfedu.SchoolMeals.model.bean;
 
+import java.util.Objects;
+
 /**
  * Class Puiple
  */
@@ -17,10 +19,11 @@ public class Puiple extends Customer implements WithId{
   //
   public Puiple () { };
 
-    public Puiple(long parseLong, String csvDatum, String csvDatum1, long parseLong1, Boolean valueOf) {
-    }
 
-    //
+  public Puiple(long parseLong, String csvDatum, long parseLong1, Boolean valueOf) {
+  }
+
+  //
   // Methods
   //
 
@@ -65,4 +68,26 @@ public class Puiple extends Customer implements WithId{
   // Other methods
   //
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    if (!super.equals(o)) return false;
+    Puiple puiple = (Puiple) o;
+    return Objects.equals(nclass, puiple.nclass) &&
+            Objects.equals(freeMeals, puiple.freeMeals);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(super.hashCode(), nclass, freeMeals);
+  }
+
+  @Override
+  public String toString() {
+    return "Puiple{" +
+            "nclass='" + nclass + '\'' +
+            ", freeMeals=" + freeMeals +
+            '}';
+  }
 }

@@ -537,3 +537,292 @@
 2020-11-23 20:04:07 INFO  DataProviderDB:59 - SELECT * FROM "customer" WHERE id=1
 2020-11-23 20:12:22 INFO  DataProviderDB:52 - INSERT INTO "customer" (name) VALUES ('Name1')
 2020-11-23 20:12:24 INFO  DataProviderDB:59 - SELECT * FROM "customer" WHERE id=1
+2020-11-30 00:30:42 FATAL DataProviderCSV:60 - Unable to initialize, no property: cinema.Order_csv
+2020-11-30 00:33:46 FATAL DataProviderCSV:100 - Cannot create file src/test/resources/csv/Order.csv
+2020-11-30 00:35:59 FATAL DataProviderCSV:100 - Cannot create file src/main/resources/csv/Order.csv
+2020-11-30 00:38:31 INFO  DataProviderCSV:98 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:38:31 INFO  DataProviderCSV:98 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:38:31 INFO  DataProviderCSV:98 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:38:31 INFO  DataProviderCSV:98 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:38:31 FATAL DataProviderCSV:60 - Unable to initialize, no property: ShoolMeals.FoodItem_csv
+2020-11-30 00:41:11 FATAL DataProviderCSV:60 - Unable to initialize, no property: src\main\resources\data\csv\Staff.Order.csv
+2020-11-30 00:41:32 FATAL DataProviderCSV:60 - Unable to initialize, no property: src\main\resources\data\csv\Order.csv
+2020-11-30 00:42:53 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:42:53 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:42:53 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:42:53 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:42:53 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\FoodItem.csv created
+2020-11-30 00:42:53 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\ComboMeals.csv created
+2020-11-30 00:42:53 FATAL IDataProvider:44 - Unknown type
+2020-11-30 00:44:23 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:44:23 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:44:23 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:44:23 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:44:23 FATAL IDataProvider:44 - Unknown type 
+2020-11-30 00:45:32 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:45:32 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:45:32 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:45:32 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:45:32 FATAL IDataProvider:44 - Unknown type 
+2020-11-30 00:47:44 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:47:44 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:47:44 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:47:44 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:47:44 FATAL IDataProvider:44 - Unknown type 
+2020-11-30 00:48:15 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:48:15 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:48:15 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:48:15 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:48:15 FATAL IDataProvider:44 - Unknown type 1 
+2020-11-30 00:49:47 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:49:47 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:49:47 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:49:47 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:49:47 FATAL IDataProvider:44 - Unknown type Staff
+2020-11-30 00:50:41 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:50:41 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:50:41 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:50:41 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:50:41 FATAL DataProviderCSV:79 - Unknown class
+2020-11-30 00:50:53 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:50:53 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:50:53 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:50:53 INFO  DataProviderCSV:99 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:50:53 FATAL DataProviderCSV:79 - Unknown class
+2020-11-30 00:52:42 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:52:42 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:52:42 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:52:42 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:52:42 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:52:42 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:52:42 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:52:42 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:52:42 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:52:42 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:52:42 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:52:42 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:52:43 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:52:43 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:52:43 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:52:43 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:52:43 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:52:43 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:52:43 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:52:43 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:52:43 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:52:43 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:52:43 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:52:43 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:52:43 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:52:43 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:52:43 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:52:43 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:52:43 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:52:43 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:52:43 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:52:43 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:52:43 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:52:43 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:52:43 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:52:43 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:52:43 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:52:43 INFO  DataProviderXML:72 - File src/main/resources/data/xml/FoodCategory.xml created
+2020-11-30 00:52:43 FATAL DataProviderXML:32 - Unable to initialize, no property: ShoolMeals.FoodItem_xml
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Order.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:54:48 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\FoodCategory.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Staff.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:54:48 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:54:48 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:54:48 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderCSV:40 - Error reading file src\main\resources\data\csv\Order.csv
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:54:48 INFO  DataProviderCSV:101 - File src\main\resources\data\csv\Puiple.csv created
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\FoodCategory.xml created
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\FoodItem.xml created
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\Order.xml created
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\ComboMeals.xml created
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\Puiple.xml created
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\Staff.xml created
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Staff
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Staff
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,12]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Staff
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Staff
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,12]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\FoodCategory.xml created
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\Order.xml created
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\Puiple.xml created
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.PersistenceException: Entry class ru.sfedu.SchoolMeals.model.bean.Order does not match class ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList for field 'order' public java.util.List ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList.order
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.PersistenceException: Entry class ru.sfedu.SchoolMeals.model.bean.Order does not match class ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList for field 'order' public java.util.List ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList.order
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,12]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Staff
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Staff
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,12]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Staff
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Staff
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Puiple.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Puiple
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Puiple
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Puiple.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,13]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Puiple.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Puiple
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Puiple
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Puiple.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,13]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\FoodCategory.xml created
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: FoodCategory
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\FoodCategory.xml created
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,12]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Staff
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Staff
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,12]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\FoodCategory.xml created
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.PersistenceException: Entry class ru.sfedu.SchoolMeals.model.bean.Order does not match class ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList for field 'order' public java.util.List ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList.order
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.PersistenceException: Entry class ru.sfedu.SchoolMeals.model.bean.Order does not match class ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList for field 'order' public java.util.List ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList.order
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\FoodCategory.xml created
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: FoodCategory
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\FoodCategory.xml created
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.PersistenceException: Entry class ru.sfedu.SchoolMeals.model.bean.Order does not match class ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList for field 'order' public java.util.List ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList.order
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,12]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Staff
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Staff
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Puiple.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,13]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Puiple.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Puiple
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Puiple
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Puiple.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,13]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\FoodCategory.xml created
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.PersistenceException: Entry class ru.sfedu.SchoolMeals.model.bean.Order does not match class ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList for field 'order' public java.util.List ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList.order
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.PersistenceException: Entry class ru.sfedu.SchoolMeals.model.bean.Order does not match class ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList for field 'order' public java.util.List ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList.order
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,12]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Staff
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Staff
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,12]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Staff
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Staff
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Puiple.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,13]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Puiple.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Puiple
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Puiple
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Puiple.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,13]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\FoodCategory.xml created
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.PersistenceException: Entry class ru.sfedu.SchoolMeals.model.bean.Order does not match class ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList for field 'order' public java.util.List ru.sfedu.SchoolMeals.model.api.WrapperXML.OrderList.order
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Order
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Order.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\FoodCategory.xml created
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: FoodCategory
+2020-11-30 00:54:48 INFO  DataProviderXML:73 - File src\main\resources\data\xml\FoodCategory.xml created
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: FoodCategory
+2020-11-30 00:54:48 ERROR DataProviderXML:110 - Error reading file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:111 - javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,12]
+Message: XML document structures must start and end within the same entity.
+2020-11-30 00:54:48 ERROR DataProviderXML:142 - Error writing file src\main\resources\data\xml\Staff.xml
+2020-11-30 00:54:48 ERROR DataProviderXML:143 - org.simpleframework.xml.core.ElementException: Value for @org.simpleframework.xml.Element(name="", type=void.class, data=false, required=true) on field 'name' private java.lang.String ru.sfedu.SchoolMeals.model.bean.Customer.name is null in class ru.sfedu.SchoolMeals.model.bean.Staff
+2020-11-30 00:54:48 INFO  IDataProvider:113 - Write: Staff
+2020-11-30 00:54:48 INFO  IDataProvider:97 - Read: FoodCategory

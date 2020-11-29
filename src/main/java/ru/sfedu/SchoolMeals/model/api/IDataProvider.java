@@ -24,6 +24,8 @@ public abstract class IDataProvider {
             return true;
         else if (tClass == Puiple.class)
             return true;
+        else if (tClass == Staff.class)
+            return true;
         else if (tClass == Customer.class)
             return true;
         else if (tClass == FoodItem.class) {
@@ -41,7 +43,7 @@ public abstract class IDataProvider {
             }
             return true;
         } else {
-            log.fatal("Unknown type");
+            log.fatal("Unknown type "+ tClass.getSimpleName());
             System.exit(1);
             return false;
         }
@@ -84,7 +86,7 @@ public abstract class IDataProvider {
             return true;
             // разобраться с листом } */
          else {
-            log.fatal("Unknown type");
+            log.fatal("Unknown type " + tClass.getSimpleName());
             System.exit(1);
             return false;
         }
@@ -130,7 +132,7 @@ public abstract class IDataProvider {
     public void saveFoodCategory(FoodCategory foodCategory) {save(FoodCategory.class, foodCategory);}
     public void deleteFoodCategory(long id) {delete(FoodCategory.class, id);}
     public FoodCategory getFoodCategoryById(long id) {return getById(FoodCategory.class, id);}
-    public List<FoodCategory> getAllFoodItemTypes() {return getAll(FoodCategory.class);}
+    public List<FoodCategory> getAllFoodCategory() {return getAll(FoodCategory.class);}
 
     public void saveFoodItem(FoodItem employee) {save(FoodItem.class, employee);}
     public void deleteFoodItem(long id) {delete(FoodItem.class, id);}

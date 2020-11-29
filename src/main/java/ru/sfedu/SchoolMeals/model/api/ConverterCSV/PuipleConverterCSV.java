@@ -17,9 +17,8 @@ public class PuipleConverterCSV implements Converter<Puiple> {
         return new Puiple(
                 Long.parseLong(csvData[0]),
                 csvData[1],
-                csvData[2],
-                Long.parseLong(csvData[3]),
-                Boolean.valueOf(csvData[4])
+                Long.parseLong(csvData[2]),
+                Boolean.valueOf(csvData[3])
         );
     }
 }

@@ -1,3 +1,4 @@
+/*
 package ru.sfedu.SchoolMeals.model.api;
 
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
@@ -34,3 +35,5 @@ class DataProviderDBTest extends TestBase {
     }
 
 }
+
+ */

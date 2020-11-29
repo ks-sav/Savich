@@ -1,6 +1,7 @@
 package ru.sfedu.SchoolMeals.model.bean;
 
 import java.sql.Timestamp;
+import java.util.Objects;
 
 /**
  * Class Order
@@ -116,4 +117,31 @@ public class Order implements WithId{
   // Other methods
   //
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Order order = (Order) o;
+    return id == order.id &&
+            pupilId == order.pupilId &&
+            totalCost == order.totalCost &&
+            Objects.equals(date, order.date) &&
+            status == order.status;
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(id, pupilId, date, status, totalCost);
+  }
+
+  @Override
+  public String toString() {
+    return "Order{" +
+            "id=" + id +
+            ", pupilId=" + pupilId +
+            ", date='" + date + '\'' +
+            ", status=" + status +
+            ", totalCost=" + totalCost +
+            '}';
+  }
 }

@@ -54,9 +54,8 @@ public class DataProviderDB extends IDataProvider{
                 return new Puiple(
                 rs.getLong(0),
                 rs.getString(1),
-                rs.getString(2),
-                rs.getLong(3),
-                rs.getBoolean(4)
+                rs.getLong(2),
+                rs.getBoolean(3)
             );
         /*
         else if (aClass == ComboMeals.class)

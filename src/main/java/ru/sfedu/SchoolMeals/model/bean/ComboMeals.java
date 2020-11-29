@@ -2,6 +2,7 @@ package ru.sfedu.SchoolMeals.model.bean;
 
 import java.sql.Timestamp;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Class ComboMeals
@@ -104,4 +105,29 @@ public class ComboMeals implements WithId {
   // Other methods
   //
 
+  @Override
+  public String toString() {
+    return "ComboMeals{" +
+            "idCombo=" + idCombo +
+            ", date='" + date + '\'' +
+            ", menu=" + menu +
+            ", price=" + price +
+            '}';
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    ComboMeals that = (ComboMeals) o;
+    return Objects.equals(idCombo, that.idCombo) &&
+            Objects.equals(date, that.date) &&
+            Objects.equals(menu, that.menu) &&
+            Objects.equals(price, that.price);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(idCombo, date, menu, price);
+  }
 }

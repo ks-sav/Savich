@@ -1,5 +1,7 @@
 package ru.sfedu.SchoolMeals.model.bean;
 
+import java.util.Objects;
+
 /**
  * Class FoodCategory
  */
@@ -43,7 +45,7 @@ public class FoodCategory implements WithId{
    * Get the value of id
    * @return the value of id
    */
-  public Integer getId () {
+  public long getId () {
     return id;
   }
   public void setCategoryName (String newVar) {
@@ -62,4 +64,25 @@ public class FoodCategory implements WithId{
   // Other methods
   //
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    FoodCategory that = (FoodCategory) o;
+    return Objects.equals(id, that.id) &&
+            Objects.equals(categoryName, that.categoryName);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(id, categoryName);
+  }
+
+  @Override
+  public String toString() {
+    return "FoodCategory{" +
+            "id=" + id +
+            ", categoryName='" + categoryName + '\'' +
+            '}';
+  }
 }

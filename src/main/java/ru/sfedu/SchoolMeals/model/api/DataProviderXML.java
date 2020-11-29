@@ -26,10 +26,11 @@ public class DataProviderXML extends IDataProvider{
     private final static Persister persister = new Persister();
 
     private String getFileName(Class<?> aClass){
-        String propertyName = "ShoolMeals."+aClass.getSimpleName()+"_xml";
-        String fileName = System.getProperty(propertyName);
+        //String propertyName = "ShoolMeals."+aClass.getSimpleName()+"_xml";
+        //String fileName = System.getProperty(propertyName);
+        String fileName = "src\\main\\resources\\data\\xml\\"+aClass.getSimpleName()+".xml";
         if (fileName == null) {
-            log.fatal("Unable to initialize, no property: " + propertyName);
+            log.fatal("Unable to initialize, no property: " + fileName);
             System.exit(1);
         }
         return fileName;

@@ -1,3 +1,4 @@
+/*
 package ru.sfedu.SchoolMeals.model.api;
 
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
@@ -71,3 +72,4 @@ class DataProviderCSVTest extends TestBase {
         System.out.println(instance.getCustomerById(2));
     }
 }
+ */

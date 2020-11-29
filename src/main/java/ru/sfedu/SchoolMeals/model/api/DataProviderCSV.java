@@ -54,10 +54,11 @@ public class DataProviderCSV extends IDataProvider {
     }
 
     private String getFileName(Class<?> aClass){
-        String propertyName = "cinema."+aClass.getSimpleName()+"_csv";
-        String fileName = System.getProperty(propertyName);
+        //String propertyName = "src\\main\\resources\\data\\csv\\"+aClass.getSimpleName()+".csv";
+        //String fileName = System.getProperty(propertyName);
+        String fileName = "src\\main\\resources\\data\\csv\\"+aClass.getSimpleName()+".csv";
         if (fileName == null) {
-            log.fatal("Unable to initialize, no property: " + propertyName);
+            log.fatal("Unable to initialize, no property: " + fileName);
             System.exit(1);
         }
         return fileName;
@@ -68,6 +69,8 @@ public class DataProviderCSV extends IDataProvider {
             return new OrderConverterCSV();
         } else if (tClass == Puiple.class) {
             return new OrderConverterCSV();
+        }else if (tClass == Staff.class) {
+                return new OrderConverterCSV();
         } else if (tClass == FoodCategory.class) {
             return new FoodCategoryConverterCSV();
         } else if (tClass == FoodItem.class) {
@@ -75,7 +78,7 @@ public class DataProviderCSV extends IDataProvider {
         } else if (tClass == ComboMeals.class) {
             return new ComboMealsConverterCSV();
         } else {
-            log.fatal("Unknown class");
+            log.fatal("Unknown class"+tClass.getSimpleName());
             System.exit(1);
             return null;
         }

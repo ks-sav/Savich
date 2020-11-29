@@ -1,5 +1,7 @@
 package ru.sfedu.SchoolMeals.model.bean;
 
+import java.util.Objects;
+
 /**
  * Class FoodItem
  */
@@ -134,4 +136,33 @@ public class FoodItem implements WithId{
   // Other methods
   //
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    FoodItem foodItem = (FoodItem) o;
+    return category_id == foodItem.category_id &&
+            Objects.equals(id, foodItem.id) &&
+            Objects.equals(itemName_, foodItem.itemName_) &&
+            Objects.equals(price, foodItem.price) &&
+            Objects.equals(description, foodItem.description) &&
+            Objects.equals(inStock, foodItem.inStock);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(id, itemName_, price, description, category_id, inStock);
+  }
+
+  @Override
+  public String toString() {
+    return "FoodItem{" +
+            "id=" + id +
+            ", itemName_='" + itemName_ + '\'' +
+            ", price=" + price +
+            ", description='" + description + '\'' +
+            ", category_id=" + category_id +
+            ", inStock=" + inStock +
+            '}';
+  }
 }
