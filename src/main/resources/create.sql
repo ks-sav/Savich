@@ -1,6 +1,13 @@
-create table if not exists Customer (
+create table if not exists Staff (
     id int primary key,
     name text
+    unionMember boolean
+);
+create table if not exists Puiple (
+    id int primary key,
+    name text,
+    nClass text,
+    freeMeals boolean
 );
 
 create table if not exists Order (

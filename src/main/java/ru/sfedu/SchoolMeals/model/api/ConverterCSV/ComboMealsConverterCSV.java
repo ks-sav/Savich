@@ -16,6 +16,11 @@ public class ComboMealsConverterCSV implements Converter<ComboMeals> {
                 String.valueOf(comboMeals.getPrice())
         };
     }
+
+    @Override
+    public ComboMeals fromCsv(String[] csvData) {
+        return null;
+    }
     /*
 //решить, как распарсить лист в бин (еще один конвертер?)
     @Override

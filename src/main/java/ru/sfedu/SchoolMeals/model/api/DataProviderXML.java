@@ -5,91 +5,141 @@
  */
 package ru.sfedu.SchoolMeals.model.api;
 
-import com.opencsv.exceptions.CsvDataTypeMismatchException;
-import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
-import ru.sfedu.SchoolMeals.model.bean.Customer;
-import ru.sfedu.SchoolMeals.model.constants.WrapperXML;
-import ru.sfedu.SchoolMeals.utils.ConfigurationUtil;
+import ru.sfedu.SchoolMeals.model.api.WrapperXML.*;
+import ru.sfedu.SchoolMeals.model.bean.*;
+
 
 /**
  *
  * @author sp2
  */
-public class DataProviderXML {
-    
-    private final String PATH="xml_path";
-    
-    private final String FILE_EXTENTION="xml";
+public class DataProviderXML extends IDataProvider{
     
     private static Logger log = LogManager.getLogger(DataProviderXML.class);
-    
-    public void insertCustomer(List<Customer> customerList) throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException, Exception{
-        try{
-            //Проверяем, создан ли файл? Если нет, то создаём
-            (new File(this.getFilePath(Customer.class))).createNewFile();
-            //Подключаемся к потоку записи файла
-            FileWriter writer = new FileWriter(this.getFilePath(Customer.class), false);
-            //Определяем сериалайзер
-            Serializer serializer = new Persister();
-            
-            //Определяем контейнер, в котором будут находиться все объекты
-            WrapperXML<Customer> xml = new WrapperXML<Customer>();
-            //Записываем список объектов в котнейнер
-            xml.setList(customerList);
-            
-            //Записываем в файл
-            serializer.write(xml, writer);
-            writer.close();
-        }catch(IndexOutOfBoundsException e){
-            log.error(e);
+    //Определяем сериалайзер
+    private final static Persister persister = new Persister();
+
+    private String getFileName(Class<?> aClass){
+        String propertyName = "ShoolMeals."+aClass.getSimpleName()+"_xml";
+        String fileName = System.getProperty(propertyName);
+        if (fileName == null) {
+            log.fatal("Unable to initialize, no property: " + propertyName);
+            System.exit(1);
         }
+        return fileName;
     }
-    
-    public Customer getCustomerById(long id) throws IOException, Exception{
-        List<Customer> list = this.select(Customer.class);
-        try{
-            Customer customer=list.stream()
-                    .filter(el->el.getId()==id)
-                    .limit(1)
-                    .findFirst().get();
-            return customer;
-        }catch(NoSuchElementException e){
-            log.error(e);
+
+    private Class getXmlList(Class<?> aClass){
+        if (aClass == Order.class)
+            return OrderList.class;
+        else if (aClass == FoodCategory.class)
+            return FoodCategoryList.class;
+        else if (aClass == Staff.class)
+            return StaffList.class;
+        else if (aClass == Puiple.class)
+            return PuipleList.class;
+        else if (aClass == FoodItem.class)
+            return FoodItemList.class;
+        else if (aClass == ComboMeals.class)
+            return ComboMealsList.class;
+        else {
+            log.fatal("Unknown class");
+            System.exit(1);
             return null;
         }
     }
-    
-    public <T> List<T> select(Class cl) throws IOException, Exception{
-        //Подключаемся к считывающему потоку из файла
-        FileReader fileReader = new FileReader(this.getFilePath(cl));
-        //Определяем сериалайзер
-        Serializer serializer = new Persister();
-        //Определяем контейнер и записываем в него объекты
-        WrapperXML xml = serializer.read(WrapperXML.class, fileReader);
-        //Если список null, то делаем его пустым списком
-        if (xml.getList() == null) xml.setList(new ArrayList<T>());
-        //Возвращаем список объектов
-        return xml.getList();
+
+    @Override
+    public void initDataSource() {
+        List<Class> classes = new ArrayList<>();
+        classes.add(FoodCategory.class);
+        classes.add(FoodItem.class);
+        classes.add(Order.class);
+        classes.add(ComboMeals.class);
+        classes.add(Puiple.class);
+        classes.add(Staff.class);
+        classes.forEach(aClass -> {
+            String fileName = getFileName(aClass);
+            File f = new File(fileName);
+            try {
+                if (f.createNewFile()) {
+                    log.info("File " + fileName + " created");
+                    writeAll(aClass, new ArrayList());
+                }
+            } catch (IOException e) {
+                log.fatal("Cannot create file " + fileName);
+                System.exit(1);
+            }
+        });
     }
-    
-    /**
-     * Получаем путь к файлу
-     * @param cl
-     * @return
-     * @throws IOException 
-     */
-    private String getFilePath(Class cl) throws IOException{
-        return ConfigurationUtil.getConfigurationEntry(PATH)+cl.getSimpleName().toString().toLowerCase()+ ConfigurationUtil.getConfigurationEntry(FILE_EXTENTION);
+
+    @Override
+    protected <T extends WithId> List<T> getAll(Class<T> tClass) {
+        String fileName = getFileName(tClass);
+        Reader reader = null;
+        try {
+            reader = new FileReader(fileName);
+            List ans;
+            if (tClass == FoodCategory.class)
+                ans = persister.read(FoodCategoryList.class, reader).foodCategory;
+            else if (tClass == FoodItem.class)
+                ans = persister.read(FoodItemList.class, reader).foodItem;
+            else if (tClass == Order.class)
+                ans = persister.read(OrderList.class, reader).order;
+            else if (tClass == ComboMeals.class)
+                ans = persister.read(ComboMealsList.class, reader).comboMeals;
+            else if (tClass == Staff.class)
+                ans = persister.read(StaffList.class, reader).staff;
+            else if (tClass == Puiple.class)
+                ans = persister.read(PuipleList.class, reader).puiple;
+            else {
+                log.fatal("Unknown class");
+                System.exit(1);
+                return null;
+            }
+            reader.close();
+            return ans;
+        } catch (Exception e) {
+            log.error("Error reading file " + fileName);
+            log.error(e);
+        }
+        return new ArrayList<>();
     }
-}
+
+    @Override
+    protected <T extends WithId> void writeAll(Class<T> tClass, List<T> data) {
+        String fileName = getFileName(tClass);
+        try {
+            //Подключаемся к потоку записи файла
+            Writer writer = new FileWriter(fileName);
+            if (tClass == FoodCategory.class)
+                //Записываем в файл
+                persister.write(new FoodCategoryList((List) data), writer);
+            else if (tClass == FoodItem.class)
+                persister.write(new FoodItemList((List) data), writer);
+            else if (tClass == Order.class)
+                persister.write(new OrderList((List) data), writer);
+            else if (tClass == ComboMeals.class)
+                persister.write(new ComboMealsList((List) data), writer);
+            else if (tClass == Staff.class)
+                persister.write(new StaffList((List) data), writer);
+            else if (tClass == Puiple.class)
+                persister.write(new PuipleList((List) data), writer);
+            else {
+                log.fatal("Unknown class");
+                writer.close();
+                System.exit(1);
+            }
+            writer.close();
+        } catch (Exception e) {
+            log.error("Error writing file " + fileName);
+            log.error(e);
+        }
+    }
+   }
