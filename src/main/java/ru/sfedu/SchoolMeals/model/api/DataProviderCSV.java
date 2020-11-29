@@ -20,9 +20,9 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
-public class DataProviderCSV {
-    private final String PATH = "csv_path";
-    private final String FILE_EXTENSION = "csv";
+public class DataProviderCSV extends IDataProvider {
+    //private final String PATH = "csv_path";
+    //private final String FILE_EXTENSION = "csv";
     private static Logger log = LogManager.getLogger(DataProviderCSV.class);
 
     private <T> List<T> readFile(String file, Converter<T> converter) {

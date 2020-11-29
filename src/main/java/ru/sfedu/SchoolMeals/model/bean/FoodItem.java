@@ -13,7 +13,7 @@ public class FoodItem implements WithId{
   private String itemName_;
   private Double price;
   private String description;
-  private FoodCategory category;
+  private long category_id;
   private Boolean inStock;
   
   //
@@ -45,7 +45,7 @@ public class FoodItem implements WithId{
    * Get the value of id
    * @return the value of id
    */
-  public Integer getId () {
+  public long getId () {
     return id;
   }
 
@@ -101,16 +101,16 @@ public class FoodItem implements WithId{
    * Set the value of category
    * @param newVar the new value of category
    */
-  public void setCategory (FoodCategory newVar) {
-    category = newVar;
+  public void setCategory (long newVar) {
+    category_id = newVar;
   }
 
   /**
    * Get the value of category
    * @return the value of category
    */
-  public FoodCategory getCategory () {
-    return category;
+  public long getCategory () {
+    return category_id;
   }
 
   /**

@@ -10,11 +10,11 @@ public class Order implements WithId{
   //
   // Fields
   //
-  private Integer id;
-  private Integer pupilId;
+  private long id;
+  private long pupilId;
   private String date;
   private OrderStatus status;
-  private Long totalCost;
+  private long totalCost;
   
   //
   // Constructors
@@ -45,7 +45,7 @@ public class Order implements WithId{
    * Get the value of id
    * @return the value of id
    */
-  public Integer getId () {
+  public long getId () {
     return id;
   }
   /**
@@ -60,7 +60,7 @@ public class Order implements WithId{
    * Get the value of pupilId
    * @return the value of pupilId
    */
-  public Integer getPupilId () {
+  public long getPupilId () {
     return pupilId;
   }
 

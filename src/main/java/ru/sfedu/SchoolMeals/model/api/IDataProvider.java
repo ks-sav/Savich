@@ -27,20 +27,16 @@ public abstract class IDataProvider {
         else if (tClass == Customer.class)
             return true;
         else if (tClass == FoodItem.class) {
-            FoodItem e = (FoodItem) data;
-            if (getFoodItemTypeById(e.getType_id()) == null) {
+            FoodItem e = (FoodItem) data; //разораться, как хранить типы
+            if (getFoodCategoryById(e.getCategory()) == null) {
                 log.error("Bad FoodItem: it's FoodCategory doesn't exist");
                 return false;
             }
-            return true;
-        } else if (tClass == Order.class) {
+            return true;}
+        else if (tClass == Order.class) {
             Order o = (Order) data;
-            if (getCustomerById(o.getOrder_id()) == null) {
-                log.error("Bad Session: it's Order doesn't exist");
-                return false;
-            }
-            if (getFilmById(o.getFilm_id()) == null) {
-                log.error("Bad Session: it's Film doesn't exist");
+            if (getPuipleById(o.getPupilId()) == null) {
+                log.error("Bad Order: it's Customer doesn't exist");
                 return false;
             }
             return true;
@@ -54,33 +50,40 @@ public abstract class IDataProvider {
     protected <T extends WithId> boolean possibleToDelete(Class<T> tClass, long id) {
         T data = getById(tClass, id);
         if (data == null) return true;
-
-        if (tClass == FoodItem.class)
+        if (tClass == ComboMeals.class)
             return true;
-        else if (tClass == Session.class)
+        if (tClass == Order.class)
             return true;
-        else if (tClass == Film.class) {
-            if (getAllSessions().stream().anyMatch(session -> session.getFilm_id() == data.getId())) {
-                log.error("Unable to delete Film, delete it's Sessions first");
+        else if (tClass == Staff.class)
+            return true;
+        else if (tClass == Puiple.class)
+            return true;
+        /*
+        else if (tClass == Customer.class) {
+            if (getAllSessions().stream().anyMatch(order -> order.getPuipleId() == data.getId())) {
+                log.error("Unable to delete Customer, you need delete Orders first");
                 return false;
             }
             return true;
-        } else if (tClass == FoodItemType.class) {
-            if (getAllFoodItems().stream().anyMatch(e -> e.getType_id() == data.getId())) {
-                log.error("Unable to delete FoodItemType, delete it's FoodItems first");
+        } */
+        else if (tClass == FoodCategory.class) {
+            if (getAllFoodItems().stream().anyMatch(e -> e.getCategory() == data.getId())) {
+                log.error("Unable to delete FoodCategory,you need delete FoodItems first");
                 return false;
             }
             return true;
-        } else if (tClass == Order.class) {
-            if (getAllSessions().stream().anyMatch(session -> session.getOrder_id() == data.getId())) {
-                log.error("Unable to delete Order, delete it's Sessions first");
+        }/*
+        else if (tClass == FoodItem.class) {
+            if (getAllSessions().stream().anyMatch(comboMeals -> comboMeals.getList() == data.getId())) {
+                log.error("Unable to delete FoodItem, delete it's comboMeals first");
                 return false;
-            } else if (getAllFoodItems().stream().anyMatch(employee -> employee.getOrder_id() == data.getId())) {
-                log.error("Unable to delete Order, delete it's FoodItems first");
+            } else if (getAllFoodItems().stream().anyMatch(order -> order.getId() == data.getId())) {
+                log.error("Unable to delete FoodItem, delete it's Order first");
                 return false;
             }
             return true;
-        } else {
+            // разобраться с листом } */
+         else {
             log.fatal("Unknown type");
             System.exit(1);
             return false;
@@ -119,29 +122,34 @@ public abstract class IDataProvider {
         }
     }
 
-    public void saveFoodItemType(FoodItemType employeeType) {save(FoodItemType.class, employeeType);}
-    public void deleteFoodItemType(long id) {delete(FoodItemType.class, id);}
-    public FoodItemType getFoodItemTypeById(long id) {return getById(FoodItemType.class, id);}
-    public List<FoodItemType> getAllFoodItemTypes() {return getAll(FoodItemType.class);}
+    public void saveComboMeals(ComboMeals comboMeals) {save(ComboMeals.class, comboMeals);}
+    public void deleteComboMeals(long id) {delete(ComboMeals.class, id);}
+    public ComboMeals getComboMeals(long id) {return getById(ComboMeals.class, id);}
+    public List<ComboMeals> getAllComboMeals() {return getAll(ComboMeals.class);}
+
+    public void saveFoodCategory(FoodCategory foodCategory) {save(FoodCategory.class, foodCategory);}
+    public void deleteFoodCategory(long id) {delete(FoodCategory.class, id);}
+    public FoodCategory getFoodCategoryById(long id) {return getById(FoodCategory.class, id);}
+    public List<FoodCategory> getAllFoodItemTypes() {return getAll(FoodCategory.class);}
 
     public void saveFoodItem(FoodItem employee) {save(FoodItem.class, employee);}
     public void deleteFoodItem(long id) {delete(FoodItem.class, id);}
     public FoodItem getFoodItemById(long id) {return getById(FoodItem.class, id);}
     public List<FoodItem> getAllFoodItems() {return getAll(FoodItem.class);}
 
-    public void saveOrder(Order hall) {save(Order.class, hall);}
+    public void saveOrder(Order order) {save(Order.class,order);}
     public void deleteOrder(long id) {delete(Order.class, id);}
     public Order getOrderById(long id) {return getById(Order.class, id);}
     public List<Order> getAllOrders() {return getAll(Order.class);}
 
-    public void saveCustomer(Film film) {save(Film.class, film);}
-    public void deleteCustomer(long id) {delete(Film.class, id);}
-    public Film getCustomerById(long id) {return getById(Film.class, id);}
-    public List<Film> getAllFilms() {return getAll(Film.class);}
+    public void saveStaff(Staff staff) {save(Staff.class, staff);}
+    public void deleteStaff(long id) {delete(Staff.class, id);}
+    public Staff getStaffById(long id) {return getById(Staff.class, id);}
+    public List<Staff> getAllStaff() {return getAll(Staff.class);}
 
-    public void saveSession(Session session) {save(Session.class, session);}
-    public void deleteSession(long id) {delete(Session.class, id);}
-    public Session getSessionById(long id) {return getById(Session.class, id);}
-    public List<Session> getAllSessions() {return getAll(Session.class);}
+    public void savePuiple(Puiple puiple) {save(Puiple.class, puiple);}
+    public void deletePuiple(long id) {delete(Puiple.class, id);}
+    public Puiple getPuipleById(long id) {return getById(Puiple.class, id);}
+    public List<Puiple> getAllPuiple() {return getAll(Puiple.class);}
 
 }
