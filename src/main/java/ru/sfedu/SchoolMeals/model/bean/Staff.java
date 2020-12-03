@@ -9,12 +9,12 @@ public class Staff extends Customer {
 
   private Boolean unionMember;
 
-  public Staff () { };
+  public Staff(long id, String name, Boolean unionMember) {
+    super(id, name);
+    this.unionMember = unionMember;
+  }
 
-    public Staff(long parseLong, String csvDatum, Boolean valueOf) {
-    }
-
-    public void setUnionMember (Boolean newVar) {
+  public void setUnionMember (Boolean newVar) {
     unionMember = newVar;
   }
 

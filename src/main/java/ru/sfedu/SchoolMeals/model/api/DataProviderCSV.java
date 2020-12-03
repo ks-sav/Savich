@@ -68,9 +68,9 @@ public class DataProviderCSV extends IDataProvider {
         if (tClass == Order.class) {
             return new OrderConverterCSV();
         } else if (tClass == Puiple.class) {
-            return new OrderConverterCSV();
+            return new PuipleConverterCSV();
         }else if (tClass == Staff.class) {
-                return new OrderConverterCSV();
+                return new StaffConverterCSV();
         } else if (tClass == FoodCategory.class) {
             return new FoodCategoryConverterCSV();
         } else if (tClass == FoodItem.class) {

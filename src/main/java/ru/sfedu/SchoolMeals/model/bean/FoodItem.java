@@ -11,9 +11,9 @@ public class FoodItem implements WithId{
   // Fields
   //
 
-  private Integer id;
+  private long id;
   private String itemName_;
-  private Double price;
+  private double price;
   private String description;
   private long category_id;
   private Boolean inStock;
@@ -21,9 +21,14 @@ public class FoodItem implements WithId{
   //
   // Constructors
   //
-  public FoodItem () { };
 
-  public FoodItem(long parseLong, String csvDatum, double parseDouble, String csvDatum1, long parseLong1, Boolean valueOf) {
+  public FoodItem(long id, String itemName_, double price, String description, long category_id, Boolean inStock) {
+    this.id = id;
+    this.itemName_ = itemName_;
+    this.price = price;
+    this.description = description;
+    this.category_id = category_id;
+    this.inStock = inStock;
   }
 
   //

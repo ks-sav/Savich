@@ -1,5 +1,3 @@
 <foodCategoryList>
-   <foodCategory class="java.util.ArrayList">
-      <foodCategory/>
-   </foodCategory>
+   <foodCategory class="java.util.ArrayList"/>
 </foodCategoryList>

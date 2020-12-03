@@ -11,17 +11,17 @@ public class Puiple extends Customer implements WithId{
   // Fields
   //
 
-  private String nclass;
+  private long nclass;
   private Boolean freeMeals;
-  
   //
   // Constructors
   //
-  public Puiple () { };
-
-
-  public Puiple(long parseLong, String csvDatum, long parseLong1, Boolean valueOf) {
+  public Puiple(long id, String name, long nclass, Boolean freeMeals) {
+    super(id, name);
+    this.nclass = nclass;
+    this.freeMeals = freeMeals;
   }
+
 
   //
   // Methods
@@ -36,7 +36,7 @@ public class Puiple extends Customer implements WithId{
    * Set the value of class
    * @param newVar the new value of class
    */
-  public void setNClass (String newVar) {
+  public void setNClass (long newVar) {
     nclass = newVar;
   }
 
@@ -44,7 +44,7 @@ public class Puiple extends Customer implements WithId{
    * Get the value of class
    * @return the value of class
    */
-  public String getNClass () {
+  public long getNClass () {
     return nclass;
   }
 

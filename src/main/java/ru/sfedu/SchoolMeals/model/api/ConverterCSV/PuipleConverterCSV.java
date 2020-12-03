@@ -7,7 +7,7 @@ public class PuipleConverterCSV implements Converter<Puiple> {
         return new String[]{
                 String.valueOf(puiple.getId()),
                 String.valueOf(puiple.getName()),
-                String.valueOf(puiple.getClass()),
+                String.valueOf(puiple.getNClass()),
                 String.valueOf(puiple.getFreeMeals())
         };
     }

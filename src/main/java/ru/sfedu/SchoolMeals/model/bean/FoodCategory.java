@@ -10,16 +10,19 @@ public class FoodCategory implements WithId{
   //
   // Fields
   //
-  private Integer id;
+  private long id;
   private String categoryName;
-  
+
+  public FoodCategory(long id, String categoryName) {
+    this.id = id;
+    this.categoryName = categoryName;
+  }
+
   //
   // Constructors
   //
   public FoodCategory () { };
 
-    public FoodCategory(long parseLong, String csvDatum) {
-    }
 
     //
   // Methods
@@ -37,7 +40,7 @@ public class FoodCategory implements WithId{
    * Set the value of id
    * @param newVar the new value of id
    */
-  public void setId (Integer newVar) {
+  public void setId (long newVar) {
     id = newVar;
   }
 

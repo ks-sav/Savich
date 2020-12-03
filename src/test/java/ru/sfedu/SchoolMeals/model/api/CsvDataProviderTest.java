@@ -3,7 +3,7 @@ package ru.sfedu.SchoolMeals.model.api;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-
+/*
 public class CsvDataProviderTest extends AbstractApiTest {
 
     @Override
@@ -37,3 +37,4 @@ public class CsvDataProviderTest extends AbstractApiTest {
         });
     }
 }
+*/

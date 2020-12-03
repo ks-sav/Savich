@@ -72,14 +72,17 @@ public class DataProviderDB extends IDataProvider{
                     rs.getString(1),
                     rs.getBoolean(2)
             );
+        /*
         else if (aClass == Order.class)
             return new Order(
                     rs.getLong(0),
                     rs.getLong(1),
                     rs.getTimestamp(2),
-                    rs.getString(3),
-                    rs.getDouble(4)
+                    //rs.valueOf(3),
+                    rs.getLong(4)
                     );
+                    //разобраться как поулчить енум
+         */
         else if (aClass == FoodItem.class)
             return new FoodItem(
                     rs.getLong(0),

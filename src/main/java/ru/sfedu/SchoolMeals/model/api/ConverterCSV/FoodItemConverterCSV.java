@@ -23,7 +23,7 @@ public class FoodItemConverterCSV implements Converter<FoodItem> {
                 Double.parseDouble(csvData[2]),
                 csvData[3],
                 Long.parseLong(csvData[4]),
-                Boolean.valueOf(csvData[4])
+                Boolean.valueOf(csvData[5])
         );
     }
 }

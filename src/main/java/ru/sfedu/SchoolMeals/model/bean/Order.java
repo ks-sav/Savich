@@ -1,31 +1,43 @@
 package ru.sfedu.SchoolMeals.model.bean;
-
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Root;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 /**
  * Class Order
  */
+@Root
 public class Order implements WithId{
 
   //
   // Fields
   //
+  @Attribute
   private long id;
+  @Attribute
   private long pupilId;
-  private String date;
+  @Attribute
+  private Timestamp date;
+  @Attribute
   private OrderStatus status;
-  private long totalCost;
-  
+  @Attribute
+  private double totalCost;
+
   //
   // Constructors
   //
-  public Order () { };
 
-
-  public Order(long parseLong, long parseLong1, Timestamp valueOf, String csvDatum, double parseDouble) {
+  public Order(long id, long pupilId, Timestamp date, OrderStatus status, double totalCost) {
+    this.id = id;
+    this.pupilId = pupilId;
+    this.date = date;
+    this.status = status;
+    this.totalCost = totalCost;
   }
 
+  public Order(){
+  }
   //
   // Methods
   //
@@ -69,7 +81,7 @@ public class Order implements WithId{
    * Set the value of date
    * @param newVar the new value of date
    */
-  public void setDate (String newVar) {
+  public void setDate (Timestamp newVar) {
     date = newVar;
   }
 
@@ -77,7 +89,7 @@ public class Order implements WithId{
    * Get the value of date
    * @return the value of date
    */
-  public String getDate () {
+  public Timestamp getDate () {
     return date;
   }
 
@@ -109,7 +121,7 @@ public class Order implements WithId{
    * Get the value of totalCost
    * @return the value of totalCost
    */
-  public Long getTotalCost () {
+  public double getTotalCost () {
     return totalCost;
   }
 

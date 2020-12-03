@@ -10,26 +10,21 @@ public class ComboMealsConverterCSV implements Converter<ComboMeals> {
     @Override
     public String[] toCsv(ComboMeals comboMeals) {
         return new String[]{
-                String.valueOf(comboMeals.getIdCombo()),
-                String.valueOf(comboMeals.getDate()),
-                String.valueOf(comboMeals.getMenu()),
-                String.valueOf(comboMeals.getPrice())
+                String.valueOf(comboMeals.getId()),
+                String.valueOf(comboMeals.getComboId()),
+                String.valueOf(comboMeals.getName()),
+                String.valueOf(comboMeals.getFoodId())
         };
     }
 
     @Override
     public ComboMeals fromCsv(String[] csvData) {
-        return null;
-    }
-    /*
-//решить, как распарсить лист в бин (еще один конвертер?)
-    @Override
-    public ComboMeals fromCsv(String[] csvData) {
         return new ComboMeals(
                 Long.parseLong(csvData[0]),
-                Timestamp.valueOf(csvData[1]),
-                List.(csvData[2]), //тут List<FoodItem>
-                Double.valueOf(csvData[3])
+                Long.parseLong(csvData[1]),
+                csvData[2],
+                Long.parseLong(csvData[3])
         );
-    }*/
+    }
+
 }

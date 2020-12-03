@@ -9,20 +9,24 @@ import java.util.Objects;
  */
 public class ComboMeals implements WithId {
 
+
+
   //
   // Fields
   //
-  private Integer idCombo;
-  private String date;
-  private List<FoodItem> menu;
-  private Long price;
-  
+  private long id;
+  private long ComboId;
+  private String name;
+  private long FoodId;
+
   //
   // Constructors
   //
-  public ComboMeals () { };
-
-  public ComboMeals(long parseLong, Timestamp valueOf, List<FoodItem> csvDatum, Double valueOf1) {
+  public ComboMeals(long id, long comboId, String name, long foodId) {
+    this.id = id;
+    ComboId = comboId;
+    this.name = name;
+    FoodId = foodId;
   }
 
   //
@@ -33,86 +37,38 @@ public class ComboMeals implements WithId {
   //
   // Accessor methods
   //
-  /**
-   * Set the value of id
-   * @param newVar the new value of id
-   */
-  public void setIdCombo (Integer newVar) {
-    idCombo = newVar;
-  }
-
-  /**
-   * Get the value of id
-   * @return the value of id
-   */
-  public Integer getIdCombo () {
-    return idCombo;
-  }
-  /**
-   * Set the value of date
-   * @param newVar the new value of date
-   */
-  public void setDate (String newVar) {
-    date = newVar;
-  }
-
-  /**
-   * Get the value of date
-   * @return the value of date
-   */
-  public String getDate () {
-    return date;
-  }
-
-  /**
-   * Set the value of menu
-   * @param newVar the new value of menu
-   */
-  public void setMenu (List<FoodItem> newVar) {
-    menu = newVar;
-  }
-
-  /**
-   * Get the value of menu
-   * @return the value of menu
-   */
-  public List<FoodItem> getMenu () {
-    return menu;
-  }
-
-  /**
-   * Set the value of price
-   * @param newVar the new value of price
-   */
-  public void setPrice (Long newVar) {
-    price = newVar;
-  }
-
-  /**
-   * Get the value of price
-   * @return the value of price
-   */
-  public Long getPrice () {
-    return price;
-  }
 
   @Override
   public long getId() {
-    return 0;
+    return id;
   }
 
-  //
-  // Other methods
-  //
+  public void setId(long id) {
+    this.id = id;
+  }
 
-  @Override
-  public String toString() {
-    return "ComboMeals{" +
-            "idCombo=" + idCombo +
-            ", date='" + date + '\'' +
-            ", menu=" + menu +
-            ", price=" + price +
-            '}';
+  public long getComboId() {
+    return ComboId;
+  }
+
+  public void setComboId(Integer comboId) {
+    ComboId = comboId;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public long getFoodId() {
+    return FoodId;
+  }
+
+  public void setFoodId(long foodId) {
+    FoodId = foodId;
   }
 
   @Override
@@ -120,14 +76,14 @@ public class ComboMeals implements WithId {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     ComboMeals that = (ComboMeals) o;
-    return Objects.equals(idCombo, that.idCombo) &&
-            Objects.equals(date, that.date) &&
-            Objects.equals(menu, that.menu) &&
-            Objects.equals(price, that.price);
+    return id == that.id &&
+            FoodId == that.FoodId &&
+            Objects.equals(ComboId, that.ComboId) &&
+            Objects.equals(name, that.name);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(idCombo, date, menu, price);
+    return Objects.hash(id, ComboId, name, FoodId);
   }
 }

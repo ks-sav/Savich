@@ -20,8 +20,6 @@ public abstract class IDataProvider {
         if (data == null) return false;
         if (tClass == FoodCategory.class)
             return true;
-        else if (tClass == Order.class)
-            return true;
         else if (tClass == Puiple.class)
             return true;
         else if (tClass == Staff.class)
@@ -29,8 +27,8 @@ public abstract class IDataProvider {
         else if (tClass == Customer.class)
             return true;
         else if (tClass == FoodItem.class) {
-            FoodItem e = (FoodItem) data; //разораться, как хранить типы
-            if (getFoodCategoryById(e.getCategory()) == null) {
+            FoodItem f = (FoodItem) data; //разобраться, как хранить типы
+            if (getFoodCategoryById(f.getCategory()) == null) {
                 log.error("Bad FoodItem: it's FoodCategory doesn't exist");
                 return false;
             }
@@ -41,12 +39,20 @@ public abstract class IDataProvider {
                 log.error("Bad Order: it's Customer doesn't exist");
                 return false;
             }
-            return true;
+            return true;}
+        else if (tClass == ComboMeals.class) {
+            ComboMeals c = (ComboMeals) data;
+                if (getFoodItemById(c.getFoodId()) == null) {
+                    log.error("Bad ComboMeals: it's FoodItem doesn't exist");
+                    return false;
+                }
+                return true;
         } else {
             log.fatal("Unknown type "+ tClass.getSimpleName());
             System.exit(1);
             return false;
         }
+
     }
 
     protected <T extends WithId> boolean possibleToDelete(Class<T> tClass, long id) {
@@ -74,17 +80,14 @@ public abstract class IDataProvider {
                 return false;
             }
             return true;
-        }/*
+        }
         else if (tClass == FoodItem.class) {
-            if (getAllSessions().stream().anyMatch(comboMeals -> comboMeals.getList() == data.getId())) {
+            if (getAllComboMeals().stream().anyMatch(comboMeals -> comboMeals.getFoodId() == data.getId())) {
                 log.error("Unable to delete FoodItem, delete it's comboMeals first");
-                return false;
-            } else if (getAllFoodItems().stream().anyMatch(order -> order.getId() == data.getId())) {
-                log.error("Unable to delete FoodItem, delete it's Order first");
                 return false;
             }
             return true;
-            // разобраться с листом } */
+        }
          else {
             log.fatal("Unknown type " + tClass.getSimpleName());
             System.exit(1);

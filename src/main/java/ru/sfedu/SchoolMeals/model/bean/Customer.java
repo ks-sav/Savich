@@ -19,6 +19,11 @@ public class Customer implements Serializable, WithId {
     @CsvBindByName
     private String name;
 
+    public Customer(long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public Customer() {
     }
 //
