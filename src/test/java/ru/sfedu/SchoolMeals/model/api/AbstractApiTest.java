@@ -29,9 +29,9 @@ public abstract class AbstractApiTest {
     private final Order order1 = new Order(1,2, new Timestamp(1), PRE,321.3);
     private final Order order11 = new Order(1,333, new Timestamp(1), PRE,12.50);
 
-    private final Staff staff0 = new Staff(0,"Amina Antonovna",Boolean.TRUE);
+    private final Staff staff0 = new Staff(0,"Amina Antonovna", Boolean.TRUE);
     private final Staff staff1 = new Staff(1,"Anna Arcadievna", Boolean.FALSE);
-    private final Staff staff11 = new Staff(1,"Sergey Sergeevich",Boolean.FALSE);
+    private final Staff staff11 = new Staff(1,"Sergey Sergeevich", Boolean.FALSE);
 
     private final FoodCategory foodCategory0 = new FoodCategory(0,"Meat");
     private final FoodCategory foodCategory00 = new FoodCategory(0,"Soup");
@@ -51,7 +51,7 @@ public abstract class AbstractApiTest {
     private final ComboMeals combo2 = new ComboMeals(2,2,"Monday" , 2);
     private final ComboMeals combo22 = new ComboMeals(22,2,"Monday", 1);
 
-    private final Logger log = LogManager.getLogger(IDataProvider.class);
+    private final Logger log = LogManager.getLogger();
 
     @Test
     public void writeAndUpdateOrderTest(){
@@ -153,7 +153,7 @@ public abstract class AbstractApiTest {
         dp.saveFoodCategory(foodCategory1);
         assertEquals(2, dp.getAllFoodCategory().size());
         dp.deleteFoodCategory(0);
-        assertEquals(1, dp.getAllFoodCategory().size());
+        assertEquals(1, dp.getAllFoodCategory().size());//invalid
         dp.deleteFoodCategory(3);
         assertEquals(1, dp.getAllFoodCategory().size());
     }
@@ -182,7 +182,7 @@ public abstract class AbstractApiTest {
         dp.saveFoodItem(foodItem2);
         assertEquals(2, dp.getAllFoodItems().size());
         dp.deleteFoodItem(1);
-        assertEquals(1, dp.getAllFoodItems().size());
+        assertEquals(1, dp.getAllFoodItems().size()); //invalid
         dp.deleteFoodItem(3);
         assertEquals(1, dp.getAllFoodItems().size());
     }
@@ -193,38 +193,44 @@ public abstract class AbstractApiTest {
         dp.saveFoodCategory(foodCategory1);
         dp.saveFoodItem(foodItem1);
         dp.saveComboMeals(combo1);
-        assertEquals(2, dp.getAllFoodItems().size());
+        assertEquals(1, dp.getAllFoodItems().size());
         dp.deleteFoodItem(1);
-        assertEquals(2, dp.getAllFoodItems().size());
+        assertEquals(1, dp.getAllFoodItems().size());
 
     }
     @Test
     public void writeAndUpdateComboMeals(){
+        log.debug("-----writeAndUpdateComboMeals--------------");
+        dp.saveFoodCategory(foodCategory0);
+        dp.saveFoodCategory(foodCategory1);
         dp.saveFoodItem(foodItem1);
         dp.saveFoodItem(foodItem2);
         dp.saveComboMeals(combo1);
-        assertEquals(1, dp.getAllPuiple().size());
+        assertEquals(1, dp.getAllComboMeals().size());
         dp.saveComboMeals(combo2);
-        assertEquals(combo1, dp.getPuipleById(1));
-        assertEquals(combo2, dp.getPuipleById(2));
-        assertEquals(2, dp.getAllPuiple().size());
+        assertEquals(combo1, dp.getComboMealsById(1));
+        assertEquals(combo2, dp.getComboMealsById(2));
+        assertEquals(2, dp.getAllComboMeals().size());
         dp.saveComboMeals(combo22);
-        assertEquals(combo22, dp.getPuipleById(2));
-        dp.saveComboMeals(combo0); ////invalid
-        assertEquals(2, dp.getAllPuiple().size());
+        assertEquals(combo22, dp.getComboMealsById(22));
+        assertEquals(3, dp.getAllComboMeals().size());
+        dp.saveComboMeals(combo0); //invalid
+        assertEquals(3, dp.getAllComboMeals().size());
     }
 
     @Test
     public void deleteComboMeals(){
+        log.debug("-----deleteComboMeals--------------");
+        dp.saveFoodCategory(foodCategory0);
+        dp.saveFoodCategory(foodCategory1);
         dp.saveFoodItem(foodItem1);
         dp.saveFoodItem(foodItem2);
         dp.saveComboMeals(combo1);
         dp.saveComboMeals(combo2);
-        assertEquals(2, dp.getAllPuiple().size());
+        assertEquals(2, dp.getAllComboMeals().size());
         dp.deleteComboMeals(1);
-        assertEquals(1, dp.getAllPuiple().size());
+        assertEquals(1, dp.getAllComboMeals().size());
         dp.deleteComboMeals(3);
-        assertEquals(1, dp.getAllPuiple().size());
+        assertEquals(1, dp.getAllComboMeals().size());
     }
-
 }

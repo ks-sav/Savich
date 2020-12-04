@@ -35,10 +35,10 @@ public abstract class IDataProvider {
             return true;}
         else if (tClass == Order.class) {
             Order o = (Order) data;
-            if (getPuipleById(o.getPupilId()) == null) {
+            /*if (getPuipleById(o.getPupilId()) == null) {
                 log.error("Bad Order: it's Customer doesn't exist");
                 return false;
-            }
+            }*/
             return true;}
         else if (tClass == ComboMeals.class) {
             ComboMeals c = (ComboMeals) data;
@@ -129,7 +129,7 @@ public abstract class IDataProvider {
 
     public void saveComboMeals(ComboMeals comboMeals) {save(ComboMeals.class, comboMeals);}
     public void deleteComboMeals(long id) {delete(ComboMeals.class, id);}
-    public ComboMeals getComboMeals(long id) {return getById(ComboMeals.class, id);}
+    public ComboMeals getComboMealsById(long id) {return getById(ComboMeals.class, id);}
     public List<ComboMeals> getAllComboMeals() {return getAll(ComboMeals.class);}
 
     public void saveFoodCategory(FoodCategory foodCategory) {save(FoodCategory.class, foodCategory);}

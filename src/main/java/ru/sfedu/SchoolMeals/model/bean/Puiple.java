@@ -1,17 +1,22 @@
 package ru.sfedu.SchoolMeals.model.bean;
 
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Root;
+
 import java.util.Objects;
 
 /**
  * Class Puiple
  */
+@Root
 public class Puiple extends Customer implements WithId{
 
   //
   // Fields
   //
-
+  @Attribute
   private long nclass;
+  @Attribute
   private Boolean freeMeals;
   //
   // Constructors
@@ -22,7 +27,9 @@ public class Puiple extends Customer implements WithId{
     this.freeMeals = freeMeals;
   }
 
+  public Puiple(){
 
+  }
   //
   // Methods
   //

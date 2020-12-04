@@ -14,4 +14,7 @@ public class OrderList {
     public OrderList(List<Order> order) {
         this.order = order;
     }
+
+    public OrderList() {
+    }
 }

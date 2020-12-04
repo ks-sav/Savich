@@ -1,5 +1,7 @@
 package ru.sfedu.SchoolMeals.model.bean;
 
+import org.simpleframework.xml.Attribute;
+
 import java.util.Objects;
 
 /**
@@ -10,7 +12,9 @@ public class FoodCategory implements WithId{
   //
   // Fields
   //
+  @Attribute
   private long id;
+  @Attribute
   private String categoryName;
 
   public FoodCategory(long id, String categoryName) {

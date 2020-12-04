@@ -3,19 +3,20 @@ package ru.sfedu.SchoolMeals.model.bean;
 import com.opencsv.bean.CsvBindByName;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
 
 import java.io.Serializable;
 import java.util.Objects;
 /**
  * Class Customer
  */
-
+@Root
 public class Customer implements Serializable, WithId {
     @Attribute
     @CsvBindByName
     private long id;
 
-    @Element
+    @Attribute
     @CsvBindByName
     private String name;
 

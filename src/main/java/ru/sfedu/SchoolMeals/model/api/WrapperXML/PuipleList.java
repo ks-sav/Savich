@@ -14,7 +14,7 @@ public class PuipleList {
     public PuipleList(List<Puiple> puiple) {
         this.puiple = puiple;
     }
-
     public PuipleList() {
+
     }
 }

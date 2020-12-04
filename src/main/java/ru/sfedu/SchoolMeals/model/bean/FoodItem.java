@@ -1,21 +1,30 @@
 package ru.sfedu.SchoolMeals.model.bean;
 
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Root;
+
 import java.util.Objects;
 
 /**
  * Class FoodItem
  */
+@Root
 public class FoodItem implements WithId{
 
   //
   // Fields
   //
-
+  @Attribute
   private long id;
+  @Attribute
   private String itemName_;
+  @Attribute
   private double price;
+  @Attribute
   private String description;
+  @Attribute
   private long category_id;
+  @Attribute
   private Boolean inStock;
   
   //
@@ -31,6 +40,9 @@ public class FoodItem implements WithId{
     this.inStock = inStock;
   }
 
+  public FoodItem(){
+
+  }
   //
   // Methods
   //

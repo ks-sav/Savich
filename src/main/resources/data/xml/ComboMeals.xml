@@ -1,3 +1,7 @@
 <comboMealsList>
-   <comboMeals class="java.util.ArrayList"/>
+   <comboMeals class="java.util.ArrayList">
+      <comboMeals id="1" comboId="2" name="Monday" foodId="1"/>
+      <comboMeals id="2" comboId="2" name="Monday" foodId="2"/>
+      <comboMeals id="22" comboId="2" name="Monday" foodId="1"/>
+   </comboMeals>
 </comboMealsList>

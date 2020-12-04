@@ -1,5 +1,8 @@
 package ru.sfedu.SchoolMeals.model.bean;
 
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Root;
+
 import java.sql.Timestamp;
 import java.util.List;
 import java.util.Objects;
@@ -7,26 +10,32 @@ import java.util.Objects;
 /**
  * Class ComboMeals
  */
+@Root
 public class ComboMeals implements WithId {
-
-
-
   //
   // Fields
   //
+  @Attribute
   private long id;
-  private long ComboId;
+  @Attribute
+  private long comboId;
+  @Attribute
   private String name;
-  private long FoodId;
+  @Attribute
+  private long foodId;
 
   //
   // Constructors
   //
+
   public ComboMeals(long id, long comboId, String name, long foodId) {
     this.id = id;
-    ComboId = comboId;
+    this.comboId = comboId;
     this.name = name;
-    FoodId = foodId;
+    this.foodId = foodId;
+  }
+
+  public ComboMeals() {
   }
 
   //
@@ -48,11 +57,11 @@ public class ComboMeals implements WithId {
   }
 
   public long getComboId() {
-    return ComboId;
+    return comboId;
   }
 
   public void setComboId(Integer comboId) {
-    ComboId = comboId;
+    comboId = comboId;
   }
 
   public String getName() {
@@ -64,11 +73,11 @@ public class ComboMeals implements WithId {
   }
 
   public long getFoodId() {
-    return FoodId;
+    return foodId;
   }
 
   public void setFoodId(long foodId) {
-    FoodId = foodId;
+    foodId = foodId;
   }
 
   @Override
@@ -77,13 +86,13 @@ public class ComboMeals implements WithId {
     if (o == null || getClass() != o.getClass()) return false;
     ComboMeals that = (ComboMeals) o;
     return id == that.id &&
-            FoodId == that.FoodId &&
-            Objects.equals(ComboId, that.ComboId) &&
+            foodId == that.foodId &&
+            Objects.equals(comboId, that.comboId) &&
             Objects.equals(name, that.name);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, ComboId, name, FoodId);
+    return Objects.hash(id, comboId, name, foodId);
   }
 }

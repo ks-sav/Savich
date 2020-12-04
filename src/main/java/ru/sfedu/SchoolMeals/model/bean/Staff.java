@@ -1,17 +1,24 @@
 package ru.sfedu.SchoolMeals.model.bean;
 
+import org.simpleframework.xml.Attribute;
+import org.simpleframework.xml.Root;
+
 import java.util.Objects;
 
 /**
  * Class Staff
  */
+@Root
 public class Staff extends Customer {
-
+  @Attribute
   private Boolean unionMember;
 
   public Staff(long id, String name, Boolean unionMember) {
     super(id, name);
     this.unionMember = unionMember;
+  }
+
+  public Staff(){
   }
 
   public void setUnionMember (Boolean newVar) {

@@ -1,3 +1,6 @@
 <foodCategoryList>
-   <foodCategory class="java.util.ArrayList"/>
+   <foodCategory class="java.util.ArrayList">
+      <foodCategory id="0" categoryName="Meat"/>
+      <foodCategory id="1" categoryName="Sweet"/>
+   </foodCategory>
 </foodCategoryList>
