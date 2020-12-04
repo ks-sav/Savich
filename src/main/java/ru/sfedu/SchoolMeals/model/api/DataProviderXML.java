@@ -13,22 +13,20 @@ import org.apache.logging.log4j.Logger;
 import org.simpleframework.xml.core.Persister;
 import ru.sfedu.SchoolMeals.model.api.WrapperXML.*;
 import ru.sfedu.SchoolMeals.model.bean.*;
+import ru.sfedu.SchoolMeals.utils.ConfigurationUtil;
 
 
-/**
- *
- * @author sp2
- */
+
 public class DataProviderXML extends IDataProvider{
     
     private static Logger log = LogManager.getLogger(DataProviderXML.class);
     //Определяем сериалайзер
     private final static Persister persister = new Persister();
+    private static final String PATH="xml_path";
+    private static final String EXT="xml";
 
-    private String getFileName(Class<?> aClass){
-        //String propertyName = "ShoolMeals."+aClass.getSimpleName()+"_xml";
-        //String fileName = System.getProperty(propertyName);
-        String fileName = "src\\main\\resources\\data\\xml\\"+aClass.getSimpleName()+".xml";
+    private String getFileName(Class<?> aClass) throws IOException {
+        String fileName = ConfigurationUtil.getConfigurationEntry(PATH) + aClass.getSimpleName() + ConfigurationUtil.getConfigurationEntry(EXT);
         if (fileName == null) {
             log.fatal("Unable to initialize, no property: " + fileName);
             System.exit(1);
@@ -66,7 +64,13 @@ public class DataProviderXML extends IDataProvider{
         classes.add(Puiple.class);
         classes.add(Staff.class);
         classes.forEach(aClass -> {
-            String fileName = getFileName(aClass);
+            String fileName = null;
+            try {
+                fileName = getFileName(aClass);
+            } catch (IOException e) {
+                log.fatal("Error ni fileName");
+                e.printStackTrace();
+            }
             File f = new File(fileName);
             try {
                 if (f.createNewFile()) {
@@ -81,7 +85,7 @@ public class DataProviderXML extends IDataProvider{
     }
 
     @Override
-    protected <T extends WithId> List<T> getAll(Class<T> tClass) {
+    protected <T extends WithId> List<T> getAll(Class<T> tClass) throws IOException {
         String fileName = getFileName(tClass);
         Reader reader = null;
         try {
@@ -114,7 +118,7 @@ public class DataProviderXML extends IDataProvider{
     }
 
     @Override
-    protected <T extends WithId> void writeAll(Class<T> tClass, List<T> data) {
+    protected <T extends WithId> void writeAll(Class<T> tClass, List<T> data) throws IOException {
         String fileName = getFileName(tClass);
         try {
             //Подключаемся к потоку записи файла

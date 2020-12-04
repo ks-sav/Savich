@@ -1,6 +1,5 @@
 <foodItemList>
    <foodItem class="java.util.ArrayList">
-      <foodItem id="1" itemName_="Borsh" price="100.5" description="Nice" category_id="0" inStock="true"/>
       <foodItem id="2" itemName_="Kompot" price="20.0" description="Good" category_id="1" inStock="true"/>
    </foodItem>
 </foodItemList>

@@ -23,8 +23,6 @@ public class DataProviderDB extends IDataProvider{
     private static final String DB_PASS="db_pass";
     private static final String DB_URL="db_url";
     private static final String DB_CREATE="src/main/resources/create.sql";
-    private static final String DB_INSERT="INSERT INTO \"%s\" (%s) VALUES (%s)";
-    private static final String DB_SELECT="SELECT * FROM \"%s\" WHERE id=%d";
     private static Logger log = LogManager.getLogger(DataProviderDB.class);
     private Connection connection;
 

@@ -2,12 +2,6 @@ package ru.sfedu.SchoolMeals.model.api;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
-import com.opencsv.bean.CsvToBean;
-import com.opencsv.bean.CsvToBeanBuilder;
-import com.opencsv.bean.StatefulBeanToCsv;
-import com.opencsv.bean.StatefulBeanToCsvBuilder;
-import com.opencsv.exceptions.CsvDataTypeMismatchException;
-import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.SchoolMeals.model.api.ConverterCSV.*;
@@ -17,13 +11,12 @@ import ru.sfedu.SchoolMeals.utils.ConfigurationUtil;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
 public class DataProviderCSV extends IDataProvider {
-    //private final String PATH = "csv_path";
-    //private final String FILE_EXTENSION = "csv";
     private static Logger log = LogManager.getLogger(DataProviderCSV.class);
+    private static final String PATH="csv_path";
+    private static final String EXT="csv";
 
     private <T> List<T> readFile(String file, Converter<T> converter) {
         Reader reader = null;
@@ -53,10 +46,8 @@ public class DataProviderCSV extends IDataProvider {
         }
     }
 
-    private String getFileName(Class<?> aClass){
-        //String propertyName = "src\\main\\resources\\data\\csv\\"+aClass.getSimpleName()+".csv";
-        //String fileName = System.getProperty(propertyName);
-        String fileName = "src\\main\\resources\\data\\csv\\"+aClass.getSimpleName()+".csv";
+    private String getFileName(Class<?> aClass) throws IOException {
+        String fileName = ConfigurationUtil.getConfigurationEntry(PATH) + aClass.getSimpleName() + ConfigurationUtil.getConfigurationEntry(EXT);
         if (fileName == null) {
             log.fatal("Unable to initialize, no property: " + fileName);
             System.exit(1);
@@ -95,7 +86,13 @@ public class DataProviderCSV extends IDataProvider {
         classes.add(ComboMeals.class);
 
         classes.forEach(aClass -> {
-            String fileName = getFileName(aClass);
+            String fileName = null;
+            try {
+                fileName = getFileName(aClass);
+            } catch (IOException e) {
+                log.fatal("Error in file name");
+                e.printStackTrace();
+            }
             File f = new File(fileName);
             try {
                 if (f.createNewFile()) log.info("File " + f + " created");
@@ -107,14 +104,14 @@ public class DataProviderCSV extends IDataProvider {
     }
 
     @Override
-    protected <T extends WithId> List<T> getAll(Class<T> tClass) {
+    protected <T extends WithId> List<T> getAll(Class<T> tClass) throws IOException {
         String fileName = getFileName(tClass);
         Converter<T> converter = getConverter(tClass);
         return readFile(fileName, converter);
     }
 
     @Override
-    protected <T extends WithId> void writeAll(Class<T> tClass, List<T> data) {
+    protected <T extends WithId> void writeAll(Class<T> tClass, List<T> data) throws IOException {
         String fileName = getFileName(tClass);
         Converter<T> converter = getConverter(tClass);
         writeFile(fileName, data, converter);

@@ -6,21 +6,22 @@ import org.junit.Before;
 import org.junit.Test;
 import ru.sfedu.SchoolMeals.model.bean.*;
 
+import java.io.IOException;
 import java.sql.Timestamp;
 import static org.junit.Assert.assertEquals;
 import static ru.sfedu.SchoolMeals.model.bean.OrderStatus.PRE;
 
-public abstract class AbstractApiTest {
+public abstract class TestBase {
     public  IDataProvider dp;
 
     public abstract IDataProvider getiDataProvider();
-    public abstract void setUpProperties();
-    public abstract void cleanBeforeRun();
+    //public abstract void setUpProperties();
+    public abstract void cleanBeforeRun() throws IOException;
 
     @Before
-    public void init(){
+    public void init() throws IOException {
         cleanBeforeRun();
-        setUpProperties();
+        //setUpProperties();
         dp = getiDataProvider();
         dp.initDataSource();
     }
@@ -51,10 +52,10 @@ public abstract class AbstractApiTest {
     private final ComboMeals combo2 = new ComboMeals(2,2,"Monday" , 2);
     private final ComboMeals combo22 = new ComboMeals(22,2,"Monday", 1);
 
-    private final Logger log = LogManager.getLogger();
+    private static Logger log = LogManager.getLogger();
 
     @Test
-    public void writeAndUpdateOrderTest(){
+    public void writeAndUpdateOrderTest() throws IOException {
         log.debug("-----writeAndUpdateOrderTest--------------");
         dp.saveOrder(order0);
         assertEquals(1, dp.getAllOrders().size());
@@ -69,7 +70,7 @@ public abstract class AbstractApiTest {
     }
 
     @Test
-    public void deleteOrderTest(){
+    public void deleteOrderTest() throws IOException {
         log.debug("-----deleteOrderTest--------------");
         dp.saveOrder(order0);
         dp.saveOrder(order1);
@@ -81,7 +82,7 @@ public abstract class AbstractApiTest {
     }
 
     @Test
-    public void writeAndUpdateStaffTest(){
+    public void writeAndUpdateStaffTest() throws IOException {
         log.debug("-----writeAndUpdateStaffTest--------------");
         dp.saveStaff(staff0);
         assertEquals(1, dp.getAllStaff().size());
@@ -95,7 +96,7 @@ public abstract class AbstractApiTest {
     }
 
     @Test
-    public void deleteStaffTest(){
+    public void deleteStaffTest() throws IOException {
         log.debug("-----deleteStaffTest--------------");
         dp.saveStaff(staff0);
         dp.saveStaff(staff1);
@@ -107,7 +108,7 @@ public abstract class AbstractApiTest {
     }
 
     @Test
-    public void writeAndUpdatePuipleTest(){
+    public void writeAndUpdatePuipleTest() throws IOException {
         log.debug("-----writeAndUpdatePuipleTest--------------");
         dp.savePuiple(puiple0);
         assertEquals(1, dp.getAllPuiple().size());
@@ -121,7 +122,7 @@ public abstract class AbstractApiTest {
     }
 
     @Test
-    public void deletePuipleTest(){
+    public void deletePuipleTest() throws IOException {
         log.debug("-----deletePuipleTest--------------");
         dp.savePuiple(puiple0);
         dp.savePuiple(puiple1);
@@ -133,7 +134,7 @@ public abstract class AbstractApiTest {
     }
 
     @Test
-    public void writeAndUpdateFoodCategoryTest(){
+    public void writeAndUpdateFoodCategoryTest() throws IOException {
         log.debug("-----writeAndUpdateFoodCategoryTest--------------");
         dp.saveFoodCategory(foodCategory0);
         assertEquals(1, dp.getAllFoodCategory().size());
@@ -147,7 +148,7 @@ public abstract class AbstractApiTest {
     }
 
     @Test
-    public void deleteFoodCategoryTest(){
+    public void deleteFoodCategoryTest() throws IOException {
      log.debug("-----deleteFoodCategoryTest--------------");
         dp.saveFoodCategory(foodCategory0);
         dp.saveFoodCategory(foodCategory1);
@@ -158,7 +159,7 @@ public abstract class AbstractApiTest {
         assertEquals(1, dp.getAllFoodCategory().size());
     }
     @Test
-    public void writeAndUpdateFoodItemTest(){
+    public void writeAndUpdateFoodItemTest() throws IOException {
         log.debug("-----writeAndUpdateFoodItemTest--------------");
         dp.saveFoodCategory(foodCategory0);
         dp.saveFoodCategory(foodCategory1);
@@ -174,7 +175,7 @@ public abstract class AbstractApiTest {
         dp.saveFoodItem(foodItem22); //invalid;
     }
     @Test
-    public void deleteFoodItemTest(){
+    public void deleteFoodItemTest() throws IOException {
         log.debug("-----deleteFoodItemTest--------------");
         dp.saveFoodCategory(foodCategory0);
         dp.saveFoodCategory(foodCategory1);
@@ -187,7 +188,7 @@ public abstract class AbstractApiTest {
         assertEquals(1, dp.getAllFoodItems().size());
     }
     @Test
-    public void invalidDeleteFoodItemTest(){
+    public void invalidDeleteFoodItemTest() throws IOException {
         log.debug("-----invalidDeleteFoodItemTest--------------");
         dp.saveFoodCategory(foodCategory0);
         dp.saveFoodCategory(foodCategory1);
@@ -199,7 +200,7 @@ public abstract class AbstractApiTest {
 
     }
     @Test
-    public void writeAndUpdateComboMeals(){
+    public void writeAndUpdateComboMeals() throws IOException {
         log.debug("-----writeAndUpdateComboMeals--------------");
         dp.saveFoodCategory(foodCategory0);
         dp.saveFoodCategory(foodCategory1);
@@ -219,7 +220,7 @@ public abstract class AbstractApiTest {
     }
 
     @Test
-    public void deleteComboMeals(){
+    public void deleteComboMeals() throws IOException {
         log.debug("-----deleteComboMeals--------------");
         dp.saveFoodCategory(foodCategory0);
         dp.saveFoodCategory(foodCategory1);

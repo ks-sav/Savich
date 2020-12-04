@@ -5322,3 +5322,1719 @@ Message: Premature end of file.
 2020-12-04 14:39:24 INFO  IDataProvider:100 - Read: FoodItem
 2020-12-04 14:39:24 ERROR IDataProvider:105 - FoodItem with id = 0 not found
 2020-12-04 14:39:24 ERROR IDataProvider:46 - Bad ComboMeals: it's FoodItem doesn't exist
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:23 DEBUG AbstractApiTest:99 - -----deleteStaffTest--------------
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: Staff
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: Staff
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: Staff
+2020-12-04 23:28:23 INFO  IDataProvider:126 - Delete: Staff
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: Staff
+2020-12-04 23:28:23 ERROR IDataProvider:105 - Staff with id = 3 not found
+2020-12-04 23:28:23 INFO  IDataProvider:126 - Delete: Staff
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:23 DEBUG AbstractApiTest:223 - -----deleteComboMeals--------------
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: ComboMeals
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: ComboMeals
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: ComboMeals
+2020-12-04 23:28:23 INFO  IDataProvider:126 - Delete: ComboMeals
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: ComboMeals
+2020-12-04 23:28:23 ERROR IDataProvider:105 - ComboMeals with id = 3 not found
+2020-12-04 23:28:23 INFO  IDataProvider:126 - Delete: ComboMeals
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:23 DEBUG AbstractApiTest:125 - -----deletePuipleTest--------------
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: Puiple
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: Puiple
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: Puiple
+2020-12-04 23:28:23 INFO  IDataProvider:126 - Delete: Puiple
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: Puiple
+2020-12-04 23:28:23 ERROR IDataProvider:105 - Puiple with id = 3 not found
+2020-12-04 23:28:23 INFO  IDataProvider:126 - Delete: Puiple
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:23 DEBUG AbstractApiTest:162 - -----writeAndUpdateFoodItemTest--------------
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:23 DEBUG AbstractApiTest:85 - -----writeAndUpdateStaffTest--------------
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: Staff
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: Staff
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: Staff
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: Staff
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: Staff
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: Staff
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:23 DEBUG AbstractApiTest:73 - -----deleteOrderTest--------------
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: Order
+2020-12-04 23:28:23 INFO  IDataProvider:116 - Write: Order
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: Order
+2020-12-04 23:28:23 INFO  IDataProvider:126 - Delete: Order
+2020-12-04 23:28:23 INFO  IDataProvider:100 - Read: Order
+2020-12-04 23:28:23 ERROR IDataProvider:105 - Order with id = 3 not found
+2020-12-04 23:28:23 INFO  IDataProvider:126 - Delete: Order
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:23 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:23 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:24 DEBUG AbstractApiTest:203 - -----writeAndUpdateComboMeals--------------
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: ComboMeals
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: ComboMeals
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: ComboMeals
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: ComboMeals
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: ComboMeals
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: ComboMeals
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 ERROR IDataProvider:105 - FoodItem with id = 0 not found
+2020-12-04 23:28:24 ERROR IDataProvider:46 - Bad ComboMeals: it's FoodItem doesn't exist
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:24 DEBUG AbstractApiTest:151 - -----deleteFoodCategoryTest--------------
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:126 - Delete: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 ERROR IDataProvider:105 - FoodCategory with id = 3 not found
+2020-12-04 23:28:24 INFO  IDataProvider:126 - Delete: FoodCategory
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:24 DEBUG AbstractApiTest:191 - -----invalidDeleteFoodItemTest--------------
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: ComboMeals
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 ERROR IDataProvider:86 - Unable to delete FoodItem, delete it's comboMeals first
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:24 DEBUG AbstractApiTest:111 - -----writeAndUpdatePuipleTest--------------
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Puiple
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Puiple
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Puiple
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Puiple
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Puiple
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Puiple
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:24 DEBUG AbstractApiTest:58 - -----writeAndUpdateOrderTest--------------
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Order
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Order
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Order
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Order
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Order
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Order
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:24 DEBUG AbstractApiTest:137 - -----writeAndUpdateFoodCategoryTest--------------
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathStaffcsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathPuiplecsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathOrdercsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodItemcsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathFoodCategorycsv is delete
+2020-12-04 23:28:24 DEBUG CsvDataProviderTest:43 - Filecsv_pathComboMealscsv is delete
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathOrdercsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathStaffcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathPuiplecsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodCategorycsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathFoodItemcsv created
+2020-12-04 23:28:24 INFO  DataProviderCSV:103 - File csv_pathComboMealscsv created
+2020-12-04 23:28:24 DEBUG AbstractApiTest:178 - -----deleteFoodItemTest--------------
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:126 - Delete: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 ERROR IDataProvider:105 - FoodItem with id = 3 not found
+2020-12-04 23:28:24 INFO  IDataProvider:126 - Delete: FoodItem
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:24 DEBUG AbstractApiTest:99 - -----deleteStaffTest--------------
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Staff
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Staff
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Staff
+2020-12-04 23:28:24 INFO  IDataProvider:126 - Delete: Staff
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Staff
+2020-12-04 23:28:24 ERROR IDataProvider:105 - Staff with id = 3 not found
+2020-12-04 23:28:24 INFO  IDataProvider:126 - Delete: Staff
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:24 DEBUG AbstractApiTest:223 - -----deleteComboMeals--------------
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: ComboMeals
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: ComboMeals
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: ComboMeals
+2020-12-04 23:28:24 INFO  IDataProvider:126 - Delete: ComboMeals
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: ComboMeals
+2020-12-04 23:28:24 ERROR IDataProvider:105 - ComboMeals with id = 3 not found
+2020-12-04 23:28:24 INFO  IDataProvider:126 - Delete: ComboMeals
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:24 DEBUG AbstractApiTest:125 - -----deletePuipleTest--------------
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Puiple
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Puiple
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Puiple
+2020-12-04 23:28:24 INFO  IDataProvider:126 - Delete: Puiple
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Puiple
+2020-12-04 23:28:24 ERROR IDataProvider:105 - Puiple with id = 3 not found
+2020-12-04 23:28:24 INFO  IDataProvider:126 - Delete: Puiple
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:24 DEBUG AbstractApiTest:162 - -----writeAndUpdateFoodItemTest--------------
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:24 DEBUG AbstractApiTest:85 - -----writeAndUpdateStaffTest--------------
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Staff
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Staff
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Staff
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Staff
+2020-12-04 23:28:24 INFO  IDataProvider:116 - Write: Staff
+2020-12-04 23:28:24 INFO  IDataProvider:100 - Read: Staff
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:24 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:24 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:25 DEBUG AbstractApiTest:73 - -----deleteOrderTest--------------
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: Order
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: Order
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: Order
+2020-12-04 23:28:25 INFO  IDataProvider:126 - Delete: Order
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: Order
+2020-12-04 23:28:25 ERROR IDataProvider:105 - Order with id = 3 not found
+2020-12-04 23:28:25 INFO  IDataProvider:126 - Delete: Order
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:25 DEBUG AbstractApiTest:203 - -----writeAndUpdateComboMeals--------------
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: ComboMeals
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: ComboMeals
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: ComboMeals
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: ComboMeals
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: ComboMeals
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: ComboMeals
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:25 ERROR IDataProvider:105 - FoodItem with id = 0 not found
+2020-12-04 23:28:25 ERROR IDataProvider:46 - Bad ComboMeals: it's FoodItem doesn't exist
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:25 DEBUG AbstractApiTest:151 - -----deleteFoodCategoryTest--------------
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:126 - Delete: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:25 ERROR IDataProvider:105 - FoodCategory with id = 3 not found
+2020-12-04 23:28:25 INFO  IDataProvider:126 - Delete: FoodCategory
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:25 DEBUG AbstractApiTest:191 - -----invalidDeleteFoodItemTest--------------
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: ComboMeals
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:25 ERROR IDataProvider:86 - Unable to delete FoodItem, delete it's comboMeals first
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:25 DEBUG AbstractApiTest:111 - -----writeAndUpdatePuipleTest--------------
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: Puiple
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: Puiple
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: Puiple
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: Puiple
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: Puiple
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: Puiple
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:25 DEBUG AbstractApiTest:58 - -----writeAndUpdateOrderTest--------------
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: Order
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: Order
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: Order
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: Order
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: Order
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: Order
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:25 DEBUG AbstractApiTest:137 - -----writeAndUpdateFoodCategoryTest--------------
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathStaffxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathPuiplexml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathOrderxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodItemxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathFoodCategoryxml is delete
+2020-12-04 23:28:25 DEBUG XmlDataProviderTest:43 - Filexml_pathComboMealsxml is delete
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodCategoryxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathFoodItemxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathOrderxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathComboMealsxml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathPuiplexml created
+2020-12-04 23:28:25 INFO  DataProviderXML:73 - File xml_pathStaffxml created
+2020-12-04 23:28:25 DEBUG AbstractApiTest:178 - -----deleteFoodItemTest--------------
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodCategory
+2020-12-04 23:28:25 INFO  IDataProvider:116 - Write: FoodItem
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:25 INFO  IDataProvider:126 - Delete: FoodItem
+2020-12-04 23:28:25 INFO  IDataProvider:100 - Read: FoodItem
+2020-12-04 23:28:25 ERROR IDataProvider:105 - FoodItem with id = 3 not found
+2020-12-04 23:28:25 INFO  IDataProvider:126 - Delete: FoodItem
+2020-12-04 23:50:21 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:21 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:21 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:21 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:21 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:21 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:21 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:21 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:21 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:21 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:21 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:21 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:21 DEBUG AbstractApiTest:100 - -----deleteStaffTest--------------
+2020-12-04 23:50:22 INFO  IDataProvider:117 - Write: Staff
+2020-12-04 23:50:22 INFO  IDataProvider:117 - Write: Staff
+2020-12-04 23:50:22 INFO  IDataProvider:101 - Read: Staff
+2020-12-04 23:50:22 INFO  IDataProvider:127 - Delete: Staff
+2020-12-04 23:50:22 INFO  IDataProvider:101 - Read: Staff
+2020-12-04 23:50:22 ERROR IDataProvider:106 - Staff with id = 3 not found
+2020-12-04 23:50:22 INFO  IDataProvider:127 - Delete: Staff
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:22 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:22 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:22 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:22 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:22 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:22 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:22 DEBUG AbstractApiTest:224 - -----deleteComboMeals--------------
+2020-12-04 23:50:22 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:22 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:22 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:22 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:22 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:22 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:22 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:22 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-04 23:50:22 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:22 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-04 23:50:22 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-04 23:50:22 INFO  IDataProvider:127 - Delete: ComboMeals
+2020-12-04 23:50:22 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-04 23:50:22 ERROR IDataProvider:106 - ComboMeals with id = 3 not found
+2020-12-04 23:50:22 INFO  IDataProvider:127 - Delete: ComboMeals
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:22 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:22 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:22 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:22 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:22 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:22 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:22 DEBUG AbstractApiTest:126 - -----deletePuipleTest--------------
+2020-12-04 23:50:22 INFO  IDataProvider:117 - Write: Puiple
+2020-12-04 23:50:22 INFO  IDataProvider:117 - Write: Puiple
+2020-12-04 23:50:22 INFO  IDataProvider:101 - Read: Puiple
+2020-12-04 23:50:22 INFO  IDataProvider:127 - Delete: Puiple
+2020-12-04 23:50:22 INFO  IDataProvider:101 - Read: Puiple
+2020-12-04 23:50:22 ERROR IDataProvider:106 - Puiple with id = 3 not found
+2020-12-04 23:50:22 INFO  IDataProvider:127 - Delete: Puiple
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:22 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:23 DEBUG AbstractApiTest:163 - -----writeAndUpdateFoodItemTest--------------
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:23 DEBUG AbstractApiTest:86 - -----writeAndUpdateStaffTest--------------
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: Staff
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: Staff
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: Staff
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: Staff
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: Staff
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: Staff
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:23 DEBUG AbstractApiTest:74 - -----deleteOrderTest--------------
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: Order
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: Order
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: Order
+2020-12-04 23:50:23 INFO  IDataProvider:127 - Delete: Order
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: Order
+2020-12-04 23:50:23 ERROR IDataProvider:106 - Order with id = 3 not found
+2020-12-04 23:50:23 INFO  IDataProvider:127 - Delete: Order
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:23 DEBUG AbstractApiTest:204 - -----writeAndUpdateComboMeals--------------
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:23 ERROR IDataProvider:106 - FoodItem with id = 0 not found
+2020-12-04 23:50:23 ERROR IDataProvider:47 - Bad ComboMeals: it's FoodItem doesn't exist
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:23 DEBUG AbstractApiTest:152 - -----deleteFoodCategoryTest--------------
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:127 - Delete: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 ERROR IDataProvider:106 - FoodCategory with id = 3 not found
+2020-12-04 23:50:23 INFO  IDataProvider:127 - Delete: FoodCategory
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:23 DEBUG AbstractApiTest:192 - -----invalidDeleteFoodItemTest--------------
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:23 ERROR IDataProvider:87 - Unable to delete FoodItem, delete it's comboMeals first
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:23 DEBUG AbstractApiTest:112 - -----writeAndUpdatePuipleTest--------------
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: Puiple
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: Puiple
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: Puiple
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: Puiple
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: Puiple
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: Puiple
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:23 DEBUG AbstractApiTest:59 - -----writeAndUpdateOrderTest--------------
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: Order
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: Order
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: Order
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: Order
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: Order
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: Order
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:23 DEBUG AbstractApiTest:138 - -----writeAndUpdateFoodCategoryTest--------------
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-04 23:50:23 DEBUG CsvDataProviderTest:44 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-04 23:50:23 INFO  DataProviderCSV:109 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-04 23:50:23 DEBUG AbstractApiTest:179 - -----deleteFoodItemTest--------------
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:23 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:127 - Delete: FoodItem
+2020-12-04 23:50:23 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:23 ERROR IDataProvider:106 - FoodItem with id = 3 not found
+2020-12-04 23:50:23 INFO  IDataProvider:127 - Delete: FoodItem
+2020-12-04 23:50:23 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:23 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:23 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:23 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:23 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:23 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:23 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:24 DEBUG AbstractApiTest:100 - -----deleteStaffTest--------------
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Staff
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Staff
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Staff
+2020-12-04 23:50:24 INFO  IDataProvider:127 - Delete: Staff
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Staff
+2020-12-04 23:50:24 ERROR IDataProvider:106 - Staff with id = 3 not found
+2020-12-04 23:50:24 INFO  IDataProvider:127 - Delete: Staff
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:24 DEBUG AbstractApiTest:224 - -----deleteComboMeals--------------
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-04 23:50:24 INFO  IDataProvider:127 - Delete: ComboMeals
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-04 23:50:24 ERROR IDataProvider:106 - ComboMeals with id = 3 not found
+2020-12-04 23:50:24 INFO  IDataProvider:127 - Delete: ComboMeals
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:24 DEBUG AbstractApiTest:126 - -----deletePuipleTest--------------
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Puiple
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Puiple
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Puiple
+2020-12-04 23:50:24 INFO  IDataProvider:127 - Delete: Puiple
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Puiple
+2020-12-04 23:50:24 ERROR IDataProvider:106 - Puiple with id = 3 not found
+2020-12-04 23:50:24 INFO  IDataProvider:127 - Delete: Puiple
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:24 DEBUG AbstractApiTest:163 - -----writeAndUpdateFoodItemTest--------------
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:24 DEBUG AbstractApiTest:86 - -----writeAndUpdateStaffTest--------------
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Staff
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Staff
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Staff
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Staff
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Staff
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Staff
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:24 DEBUG AbstractApiTest:74 - -----deleteOrderTest--------------
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Order
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Order
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Order
+2020-12-04 23:50:24 INFO  IDataProvider:127 - Delete: Order
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Order
+2020-12-04 23:50:24 ERROR IDataProvider:106 - Order with id = 3 not found
+2020-12-04 23:50:24 INFO  IDataProvider:127 - Delete: Order
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:24 DEBUG AbstractApiTest:204 - -----writeAndUpdateComboMeals--------------
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:24 ERROR IDataProvider:106 - FoodItem with id = 0 not found
+2020-12-04 23:50:24 ERROR IDataProvider:47 - Bad ComboMeals: it's FoodItem doesn't exist
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:24 DEBUG AbstractApiTest:152 - -----deleteFoodCategoryTest--------------
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:127 - Delete: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:24 ERROR IDataProvider:106 - FoodCategory with id = 3 not found
+2020-12-04 23:50:24 INFO  IDataProvider:127 - Delete: FoodCategory
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:24 DEBUG AbstractApiTest:192 - -----invalidDeleteFoodItemTest--------------
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:24 ERROR IDataProvider:87 - Unable to delete FoodItem, delete it's comboMeals first
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:24 DEBUG AbstractApiTest:112 - -----writeAndUpdatePuipleTest--------------
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Puiple
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Puiple
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Puiple
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Puiple
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Puiple
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Puiple
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:24 DEBUG AbstractApiTest:59 - -----writeAndUpdateOrderTest--------------
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Order
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Order
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Order
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Order
+2020-12-04 23:50:24 INFO  IDataProvider:117 - Write: Order
+2020-12-04 23:50:24 INFO  IDataProvider:101 - Read: Order
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:24 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:24 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:25 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:25 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:25 DEBUG AbstractApiTest:138 - -----writeAndUpdateFoodCategoryTest--------------
+2020-12-04 23:50:25 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:25 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:25 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:25 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:25 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:25 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:25 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-04 23:50:25 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-04 23:50:25 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-04 23:50:25 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-04 23:50:25 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-04 23:50:25 DEBUG XmlDataProviderTest:45 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-04 23:50:25 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-04 23:50:25 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-04 23:50:25 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-04 23:50:25 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-04 23:50:25 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-04 23:50:25 INFO  DataProviderXML:80 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-04 23:50:25 DEBUG AbstractApiTest:179 - -----deleteFoodItemTest--------------
+2020-12-04 23:50:25 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:25 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-04 23:50:25 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:25 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:25 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-04 23:50:25 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-04 23:50:25 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:25 INFO  IDataProvider:127 - Delete: FoodItem
+2020-12-04 23:50:25 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-04 23:50:25 ERROR IDataProvider:106 - FoodItem with id = 3 not found
+2020-12-04 23:50:25 INFO  IDataProvider:127 - Delete: FoodItem
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:18 DEBUG TestBase:100 - -----deleteStaffTest--------------
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: Staff
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: Staff
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: Staff
+2020-12-05 00:05:18 INFO  IDataProvider:127 - Delete: Staff
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: Staff
+2020-12-05 00:05:18 ERROR IDataProvider:106 - Staff with id = 3 not found
+2020-12-05 00:05:18 INFO  IDataProvider:127 - Delete: Staff
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:18 DEBUG TestBase:224 - -----deleteComboMeals--------------
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-05 00:05:18 INFO  IDataProvider:127 - Delete: ComboMeals
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-05 00:05:18 ERROR IDataProvider:106 - ComboMeals with id = 3 not found
+2020-12-05 00:05:18 INFO  IDataProvider:127 - Delete: ComboMeals
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:18 DEBUG TestBase:126 - -----deletePuipleTest--------------
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: Puiple
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: Puiple
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: Puiple
+2020-12-05 00:05:18 INFO  IDataProvider:127 - Delete: Puiple
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: Puiple
+2020-12-05 00:05:18 ERROR IDataProvider:106 - Puiple with id = 3 not found
+2020-12-05 00:05:18 INFO  IDataProvider:127 - Delete: Puiple
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:18 DEBUG TestBase:163 - -----writeAndUpdateFoodItemTest--------------
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:18 DEBUG TestBase:86 - -----writeAndUpdateStaffTest--------------
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: Staff
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: Staff
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: Staff
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: Staff
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: Staff
+2020-12-05 00:05:18 INFO  IDataProvider:101 - Read: Staff
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:18 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:18 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:18 DEBUG TestBase:74 - -----deleteOrderTest--------------
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: Order
+2020-12-05 00:05:18 INFO  IDataProvider:117 - Write: Order
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Order
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: Order
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Order
+2020-12-05 00:05:19 ERROR IDataProvider:106 - Order with id = 3 not found
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: Order
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:19 DEBUG TestBase:204 - -----writeAndUpdateComboMeals--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 ERROR IDataProvider:106 - FoodItem with id = 0 not found
+2020-12-05 00:05:19 ERROR IDataProvider:47 - Bad ComboMeals: it's FoodItem doesn't exist
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:19 DEBUG TestBase:152 - -----deleteFoodCategoryTest--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 ERROR IDataProvider:106 - FoodCategory with id = 3 not found
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: FoodCategory
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:19 DEBUG TestBase:192 - -----invalidDeleteFoodItemTest--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 ERROR IDataProvider:87 - Unable to delete FoodItem, delete it's comboMeals first
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:19 DEBUG TestBase:112 - -----writeAndUpdatePuipleTest--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Puiple
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Puiple
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Puiple
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Puiple
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Puiple
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Puiple
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:19 DEBUG TestBase:59 - -----writeAndUpdateOrderTest--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Order
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Order
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Order
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Order
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Order
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Order
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:19 DEBUG TestBase:138 - -----writeAndUpdateFoodCategoryTest--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Staff.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Puiple.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/Order.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodItem.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/FoodCategory.csv is delete
+2020-12-05 00:05:19 DEBUG DataProviderCSVTest:33 - File./src/main/resources/data/csv/ComboMeals.csv is delete
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Order.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Staff.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\Puiple.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodCategory.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\FoodItem.csv created
+2020-12-05 00:05:19 INFO  DataProviderCSV:107 - File .\src\main\resources\data\csv\ComboMeals.csv created
+2020-12-05 00:05:19 DEBUG TestBase:179 - -----deleteFoodItemTest--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 ERROR IDataProvider:106 - FoodItem with id = 3 not found
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: FoodItem
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:19 DEBUG TestBase:100 - -----deleteStaffTest--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Staff
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Staff
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Staff
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: Staff
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Staff
+2020-12-05 00:05:19 ERROR IDataProvider:106 - Staff with id = 3 not found
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: Staff
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:19 DEBUG TestBase:224 - -----deleteComboMeals--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: ComboMeals
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-05 00:05:19 ERROR IDataProvider:106 - ComboMeals with id = 3 not found
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: ComboMeals
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:19 DEBUG TestBase:126 - -----deletePuipleTest--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Puiple
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Puiple
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Puiple
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: Puiple
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Puiple
+2020-12-05 00:05:19 ERROR IDataProvider:106 - Puiple with id = 3 not found
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: Puiple
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:19 DEBUG TestBase:163 - -----writeAndUpdateFoodItemTest--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:19 DEBUG TestBase:86 - -----writeAndUpdateStaffTest--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Staff
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Staff
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Staff
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Staff
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Staff
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Staff
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:19 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:19 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:19 DEBUG TestBase:74 - -----deleteOrderTest--------------
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Order
+2020-12-05 00:05:19 INFO  IDataProvider:117 - Write: Order
+2020-12-05 00:05:19 INFO  IDataProvider:101 - Read: Order
+2020-12-05 00:05:19 INFO  IDataProvider:127 - Delete: Order
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: Order
+2020-12-05 00:05:20 ERROR IDataProvider:106 - Order with id = 3 not found
+2020-12-05 00:05:20 INFO  IDataProvider:127 - Delete: Order
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:20 DEBUG TestBase:204 - -----writeAndUpdateComboMeals--------------
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: ComboMeals
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:20 ERROR IDataProvider:106 - FoodItem with id = 0 not found
+2020-12-05 00:05:20 ERROR IDataProvider:47 - Bad ComboMeals: it's FoodItem doesn't exist
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:20 DEBUG TestBase:152 - -----deleteFoodCategoryTest--------------
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:127 - Delete: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:20 ERROR IDataProvider:106 - FoodCategory with id = 3 not found
+2020-12-05 00:05:20 INFO  IDataProvider:127 - Delete: FoodCategory
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:20 DEBUG TestBase:192 - -----invalidDeleteFoodItemTest--------------
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: ComboMeals
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:20 ERROR IDataProvider:87 - Unable to delete FoodItem, delete it's comboMeals first
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:20 DEBUG TestBase:112 - -----writeAndUpdatePuipleTest--------------
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: Puiple
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: Puiple
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: Puiple
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: Puiple
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: Puiple
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: Puiple
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:20 DEBUG TestBase:59 - -----writeAndUpdateOrderTest--------------
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: Order
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: Order
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: Order
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: Order
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: Order
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: Order
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:20 DEBUG TestBase:138 - -----writeAndUpdateFoodCategoryTest--------------
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Staff.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Puiple.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/Order.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodItem.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/FoodCategory.xml is delete
+2020-12-05 00:05:20 DEBUG DataProviderXMLTest:35 - File./src/main/resources/data/xml/ComboMeals.xml is delete
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodCategory.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/FoodItem.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Order.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/ComboMeals.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Puiple.xml created
+2020-12-05 00:05:20 INFO  DataProviderXML:77 - File ./src/main/resources/data/xml/Staff.xml created
+2020-12-05 00:05:20 DEBUG TestBase:179 - -----deleteFoodItemTest--------------
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodCategory
+2020-12-05 00:05:20 INFO  IDataProvider:117 - Write: FoodItem
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:20 INFO  IDataProvider:127 - Delete: FoodItem
+2020-12-05 00:05:20 INFO  IDataProvider:101 - Read: FoodItem
+2020-12-05 00:05:20 ERROR IDataProvider:106 - FoodItem with id = 3 not found
+2020-12-05 00:05:20 INFO  IDataProvider:127 - Delete: FoodItem
