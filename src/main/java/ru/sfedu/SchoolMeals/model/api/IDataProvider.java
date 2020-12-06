@@ -1,6 +1,6 @@
 package ru.sfedu.SchoolMeals.model.api;
 
-import ru.sfedu.SchoolMeals.model.*;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.SchoolMeals.model.bean.*;
