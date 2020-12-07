@@ -3,7 +3,6 @@ package ru.sfedu.SchoolMeals.api;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.SchoolMeals.model.*;
-import ru.sfedu.SchoolMeals.model.bean.*;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,7 +11,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataProviderDB extends IDataProvider{
+public class DataProviderDB implements IDataProvider{
 
     private static final String DB_DRIVER="db_driver";
     private static final String DB_USER="db_user";
@@ -97,8 +96,9 @@ public class DataProviderDB extends IDataProvider{
             return null;
         }
     }
+
     @Override
-    protected <T extends WithId> List<T> getAll(Class<T> tClass) {
+    public <T extends WithId> List<T> getAll(Class<T> tClass) {
         try {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("select * from " + tClass.getSimpleName());
@@ -168,7 +168,7 @@ public class DataProviderDB extends IDataProvider{
     }
 
     @Override
-    protected <T extends WithId> void writeAll(Class<T> tClass, List<T> data) {
+    public <T extends WithId> void writeAll(Class<T> tClass, List<T> data) {
         try {
             Statement statement = connection.createStatement();
             statement.execute("delete from " + tClass.getSimpleName());

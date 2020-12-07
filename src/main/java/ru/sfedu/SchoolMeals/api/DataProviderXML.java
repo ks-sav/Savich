@@ -13,13 +13,11 @@ import org.apache.logging.log4j.Logger;
 import org.simpleframework.xml.core.Persister;
 import ru.sfedu.SchoolMeals.api.WrapperXML.*;
 import ru.sfedu.SchoolMeals.model.*;
-import ru.sfedu.SchoolMeals.model.api.WrapperXML.*;
-import ru.sfedu.SchoolMeals.model.bean.*;
 import ru.sfedu.SchoolMeals.utils.ConfigurationUtil;
 
 
 
-public class DataProviderXML extends IDataProvider{
+public class DataProviderXML implements IDataProvider{
     
     private static Logger log = LogManager.getLogger(DataProviderXML.class);
     //Определяем сериалайзер
@@ -87,7 +85,7 @@ public class DataProviderXML extends IDataProvider{
     }
 
     @Override
-    protected <T extends WithId> List<T> getAll(Class<T> tClass) throws IOException {
+    public <T extends WithId> List<T> getAll(Class<T> tClass) throws IOException {
         String fileName = getFileName(tClass);
         Reader reader = null;
         try {
@@ -120,7 +118,7 @@ public class DataProviderXML extends IDataProvider{
     }
 
     @Override
-    protected <T extends WithId> void writeAll(Class<T> tClass, List<T> data) throws IOException {
+    public <T extends WithId> void writeAll(Class<T> tClass, List<T> data) throws IOException {
         String fileName = getFileName(tClass);
         try {
             //Подключаемся к потоку записи файла

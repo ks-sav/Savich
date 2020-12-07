@@ -6,8 +6,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.SchoolMeals.api.ConverterCSV.*;
 import ru.sfedu.SchoolMeals.model.*;
-import ru.sfedu.SchoolMeals.model.api.ConverterCSV.*;
-import ru.sfedu.SchoolMeals.model.bean.*;
 import ru.sfedu.SchoolMeals.utils.ConfigurationUtil;
 
 import java.io.*;
@@ -15,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class DataProviderCSV extends IDataProvider {
+public class DataProviderCSV implements IDataProvider {
     private static Logger log = LogManager.getLogger(DataProviderCSV.class);
     private static final String PATH="csv_path";
     private static final String EXT="csv";
@@ -106,14 +104,14 @@ public class DataProviderCSV extends IDataProvider {
     }
 
     @Override
-    protected <T extends WithId> List<T> getAll(Class<T> tClass) throws IOException {
+    public <T extends WithId> List<T> getAll(Class<T> tClass) throws IOException {
         String fileName = getFileName(tClass);
         Converter<T> converter = getConverter(tClass);
         return readFile(fileName, converter);
     }
 
     @Override
-    protected <T extends WithId> void writeAll(Class<T> tClass, List<T> data) throws IOException {
+    public <T extends WithId> void writeAll(Class<T> tClass, List<T> data) throws IOException {
         String fileName = getFileName(tClass);
         Converter<T> converter = getConverter(tClass);
         writeFile(fileName, data, converter);
