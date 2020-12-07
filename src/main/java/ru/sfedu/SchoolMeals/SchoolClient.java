@@ -4,15 +4,12 @@ import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.sfedu.SchoolMeals.model.api.DataProviderCSV;
-import ru.sfedu.SchoolMeals.model.bean.Customer;
+import ru.sfedu.SchoolMeals.model.Customer;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
-import static ru.sfedu.SchoolMeals.model.constants.Constants.ENV_CONST;
-import static ru.sfedu.SchoolMeals.model.constants.Constants.INT_CONST;
+import static ru.sfedu.SchoolMeals.Constants.ENV_CONST;
+import static ru.sfedu.SchoolMeals.Constants.INT_CONST;
 import static ru.sfedu.SchoolMeals.utils.ConfigurationUtil.getConfigurationEntry;
 
 //Этот класс будет являться API для вызовов основных методов вашего приложения
