@@ -21,15 +21,18 @@ public class Puiple extends Customer implements WithId{
   //
   // Constructors
   //
-  public Puiple(long id, String name, long nclass, Boolean freeMeals) {
-    super(id, name);
+
+
+  public Puiple(long id, String name, CustomerType customerType, long nclass, Boolean freeMeals) {
+    super(id, name, customerType);
     this.nclass = nclass;
     this.freeMeals = freeMeals;
   }
 
-  public Puiple(){
 
+  public Puiple(){
   }
+
   //
   // Methods
   //

@@ -10,7 +10,7 @@ import java.util.Objects;
  * Class Customer
  */
 @Root
-public class Customer implements Serializable, WithId {
+abstract public class Customer implements Serializable, WithId {
     @Attribute
     @CsvBindByName
     private long id;
@@ -19,14 +19,20 @@ public class Customer implements Serializable, WithId {
     @CsvBindByName
     private String name;
 
-    public Customer(long id, String name) {
+    @Attribute
+    @CsvBindByName
+    private  CustomerType customerType;
+
+    public Customer(long id, String name, CustomerType customerType) {
         this.id = id;
         this.name = name;
+        this.customerType = customerType;
     }
-
     public Customer() {
     }
-//
+    //
+
+
     // Methods
     //
 
@@ -53,6 +59,14 @@ public class Customer implements Serializable, WithId {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public CustomerType getCustomerType() {
+        return customerType;
+    }
+
+    public void setCustomerType(CustomerType customerType) {
+        this.customerType = customerType;
     }
 
     @Override

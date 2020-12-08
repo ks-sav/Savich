@@ -35,10 +35,10 @@ public interface IDataProvider {
             return true;}
         else if (tClass == Order.class) {
             Order o = (Order) data;
-            /*if (getPuipleById(o.getPupilId()) == null) {
+            if (getPuipleById(o.getPupilId()) == null) {
                 log.error("Bad Order: it's Customer doesn't exist");
                 return false;
-            }*/
+            }
             return true;}
         else if (tClass == ComboMeals.class) {
             ComboMeals c = (ComboMeals) data;
@@ -66,14 +66,13 @@ public interface IDataProvider {
             return true;
         else if (tClass == Puiple.class)
             return true;
-        /*
         else if (tClass == Customer.class) {
-            if (getAllSessions().stream().anyMatch(order -> order.getPuipleId() == data.getId())) {
+            if (getAllOrders().stream().anyMatch(order -> order.getPupilId() == data.getId())) {
                 log.error("Unable to delete Customer, you need delete Orders first");
                 return false;
             }
             return true;
-        } */
+        }
         else if (tClass == FoodCategory.class) {
             if (getAllFoodItems().stream().anyMatch(e -> e.getCategory() == data.getId())) {
                 log.error("Unable to delete FoodCategory,you need delete FoodItems first");
@@ -157,5 +156,10 @@ public interface IDataProvider {
     public default void deletePuiple(long id) throws IOException {delete(Puiple.class, id);}
     public default Puiple getPuipleById(long id) throws IOException {return getById(Puiple.class, id);}
     public default List<Puiple> getAllPuiple() throws IOException {return getAll(Puiple.class);}
+
+    public default void saveCustomer(Customer customer) throws IOException {save(Customer.class, customer);}
+    public default void deleteCustomer(long id) throws IOException {delete(Customer.class, id);}
+    public default Customer getCustomerById(long id) throws IOException {return getById(Customer.class, id);}
+    public default List<Puiple> getAllCustomer() throws IOException {return getAll(Customer.class);}
 
 }
