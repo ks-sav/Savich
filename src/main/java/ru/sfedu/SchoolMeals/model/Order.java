@@ -38,6 +38,9 @@ public class Order implements WithId{
 
   public Order(){
   }
+
+  public Order(long aLong, long aLong1, Timestamp timestamp, String string, long aLong2) {
+      }
   //
   // Methods
   //

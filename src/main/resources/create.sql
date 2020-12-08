@@ -1,39 +1,40 @@
-create table if not exists Staff (
+create table if not exists "Staff" (
     id int primary key,
-    name text
+    name text,
     unionMember boolean
 );
-create table if not exists Puiple (
+create table if not exists "Puiple" (
     id int primary key,
     name text,
     nClass text,
     freeMeals boolean
 );
 
-create table if not exists Order (
+create table if not exists "Order" (
     id int primary key,
     customerId int,
     date timestamp,
     status text,
-    totalCost double
+    totalCost real
 );
 
-create table if not exists FoodItem (
+create table if not exists "FoodItem" (
     id int primary key,
     itemName text,
-    price double,
+    price real,
     description text,
     category_id int,
     inStock boolean
 );
 
-create table if not exists FoodCategory (
+create table if not exists "FoodCategory" (
     id int primary key,
-    categoryName text,
+    categoryName text
 );
 
-create table if not exists ComboMeals (
+create table if not exists "ComboMeals" (
     id int primary key,
-    date timestamp,
-    price double
+    comboId int,
+    name text,
+    foodId int
 );

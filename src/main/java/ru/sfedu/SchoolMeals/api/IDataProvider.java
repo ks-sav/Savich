@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 public interface IDataProvider {
     Logger log = LogManager.getLogger(IDataProvider.class);
-    void initDataSource();
+    void initDataSource() throws IOException;
     abstract <T extends WithId> List<T> getAll(Class<T> tClass) throws IOException;
     abstract <T extends WithId> void writeAll(Class<T> tClass, List<T> data) throws IOException;
 
@@ -122,6 +122,7 @@ public interface IDataProvider {
             List<T> updated = getAll(tClass).stream()
                     .filter(t -> t.getId() != id)
                     .collect(Collectors.toList());
+            log.info(tClass.getSimpleName() + updated.toString());
             writeAll(tClass, updated);
             log.info("Delete: " + tClass.getSimpleName());
         }

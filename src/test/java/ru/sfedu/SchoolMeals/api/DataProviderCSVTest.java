@@ -11,12 +11,13 @@ import java.util.List;
 
 public class DataProviderCSVTest extends TestBase {
     private final Logger log = LogManager.getLogger();
+    private static final String PATH="csv_path";
+    private static final String EXT="csv";
+
     @Override
     public IDataProvider getiDataProvider() {
         return new DataProviderCSV();
     }
-        private static final String PATH="csv_path";
-    private static final String EXT="csv";
 
     @Override
     public void cleanBeforeRun() throws IOException {
