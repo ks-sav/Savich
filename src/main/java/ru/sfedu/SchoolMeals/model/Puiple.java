@@ -9,7 +9,7 @@ import java.util.Objects;
  * Class Puiple
  */
 @Root
-public class Puiple extends Customer implements WithId{
+public class Puiple extends Customer {
 
   //
   // Fields

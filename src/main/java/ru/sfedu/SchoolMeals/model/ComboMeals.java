@@ -9,7 +9,7 @@ import java.util.Objects;
  * Class ComboMeals
  */
 @Root
-public class ComboMeals implements WithId {
+public class ComboMeals {
   //
   // Fields
   //
@@ -45,7 +45,7 @@ public class ComboMeals implements WithId {
   // Accessor methods
   //
 
-  @Override
+
   public long getId() {
     return id;
   }

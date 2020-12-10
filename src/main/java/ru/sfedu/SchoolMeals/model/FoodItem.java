@@ -9,7 +9,7 @@ import java.util.Objects;
  * Class FoodItem
  */
 @Root
-public class FoodItem implements WithId{
+public class FoodItem {
 
   //
   // Fields

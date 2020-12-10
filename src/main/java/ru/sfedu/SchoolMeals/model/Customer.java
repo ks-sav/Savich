@@ -10,7 +10,7 @@ import java.util.Objects;
  * Class Customer
  */
 @Root
-abstract public class Customer implements Serializable, WithId {
+abstract public class Customer {
     @Attribute
     @CsvBindByName
     private long id;

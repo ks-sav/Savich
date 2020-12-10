@@ -2,13 +2,14 @@ package ru.sfedu.SchoolMeals.model;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 import java.sql.Timestamp;
+import java.util.Map;
 import java.util.Objects;
 
 /**
  * Class Order
  */
 @Root
-public class Order implements WithId{
+public class Order {
 
   //
   // Fields
@@ -24,6 +25,9 @@ public class Order implements WithId{
   @Attribute
   private double totalCost;
 
+  //TODO
+ // private Map<FoodItem, Long> menu;
+
   //
   // Constructors
   //
@@ -34,6 +38,7 @@ public class Order implements WithId{
     this.date = date;
     this.status = status;
     this.totalCost = totalCost;
+
   }
 
   public Order(){

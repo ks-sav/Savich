@@ -23,15 +23,6 @@ public class SchoolClient {
     public static void main(String[] args) throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
         new SchoolClient();
         logBasicSystemInfo();
-        Customer customer = new Customer();
-        customer.setId(1);
-        customer.setName("Ks");
-
-        //List<Customer> listCustomer = new ArrayList<>();
-        //listCustomer.add(customer);
-
-        //DataProviderCSV providerCSV = new DataProviderCSV();
-        //providerCSV.insertCustomer(listCustomer);
         }
     public static void logBasicSystemInfo() throws IOException {
         log.error("Launching the application...");
