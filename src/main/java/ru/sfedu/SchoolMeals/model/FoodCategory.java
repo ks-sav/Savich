@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * Class FoodCategory
  */
-public class FoodCategory implements WithId{
+public class FoodCategory {
 
   //
   // Fields

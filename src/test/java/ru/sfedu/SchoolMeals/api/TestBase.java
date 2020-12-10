@@ -9,6 +9,8 @@ import ru.sfedu.SchoolMeals.model.*;
 import java.io.IOException;
 import java.sql.Timestamp;
 import static org.junit.Assert.assertEquals;
+import static ru.sfedu.SchoolMeals.model.CustomerType.PUIPLE;
+import static ru.sfedu.SchoolMeals.model.CustomerType.STAFF;
 import static ru.sfedu.SchoolMeals.model.OrderStatus.PRE;
 
 public abstract class TestBase {
@@ -30,17 +32,17 @@ public abstract class TestBase {
     private final Order order1 = new Order(1,2, new Timestamp(1), PRE,321.3);
     private final Order order11 = new Order(1,333, new Timestamp(1), PRE,12.50);
 
-    private final Staff staff0 = new Staff(0,"Amina Antonovna", Boolean.TRUE);
-    private final Staff staff1 = new Staff(1,"Anna Arcadievna", Boolean.FALSE);
-    private final Staff staff11 = new Staff(1,"Sergey Sergeevich", Boolean.FALSE);
+    private final Staff staff0 = new Staff(0,"Amina Antonovna",STAFF, Boolean.TRUE);
+    private final Staff staff1 = new Staff(1,"Anna Arcadievna", STAFF, Boolean.FALSE);
+    private final Staff staff11 = new Staff(1,"Sergey Sergeevich",STAFF, Boolean.FALSE);
 
     private final FoodCategory foodCategory0 = new FoodCategory(0,"Meat");
     private final FoodCategory foodCategory00 = new FoodCategory(0,"Soup");
     private final FoodCategory foodCategory1 = new FoodCategory(1,"Sweet");
 
-    private final Puiple puiple0 = new Puiple(0,"Oleg",5, Boolean.TRUE);
-    private final Puiple puiple1 = new Puiple(1,"Kirill",5,Boolean.FALSE);
-    private final Puiple puiple11 = new Puiple(1,"Kirill",10 ,Boolean.FALSE);
+    private final Puiple puiple0 = new Puiple(0,"Oleg",PUIPLE,5, Boolean.TRUE);
+    private final Puiple puiple1 = new Puiple(1,"Kirill",PUIPLE,5,Boolean.FALSE);
+    private final Puiple puiple11 = new Puiple(1,"Kirill",PUIPLE,10 ,Boolean.FALSE);
 
     private final FoodItem foodItem1 = new FoodItem(1, "Borsh", 100.50, "Nice", 0,Boolean.TRUE);
     private final FoodItem foodItem2 = new FoodItem(2,"Kompot", 20, "Good", 1,Boolean.TRUE);

@@ -85,7 +85,7 @@ public class DataProviderXML implements IDataProvider{
     }
 
     @Override
-    public <T extends WithId> List<T> getAll(Class<T> tClass) throws IOException {
+    public <T> List<T> getAll(Class<T> tClass) throws IOException {
         String fileName = getFileName(tClass);
         Reader reader = null;
         try {
@@ -118,7 +118,7 @@ public class DataProviderXML implements IDataProvider{
     }
 
     @Override
-    public <T extends WithId> void writeAll(Class<T> tClass, List<T> data) throws IOException {
+    public <T> void writeAll(Class<T> tClass, List<T> data) throws IOException {
         String fileName = getFileName(tClass);
         try {
             //Подключаемся к потоку записи файла

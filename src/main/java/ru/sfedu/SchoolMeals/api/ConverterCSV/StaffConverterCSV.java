@@ -1,4 +1,5 @@
 package ru.sfedu.SchoolMeals.api.ConverterCSV;
+import ru.sfedu.SchoolMeals.model.CustomerType;
 import ru.sfedu.SchoolMeals.model.Staff;
 
 public class StaffConverterCSV implements Converter<Staff> {
@@ -7,6 +8,7 @@ public class StaffConverterCSV implements Converter<Staff> {
         return new String[]{
                 String.valueOf(staff.getId()),
                 String.valueOf(staff.getName()),
+                String.valueOf(staff.getCustomerType()),
                 String.valueOf(staff.getUnionMember()),
         };
     }
@@ -16,7 +18,8 @@ public class StaffConverterCSV implements Converter<Staff> {
         return new Staff(
                 Long.parseLong(csvData[0]),
                 csvData[1],
-                Boolean.valueOf(csvData[2])
+                CustomerType.valueOf(csvData[2]),
+                Boolean.valueOf(csvData[3])
         );
     }
 }

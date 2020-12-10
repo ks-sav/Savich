@@ -13,10 +13,12 @@ public class Staff extends Customer {
   @Attribute
   private Boolean unionMember;
 
-  public Staff(long id, String name, Boolean unionMember) {
-    super(id, name);
+
+  public Staff(long id, String name, CustomerType customerType, Boolean unionMember) {
+    super(id, name, customerType);
     this.unionMember = unionMember;
   }
+
 
   public Staff(){
   }

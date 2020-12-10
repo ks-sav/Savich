@@ -12,6 +12,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static ru.sfedu.SchoolMeals.Constants.*;
+
 public class DataProviderDB implements IDataProvider{
 
     private static final String DB_DRIVER="db_driver";
@@ -48,22 +50,24 @@ public class DataProviderDB implements IDataProvider{
                 return new Puiple(
                 rs.getLong(1),
                 rs.getString(2),
-                rs.getLong(3),
-                rs.getBoolean(4)
+                 CustomerType.valueOf(rs.getString(3)),
+                rs.getLong(4),
+                rs.getBoolean(5)
             );
 
         else if (aClass == ComboMeals.class)
             return new ComboMeals(
                     rs.getLong(1),
                     rs.getLong(2),
-                    rs.getString(3),//тут вообзе то должен быть List
+                    rs.getString(3),
                     rs.getLong(4)
             );
         else if (aClass == Staff.class)
             return new Staff(
                     rs.getLong(1),
                     rs.getString(2),
-                    rs.getBoolean(3)
+                    CustomerType.valueOf(rs.getString(3)),
+                    rs.getBoolean(4)
             );
 
         else if (aClass == Order.class)
@@ -74,7 +78,7 @@ public class DataProviderDB implements IDataProvider{
                     OrderStatus.valueOf(rs.getString(4)),
                     rs.getDouble(5)
                     );
-                    //разобраться как поулчить енум
+
         else if (aClass == FoodItem.class)
             return new FoodItem(
                     rs.getLong(1),
@@ -97,10 +101,10 @@ public class DataProviderDB implements IDataProvider{
     }
 
     @Override
-    public <T extends WithId> List<T> getAll(Class<T> tClass) {
+    public <T> List<T> getAll(Class<T> tClass) {
         try {
             Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery("select * from \"" + tClass.getSimpleName()+"\"");
+            ResultSet rs = statement.executeQuery(SELECT + tClass.getSimpleName()+END);
             List ans  = new ArrayList<>();
             while (rs.next()) {
                 ans.add(dataFromResultSet(rs, tClass));
@@ -115,7 +119,7 @@ public class DataProviderDB implements IDataProvider{
     }
 
     private void writeFoodCategory(List<FoodCategory> foodCategory) throws SQLException {
-        PreparedStatement pst = connection.prepareStatement("insert into \"FoodCategory\" (id,categoryName) values(?, ?)");
+        PreparedStatement pst = connection.prepareStatement(INS_FOODCATEGORY);
         for (FoodCategory a : foodCategory) {
             pst.setObject(1, a.getId());
             pst.setObject(2, a.getCategoryName());
@@ -123,7 +127,7 @@ public class DataProviderDB implements IDataProvider{
         }
     }
     private void writeComboMeals(List<ComboMeals> comboMeals) throws SQLException {
-        PreparedStatement pst = connection.prepareStatement("insert into \"ComboMeals\" (id,comboId,name,foodId) values(?, ?,?,?)");
+        PreparedStatement pst = connection.prepareStatement(INS_COMBOMEALS);
         for (ComboMeals a : comboMeals) {
             pst.setObject(1, a.getId());
             pst.setObject(2, a.getComboId());
@@ -133,7 +137,7 @@ public class DataProviderDB implements IDataProvider{
         }
     }
     private void writeFoodItem(List<FoodItem> foodItem) throws SQLException {
-        PreparedStatement pst = connection.prepareStatement("insert into \"FoodItem\" (id,itemName,price,description,category_id,inStock) values(?, ?,?,?,?,?)");
+        PreparedStatement pst = connection.prepareStatement(INS_FOODITEM);
         for (FoodItem a : foodItem) {
             pst.setObject(1, a.getId());
             pst.setObject(2, a.getItemName_());
@@ -145,7 +149,7 @@ public class DataProviderDB implements IDataProvider{
         }
     }
     private void writeOrder(List<Order> order) throws SQLException {
-        PreparedStatement pst = connection.prepareStatement("insert into \"Order\" (id,customerId,date,status,totalCost) values(?, ?, ?, ?, ?)");
+        PreparedStatement pst = connection.prepareStatement(INS_ORDER);
         for (Order a : order) {
             pst.setObject(1, a.getId());
             pst.setObject(2, a.getPupilId());
@@ -155,32 +159,34 @@ public class DataProviderDB implements IDataProvider{
             pst.execute();
         }
     }
-    //А ШТО ДЕЛАЦ ЕСЛИ ID заказчика = или школьник или стафф...непонятно...
+    //Что делать:  ID заказчика = или школьник или стафф.
     private void writePuiple(List<Puiple> puiple) throws SQLException {
-        PreparedStatement pst = connection.prepareStatement("insert into \"Puiple\" (id,name,nClass,freeMeals) values(?, ?, ?, ?)");
+        PreparedStatement pst = connection.prepareStatement(INS_PUIPLE);
         for (Puiple a : puiple) {
             pst.setObject(1, a.getId());
             pst.setObject(2, a.getName());
-            pst.setObject(3, a.getNClass());
-            pst.setObject(4, a.getFreeMeals());
+            pst.setObject(3, a.getCustomerType().name());
+            pst.setObject(4, a.getNClass());
+            pst.setObject(5, a.getFreeMeals());
             pst.execute();
         }
     }
     private void writeStaff(List<Staff> staff) throws SQLException {
-        PreparedStatement pst = connection.prepareStatement("insert into \"Staff\" (id,name,unionMember) values(?, ?,?)");
+        PreparedStatement pst = connection.prepareStatement(INS_STAFF);
         for (Staff a : staff) {
             pst.setObject(1, a.getId());
             pst.setObject(2, a.getName());
-            pst.setObject(3, a.getUnionMember());
+            pst.setObject(3, a.getCustomerType().name());
+            pst.setObject(4, a.getUnionMember());
             pst.execute();
         }
     }
 
     @Override
-    public <T extends WithId> void writeAll(Class<T> tClass, List<T> data) {
+    public <T> void writeAll(Class<T> tClass, List<T> data) {
         try {
             Statement statement = connection.createStatement();
-            statement.execute("delete from \"" + tClass.getSimpleName()+ "\"");
+            statement.execute(DELETE+ tClass.getSimpleName()+ END);
             if (tClass == FoodCategory.class)
                 writeFoodCategory((List) data);
             else if (tClass == ComboMeals.class)
