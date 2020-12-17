@@ -412,7 +412,12 @@ public interface IDataProvider {
         return pickedMeals;
     }
 //--------------------------------Select combo------------------------------
+    default List<FoodItem> selectCombo(Boolean takeCombo){
+        List<FoodItem> comboMeals = new ArrayList<FoodItem>();
+        //Read combo meals and return them
 
+        return comboMeals;
+    }
 //--------------------------------Make changes to Order------------------------------
 
 //--------------------------------Cancel Order--------------------------------------
