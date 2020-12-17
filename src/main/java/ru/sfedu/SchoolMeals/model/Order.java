@@ -2,6 +2,7 @@ package ru.sfedu.SchoolMeals.model;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 import java.sql.Timestamp;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
@@ -15,7 +16,7 @@ public class Order {
   // Fields
   //
   @Attribute
-  private long id;
+  private long id;//customeID??
   @Attribute
   private long pupilId;
   @Attribute
@@ -24,9 +25,13 @@ public class Order {
   private OrderStatus status;
   @Attribute
   private double totalCost;
+  @Attribute
+  private Sting dateOrder;
+  @Attribute
+  List<FoodItem> meals;
 
   //TODO
- // private Map<FoodItem, Long> menu;
+ // private Map<FoodItem, Long> menu;//we need to save a list with the aliments
 
   //
   // Constructors
@@ -39,6 +44,12 @@ public class Order {
     this.status = status;
     this.totalCost = totalCost;
 
+  }
+
+  public Order(Integer customerId, Sting date,  List<FoodItem> meals) {//constructor for preliminar order
+    this.id = customerId;
+    this.dateOrder = date;
+    this.meals = meals;
   }
 
   public Order(){
