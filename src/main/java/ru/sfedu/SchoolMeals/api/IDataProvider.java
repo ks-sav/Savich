@@ -7,10 +7,10 @@ import ru.sfedu.SchoolMeals.model.*;
 
 import java.awt.*;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.sql.Timestamp;
+import java.time.LocalTime;
+import java.util.*;
 import java.util.List;
-import java.util.Optional;
-import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public interface IDataProvider {
@@ -71,7 +71,8 @@ public interface IDataProvider {
             return opt.get();
         else
             log.error("ComboMeals with id = " + id + " not found");
-        return null;}
+        return null;
+    }
 
     /**
      * Getting all positions ComboMeals
@@ -367,56 +368,53 @@ public interface IDataProvider {
      * @return List Puiple
      */
     default List<Puiple> getAllPuiple() throws IOException {return getAll(Puiple.class);}
+
+
 //--------------------------------Create  Order------------------------------
     //preliminar order till all orders finish
     //Meals represen all available meals
     //Date is the date when user choose option Create Order
     //Customer Id, who is our customer??
-    default Order createOrder(Integer customerId, Sting date,  List<FoodItem> meals)throws  IOException{
+    default Order createOrder(Integer customerId, Sting date,  List<FoodItem> meals) throws IOException {
         List<FoodItem> orderedMeals = new ArrayList<FoodItem>();
         orderedMeals = pickMeals(meals);
-        if (orderedMeals.get(0) == null)
-            System.out.println("Order was not created. Reason: Order Empty");
-        else
-            System.out.println("Order created");
-        return  new Order(customerId, date, meals);
+        log.info("Order created ");
+        return  new Order(customerId, date, orderedMeals);
     }
 
+    boolean selectcombo = false;
+    List<FoodItem> pickedMeals = new ArrayList<FoodItem>();
+    long idCombo = 1;
+    Random rand = new Random();
+    int customerId = rand.nextInt(100);
+    Sting date = new Sting(new Timestamp(System.currentTimeMillis()));
 
 //--------------------------------Pick meals------------------------------
-    default List<FoodItem> pickMeals(List<FoodItem> meals) throws IOException{
-        List<FoodItem> pickedMeals = new ArrayList<FoodItem>();
+    default List<FoodItem> pickMeals(List<FoodItem> meals) throws IOException {
         int maxNumberOfMeals = 10;
         int[] numbers = new int[maxNumberOfMeals];
-        Scanner scan = new Scanner(System.in);
-
-        System.out.println("What would you like to eat?");
-        System.out.println("    MEAL        ID");
-        for(int i = 0; i < meals.size(); i++){
-            System.out.println("\t" + meals.get(i).getItemName_() + "\tID: " + meals.get(i).getId());
-        }
-        System.out.print("Please write meal id ");
-        for(int i = 0; i < 10; i++) {
-            numbers[i] = scan.nextInt();
-            if (numbers[i] == 0)
-                break;
-            pickedMeals.add(meals.get(numbers[i]));
-            System.out.println("Current Order  :)");
-            System.out.println("    MEAL        ID");
-            for (int j = 0; j < pickedMeals.size(); j++) {
-                System.out.println("\t" + meals.get(i).getItemName_() + "\tID: " + meals.get(i).getId());
+        List<FoodItem> comboMeals;
+        if (selectcombo)
+        {
+            comboMeals = selectCombo(idCombo);
+            for(int i = 0; i < comboMeals.size(); i++)
+            {
+                pickedMeals.add(comboMeals.get(i));//we add all items combo in the list
             }
-            System.out.println("ENTER 0 to finish order");
-            // TODO select combo, need to think about logic of combo, what is a combo?which products are in a combo, drink, fries and cola???
+        }
+        for(int i = 0; i < numbers.length ; i++) {
+            pickedMeals.add(meals.get(numbers[i]));
         }
         return pickedMeals;
     }
 //--------------------------------Select combo------------------------------
-    default List<FoodItem> selectCombo(Boolean takeCombo){
-        List<FoodItem> comboMeals = new ArrayList<FoodItem>();
-        //Read combo meals and return them
+    default List<FoodItem> selectCombo(long idCombo) throws IOException {//ID COMBO
+        Class<ComboMeals> NClass = ComboMeals.class;
+        List<ComboMeals> comboMeals= getAll(NClass);
+        List<FoodItem> itemsOfCombo = new ArrayList<FoodItem>();
+        //TODO , need a method to covert como to a FooItem list, combo class do not have a list of food,what is the foodID?
 
-        return comboMeals;
+        return itemsOfCombo;
     }
 //--------------------------------Make changes to Order------------------------------
 
