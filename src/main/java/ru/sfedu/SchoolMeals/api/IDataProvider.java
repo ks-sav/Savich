@@ -436,7 +436,24 @@ boolean isApproved
         return order;
     }
 //--------------------------------Cancel Order--------------------------------------
+/*
+* Возможность отменить заказ, пока он не был подтвержден
+Входные данные:
+Order order
+Возвращаемое значение:
+boolean isCanceled
 
+Может выполняться только при условии, что OrderStatus= PRE
+* */
+    default boolean CancelOrder(Order order) throws IOException {
+        boolean isCanceled = false;
+        if(order.getStatus() == OrderStatus.PRE)
+        {
+            deleteOrder(order.getId());
+            isCanceled = true;
+        }
+        return isCanceled;
+    }
 //--------------------------------View order history---------------------------------
 
 //--------------------------------Add combo-----------------------------------------
