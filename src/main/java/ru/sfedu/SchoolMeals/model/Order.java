@@ -66,9 +66,17 @@ public class Order {
   // Accessor methods
   //
   /**
+   * Get the llist of meals
+   *  @return the value of meals
+   */
+  public List<FoodItem> getMeals() {
+    return meals;
+  }
+  /**
    * Set the value of id
    * @param newVar the new value of id
    */
+
   public void setId (Integer newVar) {
     id = newVar;
   }

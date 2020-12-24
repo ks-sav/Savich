@@ -212,7 +212,7 @@ public interface IDataProvider {
      * @return True if save completed successfully, False if there are errors
      */
 
-    default boolean saveOrder(Order data) throws IOException {
+    default boolean saveOrder(Order data) throws IOException {//save order into updatedList but this list is unreacheable
         Class<Order> NClass = Order.class;
         List<Order> updated = getAll(NClass).stream()
                 .filter(t -> t.getId() != data.getId())
@@ -346,12 +346,13 @@ public interface IDataProvider {
         writeAll(NClass, updated);
         log.info("Delete Puiple ");
         return true;
-    };
+    }
     /**
      * Getting a position from the Puiple by id
      * @param id id of the item
      * @return Class instance Puiple
      */
+
     default Puiple getPuipleById(long id) throws IOException {
         Class<Puiple> NClass = Puiple.class;
         List<Puiple> data = getAll(NClass);
@@ -377,9 +378,12 @@ public interface IDataProvider {
     //Customer Id, who is our customer??
     default Order createOrder(Integer customerId, Sting date,  List<FoodItem> meals) throws IOException {
         List<FoodItem> orderedMeals = new ArrayList<FoodItem>();
-        orderedMeals = pickMeals(meals);
+        long[] itemsId = new long[0];///the numbers from console
+        orderedMeals = pickMeals(meals, itemsId);
         log.info("Order created ");
-        return  new Order(customerId, date, orderedMeals);
+        Order order = new Order(customerId, date, orderedMeals);
+        order.setStatus(OrderStatus.PRE);
+        return  order;
     }
 
     boolean selectcombo = false;
@@ -390,34 +394,47 @@ public interface IDataProvider {
     Sting date = new Sting(new Timestamp(System.currentTimeMillis()));
 
 //--------------------------------Pick meals------------------------------
-    default List<FoodItem> pickMeals(List<FoodItem> meals) throws IOException {
-        int maxNumberOfMeals = 10;
-        int[] numbers = new int[maxNumberOfMeals];
-        List<FoodItem> comboMeals;
+    default List<FoodItem> pickMeals(List<FoodItem> meals, long[] itemsId) throws IOException {
+        //Class<FoodItem> NClass = FoodItem.class;
+        //List<FoodItem> data = getAll(NClass);
+        FoodItem combo;
         if (selectcombo)
         {
-            comboMeals = selectCombo(idCombo);
-            for(int i = 0; i < comboMeals.size(); i++)
-            {
-                pickedMeals.add(comboMeals.get(i));//we add all items combo in the list
-            }
+            combo = selectCombo(idCombo);
+            pickedMeals.add(combo);//we add all items combo in the list
         }
-        for(int i = 0; i < numbers.length ; i++) {
-            pickedMeals.add(meals.get(numbers[i]));
+        for(int i = 0; i < itemsId.length ; i++) {
+            pickedMeals.add(meals.get((int)itemsId[i]));
         }
         return pickedMeals;
     }
 //--------------------------------Select combo------------------------------
-    default List<FoodItem> selectCombo(long idCombo) throws IOException {//ID COMBO
-        Class<ComboMeals> NClass = ComboMeals.class;
-        List<ComboMeals> comboMeals= getAll(NClass);
-        List<FoodItem> itemsOfCombo = new ArrayList<FoodItem>();
-        //TODO , need a method to covert como to a FooItem list, combo class do not have a list of food,what is the foodID?
+    default FoodItem selectCombo(long idCombo) throws IOException {//Our combo is now a FoodItem
+        ComboMeals combo= getComboMealsById(idCombo);
+        Double comboPrice = 100.0;
+        FoodItem comboAsItem = new FoodItem(idCombo, combo.getName(), comboPrice, "FirstCombo", 4, true);
 
-        return itemsOfCombo;
+        return comboAsItem;
     }
 //--------------------------------Make changes to Order------------------------------
 
+    /*ержден
+Входные данные:
+Order order
+Возвращаемое значение:
+boolean isApproved
+
+Может выполняться только при условии, что OrderStatus= PRE
+//Do we have to change the meals values?
+    * */
+    default Order makeChangesToOrder(Order order, List<FoodItem> meals, boolean add){//true add, false delte
+
+        order.setTotalCost((long)100);
+        //order.setPupilId();
+        if(order.getStatus() == OrderStatus.PRE)
+            order.setStatus(OrderStatus.APPROV);
+        return order;
+    }
 //--------------------------------Cancel Order--------------------------------------
 
 //--------------------------------View order history---------------------------------

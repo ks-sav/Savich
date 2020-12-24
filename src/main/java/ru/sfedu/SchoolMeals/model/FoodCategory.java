@@ -7,6 +7,7 @@ import java.util.Objects;
 /**
  * Class FoodCategory
  */
+
 public class FoodCategory {
 
   //
