@@ -252,7 +252,8 @@ public interface IDataProvider {
             return opt.get();
         else
             log.error("Order with id = " + id + " not found");
-        return null;}
+        return null;
+    }
 
     /**
      * Getting all positions Order
@@ -445,7 +446,7 @@ boolean isCanceled
 
 Может выполняться только при условии, что OrderStatus= PRE
 * */
-    default boolean CancelOrder(Order order) throws IOException {
+    default boolean cancelOrder(Order order) throws IOException {
         boolean isCanceled = false;
         if(order.getStatus() == OrderStatus.PRE)
         {
@@ -454,7 +455,32 @@ boolean isCanceled
         }
         return isCanceled;
     }
+
 //--------------------------------View order history---------------------------------
+/*
+* Просмотр истории заказов ученика и суммы заказов за прошлый месяц, может использоваться для оплаты питания
+Заказ включает в себя номер заказа, дату, список блюд и стоимость.  Включаются только заказы, где OrderStatus= APPROVED
+
+Входные параметры: integer customerId
+Возвращаемое значение:
+Возвращаемое значение:
+StringBuffer orderHistory
+либо
+NullPointerException e, e.getMessage()
+
+
+* */
+    default StringBuffer viewOrderHistory(Integer id) throws IOException {
+        Class<Order> NClass = Order.class;
+        List<Order> data = getAll(NClass);
+        log.info("Read Order");
+        Optional<Order> opt = data.stream().filter(t -> t.getPupilId() == id).findFirst();
+        if (opt.isPresent())
+            return new StringBuffer(opt.toString());
+        else
+            log.error("Order with id = " + id + " not found");
+        return null;
+    }
 
 //--------------------------------Add combo-----------------------------------------
 
