@@ -4,9 +4,18 @@ import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.sfedu.SchoolMeals.api.DataProviderCSV;
+import ru.sfedu.SchoolMeals.api.IDataProvider;
+import ru.sfedu.SchoolMeals.model.ComboMeals;
 import ru.sfedu.SchoolMeals.model.Customer;
+import ru.sfedu.SchoolMeals.model.FoodItem;
+import ru.sfedu.SchoolMeals.model.Sting;
 
+import java.io.Console;
 import java.io.IOException;
+import java.sql.Timestamp;
+import java.util.List;
+import java.util.Scanner;
 
 import static ru.sfedu.SchoolMeals.Constants.ENV_CONST;
 import static ru.sfedu.SchoolMeals.Constants.INT_CONST;
@@ -16,12 +25,22 @@ import static ru.sfedu.SchoolMeals.utils.ConfigurationUtil.getConfigurationEntry
 public class SchoolClient {
     private static  Logger log = LogManager.getLogger(SchoolClient.class);
 
+
     public SchoolClient(){
         log.debug("<ConstructorName>[0]: starting application.........");
     }
 
     public static void main(String[] args) throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
         new SchoolClient();
+        log.debug("<ConstructorName>[0]: starting application.........");
+        IDataProvider dataProvider = new DataProviderCSV();
+        dataProvider.initDataSource();
+        long now = System.currentTimeMillis();
+        Timestamp timestamp = new Timestamp(now);
+        Sting date = new Sting(timestamp);
+
+        dataProvider.createOrder(1, date, dataProvider.getAll(FoodItem.class));
+
         logBasicSystemInfo();
         }
     public static void logBasicSystemInfo() throws IOException {

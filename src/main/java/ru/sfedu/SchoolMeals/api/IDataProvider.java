@@ -5,9 +5,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.sfedu.SchoolMeals.model.*;
 
+import java.awt.*;
 import java.io.IOException;
+import java.sql.Timestamp;
+import java.time.LocalTime;
+import java.util.*;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 public interface IDataProvider {
@@ -68,7 +71,8 @@ public interface IDataProvider {
             return opt.get();
         else
             log.error("ComboMeals with id = " + id + " not found");
-        return null;}
+        return null;
+    }
 
     /**
      * Getting all positions ComboMeals
@@ -208,7 +212,7 @@ public interface IDataProvider {
      * @return True if save completed successfully, False if there are errors
      */
 
-    default boolean saveOrder(Order data) throws IOException {
+    default boolean saveOrder(Order data) throws IOException {//save order into updatedList but this list is unreacheable
         Class<Order> NClass = Order.class;
         List<Order> updated = getAll(NClass).stream()
                 .filter(t -> t.getId() != data.getId())
@@ -248,7 +252,8 @@ public interface IDataProvider {
             return opt.get();
         else
             log.error("Order with id = " + id + " not found");
-        return null;}
+        return null;
+    }
 
     /**
      * Getting all positions Order
@@ -342,12 +347,13 @@ public interface IDataProvider {
         writeAll(NClass, updated);
         log.info("Delete Puiple ");
         return true;
-    };
+    }
     /**
      * Getting a position from the Puiple by id
      * @param id id of the item
      * @return Class instance Puiple
      */
+
     default Puiple getPuipleById(long id) throws IOException {
         Class<Puiple> NClass = Puiple.class;
         List<Puiple> data = getAll(NClass);
@@ -364,17 +370,117 @@ public interface IDataProvider {
      * @return List Puiple
      */
     default List<Puiple> getAllPuiple() throws IOException {return getAll(Puiple.class);}
+
+
 //--------------------------------Create  Order------------------------------
+    //preliminar order till all orders finish
+    //Meals represen all available meals
+    //Date is the date when user choose option Create Order
+    //Customer Id, who is our customer??
+    default Order createOrder(Integer customerId, Sting date,  List<FoodItem> meals) throws IOException {
+        List<FoodItem> orderedMeals = new ArrayList<FoodItem>();
+        long[] itemsId = new long[0];///the numbers from console
+        orderedMeals = pickMeals(meals, itemsId);
+        log.info("Order created ");
+        Order order = new Order(customerId, date, orderedMeals);
+        order.setStatus(OrderStatus.PRE);
+        return  order;
+    }
+
+    boolean selectcombo = false;
+    List<FoodItem> pickedMeals = new ArrayList<FoodItem>();
+    long idCombo = 1;
+    Random rand = new Random();
+    int customerId = rand.nextInt(100);
+    Sting date = new Sting(new Timestamp(System.currentTimeMillis()));
 
 //--------------------------------Pick meals------------------------------
-
+    default List<FoodItem> pickMeals(List<FoodItem> meals, long[] itemsId) throws IOException {
+        //Class<FoodItem> NClass = FoodItem.class;
+        //List<FoodItem> data = getAll(NClass);
+        FoodItem combo;
+        if (selectcombo)
+        {
+            combo = selectCombo(idCombo);
+            pickedMeals.add(combo);//we add all items combo in the list
+        }
+        for(int i = 0; i < itemsId.length ; i++) {
+            pickedMeals.add(meals.get((int)itemsId[i]));
+        }
+        return pickedMeals;
+    }
 //--------------------------------Select combo------------------------------
+    default FoodItem selectCombo(long idCombo) throws IOException {//Our combo is now a FoodItem
+        ComboMeals combo= getComboMealsById(idCombo);
+        Double comboPrice = 100.0;
+        FoodItem comboAsItem = new FoodItem(idCombo, combo.getName(), comboPrice, "FirstCombo", 4, true);
 
+        return comboAsItem;
+    }
 //--------------------------------Make changes to Order------------------------------
 
+    /*ержден
+Входные данные:
+Order order
+Возвращаемое значение:
+boolean isApproved
+
+Может выполняться только при условии, что OrderStatus= PRE
+//Do we have to change the meals values?
+    * */
+    default Order makeChangesToOrder(Order order, List<FoodItem> meals, boolean add){//true add, false delte
+
+        order.setTotalCost((long)100);
+        //order.setPupilId();
+        if(order.getStatus() == OrderStatus.PRE)
+            order.setStatus(OrderStatus.APPROV);
+        return order;
+    }
 //--------------------------------Cancel Order--------------------------------------
+/*
+* Возможность отменить заказ, пока он не был подтвержден
+Входные данные:
+Order order
+Возвращаемое значение:
+boolean isCanceled
+
+Может выполняться только при условии, что OrderStatus= PRE
+* */
+    default boolean cancelOrder(Order order) throws IOException {
+        boolean isCanceled = false;
+        if(order.getStatus() == OrderStatus.PRE)
+        {
+            deleteOrder(order.getId());
+            isCanceled = true;
+        }
+        return isCanceled;
+    }
 
 //--------------------------------View order history---------------------------------
+/*
+* Просмотр истории заказов ученика и суммы заказов за прошлый месяц, может использоваться для оплаты питания
+Заказ включает в себя номер заказа, дату, список блюд и стоимость.  Включаются только заказы, где OrderStatus= APPROVED
+
+Входные параметры: integer customerId
+Возвращаемое значение:
+Возвращаемое значение:
+StringBuffer orderHistory
+либо
+NullPointerException e, e.getMessage()
+
+
+* */
+    default StringBuffer viewOrderHistory(Integer id) throws IOException {
+        Class<Order> NClass = Order.class;
+        List<Order> data = getAll(NClass);
+        log.info("Read Order");
+        Optional<Order> opt = data.stream().filter(t -> t.getPupilId() == id).findFirst();
+        if (opt.isPresent())
+            return new StringBuffer(opt.toString());
+        else
+            log.error("Order with id = " + id + " not found");
+        return null;
+    }
 
 //--------------------------------Add combo-----------------------------------------
 
