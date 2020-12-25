@@ -555,7 +555,13 @@ public interface IDataProvider {
 
     order.setTotalCost((long)calculateTotalCost(order));
     if(order.getStatus() == OrderStatus.PRE)
+    {
         order.setStatus(OrderStatus.APPROV);
+        log.info("Order with Id: " + order.getId() + " succesfully Approved");
+    }
+    else
+        log.error("Order with Id: " + order.getId() + "  is alreay aprroved");
+
     return order;
     }
 
@@ -587,6 +593,7 @@ public interface IDataProvider {
                 meal.setPrice(meal.getPrice() - meal.getPrice()*Collections.frequency(allItemsForDisccount, meal)/100);
             cost = cost + meal.getPrice();
         }
+        log.info("Cost for order with Id: " + order.getId() + " succesfully calculated.");
         return cost;
     }
 }
