@@ -12,6 +12,7 @@ import java.time.LocalTime;
 import java.util.*;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public interface IDataProvider {
     Logger log = LogManager.getLogger(IDataProvider.class);
@@ -372,7 +373,7 @@ public interface IDataProvider {
     default List<Puiple> getAllPuiple() throws IOException {return getAll(Puiple.class);}
 
 
-//--------------------------------Create  Order------------------------------
+//--------------------------------Create Order------------------------------
     /**
      * Create order
      * @return Order order
@@ -384,6 +385,7 @@ public interface IDataProvider {
         else
             orderedMeals = selectCombo(itemsId[0]);
         Order order = new Order(customerId, date, orderedMeals);
+        order.setCombo(selectcombo);
         if(order != null){
             log.info("Order created ");
             order.setStatus(OrderStatus.PRE);
@@ -426,22 +428,15 @@ public interface IDataProvider {
      * pick the combo meals
      * @return List of meals
      */
-    default List<FoodItem> selectCombo(long idCombo) throws IOException {//Our combo is now a FoodItem
-        //ComboMeals combo= getComboMealsById(idCombo);
-        Class<FoodItem> NClass = FoodItem.class;
-        List<FoodItem> meals = getAll(NClass);
-        List<FoodItem> items = new ArrayList<>();
-        if (idCombo == 0){
-            items.add(meals.get(2));
-            items.add(meals.get(5));
-            items.add(meals.get(6));
-            items.add(meals.get(7));
+    default List<FoodItem> selectCombo(long idCombo) throws IOException {//need configure the combo with edit combo
+        ComboMeals combo = getComboMealsById(idCombo);
+        if(combo == null){
+            log.info("Combo with Id :"  + idCombo + "does not exist");
         }
-        if (idCombo == 2){
-            items.add(meals.get(3));
-            items.add(meals.get(2));
-            items.add(meals.get(1));
-            items.add(meals.get(0));
+        List<FoodItem> items = pickMeals(getComboMealsById(idCombo).getItemsId());
+        if (items == null)
+        {
+            log.error("No Food Items in combo " + combo.getName());
         }
         return items;
     }
@@ -456,7 +451,7 @@ public interface IDataProvider {
         for (long l : itemsId) {//check if exist in stock
             item = getFoodItemById(l);
             if (item == null)
-                log.error("Item with Id: " + l + " don't exist");
+                log.error("Item with Id: " + l + " doesn't exist");
             else if (!item.getInStock()){
                 log.error("Item with Id: " + l + " is not in stock");
             }
@@ -491,101 +486,107 @@ public interface IDataProvider {
     }
 
 //--------------------------------View order history---------------------------------
-/*
-* Просмотр истории заказов ученика и суммы заказов за прошлый месяц, может использоваться для оплаты питания
-Заказ включает в себя номер заказа, дату, список блюд и стоимость.  Включаются только заказы, где OrderStatus= APPROVED
-
-Входные параметры: integer customerId
-Возвращаемое значение:
-Возвращаемое значение:
-StringBuffer orderHistory
-либо
-NullPointerException e, e.getMessage()
-
-when we create the order, where is the pupilID?
-* */
-    default StringBuffer viewOrderHistory(Integer id) throws IOException {
+    /**
+     * view all order with this custormerId
+     * @return StringBuffer with all orders with customerId
+     */
+    default StringBuffer viewOrderHistory(Integer customerId) throws IOException {
         Class<Order> NClass = Order.class;
         List<Order> data = getAll(NClass);
         log.info("View order history");
-        Optional<Order> opt = data.stream().filter(t -> t.getPupilId() == id).findFirst();//TODO find all
-        if (opt.isPresent())
-            return new StringBuffer(opt.toString());//TODO check!!!
-        else
-            log.error("History with id = " + id + " not found");
-        return null;
+        StringBuffer buf = new StringBuffer();
+        for(Order element : data)
+        {
+            if(element.getPupilId() == customerId){
+                buf.append(element.toString());
+            }
+        }
+        log.info("Order history created");
+        return buf;
     }
 
 //--------------------------------Edit Combo-----------------------------------------
-    /*
-    * Изменить комбо-меню (т.е. список блюд) на конкретной дате
-Входные данные:
-ComboMeals comboMeals
-Возвращаемое значение:
-boolean isUpdated
-    * */
-    default ComboMeals editCombo(ComboMeals comboMeals){
-        Boolean isUpdated = false;
-        //Change the elements of combo
-
+    /**
+     * Update the food items of a combo
+     * @return boolean with true if update
+     */
+    default boolean editCombo(Integer comboId, long[] itemsId) throws IOException {
+        boolean isUpdated = false;
+        ComboMeals comboMeals = getComboMealsById(comboId);
+        if (comboMeals!= null && itemsId != null){
+            comboMeals.setItemsId(itemsId);
+            log.info("Combo " + comboMeals.getName() + " succesfully updated");
+            isUpdated = true;
+        }
+        else
+            log.info("Unable to update this combo");
         return isUpdated;
     }
 //--------------------------------Create Report--------------------------------------
-/*
-* Просмотр списка заказов за определённый период 
-Входные данные:
-Double startPeriod, Double endPeriod,  OrderStatus status
-Возвращаемое значение:
-Возвращаемое значение: 
-StringBuffer report 
-либо
-NullPointerException e, e.getMessage()
-* */
-    default StringBuffer createReport(double startPeriod, double endPeriod, OrderStatus status) throws IOException {
+    /**
+     * Create report of all order in an specific period
+     * @return StringBuffer with report information
+     */
+    default StringBuffer createReport(Timestamp startPeriod, Timestamp endPeriod, OrderStatus status) throws IOException {
         Class<Order> NClass = Order.class;
         List<Order> data = getAll(NClass);
-        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        log.info("Read Order");
-        Optional<Order> opt = data.stream().filter(t -> t.getDate() == timestamp).findFirst();
-        if (opt.isPresent())
-            return new StringBuffer(opt.toString());
-        else
-            log.error("Wrong time interval");
-        return null;
+        StringBuffer buf = new StringBuffer();
+        Optional<Order> opt = data.stream().filter(t -> t.getDate().after(startPeriod) && t.getDate().before(endPeriod)).findFirst();
+        if (!opt.isPresent())
+        {
+            log.error("There are not orders in this time period");
+            return null;
+        }
+        for(Order order : data)
+        {
+            if(order.getStatus() == status && order.getDate().after(startPeriod) && order.getDate().before(endPeriod))
+                buf.append(order.toString());
+        }
+        log.info("Report created");
+        return buf;
     }
     
 //--------------------------------Approv Order---------------------------------------
-/*
-* Подтверждение заказа. Подтверждаются только заказы со статусом status=PRE.
- В прецендент включен прецендент calculate Total Cost, где  происходит подсчет итоговой стоимости (totalCost), и статус обновляется до APPROVED
-
-Входные данные:
-Order order, Double totalCost
-* */
-    default Order approvOrder(Order order){//true add, false delte
+    /**
+     * Set the total order cost and change the order to approved status
+     * @return Order with new changes
+     */
+    default Order approvOrder(Order order) throws IOException {//true add, false delte
 
     order.setTotalCost((long)calculateTotalCost(order));
-    //order.setPupilId();
     if(order.getStatus() == OrderStatus.PRE)
         order.setStatus(OrderStatus.APPROV);
     return order;
     }
 
 //--------------------------------Calculate Total Cost---------------------------------
-    /*
-    * Подсчет итоговой стоимости блюд в зависимости от количества этого блюда в заказах и наличия дополнительных скидок (бесплатное питание у школьников, скидки от профсоюза у работников)
+    /**
+     * Calculate total cost cosidering possible discounts
+     * For every repeated element in all orders, exist a 1% discount to the original cost
+     * Discounts are not available for FoodItems of combo, and also the FoodItems from combo
+     * are not considered to calculate discount
+     * @return Total price of the order
+     */
 
-Входные параметры: Order order
-Возвращаемое значение:
-Double orderCost
-    * */
-
-    default double calculateTotalCost() throws IOException {
+    default double calculateTotalCost(Order order) throws IOException {
         Class<Order> NClass = Order.class;
         List<Order> data = getAll(NClass);
-        double orderCost = 0;
-        for(int i = 0; i < order.getMeals().)
-            //TODO dont count combo elements
-        return orderCost;
+        List<FoodItem> allItemsForDisccount = new ArrayList<>();
+        for(Order ord : data){
+            if(!ord.getCombo()){
+                allItemsForDisccount.addAll(ord.getMeals());
+            }
+        }
+        for(FoodItem meal : allItemsForDisccount){
+            meal.setPrice(meal.getPrice() - meal.getPrice()*Collections.frequency(allItemsForDisccount, meal)/100);
+        }
+        double cost = 0;
+        for(FoodItem meal : order.getMeals())
+        {
+            if(!order.getCombo())
+                meal.setPrice(meal.getPrice() - meal.getPrice()*Collections.frequency(allItemsForDisccount, meal)/100);
+            cost = cost + meal.getPrice();
+        }
+        return cost;
     }
 }

@@ -21,6 +21,8 @@ public class ComboMeals {
   private String name;
   @Attribute
   private long foodId;
+  @Attribute
+  private long[] itemsId;
 
   //
   // Constructors
@@ -45,6 +47,9 @@ public class ComboMeals {
   // Accessor methods
   //
 
+  public void setItemsId(long[] itemsId){this.itemsId = itemsId;}
+
+  public long[] getItemsId(){return itemsId;}
 
   public long getId() {
     return id;

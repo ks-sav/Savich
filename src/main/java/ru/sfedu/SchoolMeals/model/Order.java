@@ -29,6 +29,8 @@ public class Order {
   private Sting dateOrder;
   @Attribute
   List<FoodItem> meals;
+  @Attribute
+  boolean combo;
 
   //TODO
  // private Map<FoodItem, Long> menu;//we need to save a list with the aliments
@@ -65,6 +67,23 @@ public class Order {
   //
   // Accessor methods
   //
+
+  /**
+   * The order can be with combo or not
+   * @param combo flag
+   */
+
+  public void setCombo (boolean combo) {
+    this.combo = combo;
+  }
+
+  /**
+   * Get curren boolean info about combo
+   *  @return true or false
+   */
+  public boolean getCombo() {
+    return combo;
+  }
 
   /**
    * Set the list of meals
