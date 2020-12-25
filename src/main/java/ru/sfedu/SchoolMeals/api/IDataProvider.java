@@ -377,10 +377,10 @@ public interface IDataProvider {
     //Meals represen all available meals
     //Date is the date when user choose option Create Order
     //Customer Id, who is our customer??
-    default Order createOrder(Integer customerId, Sting date,  List<FoodItem> meals) throws IOException {
-        List<FoodItem> orderedMeals = new ArrayList<FoodItem>();
-        long[] itemsId = new long[0];///the numbers from console
-        orderedMeals = pickMeals(meals, itemsId);
+    //itensId for selectComobo and pickedMeals
+    default Order createOrder(Integer customerId, Sting date,  long[] itemsId, boolean selectcombo) throws IOException {
+        List<FoodItem> orderedMeals;
+        //long[] itemsId = new long[0];///the numbers from console
         log.info("Order created ");
         Order order = new Order(customerId, date, orderedMeals);
         order.setStatus(OrderStatus.PRE);
@@ -389,33 +389,39 @@ public interface IDataProvider {
 
     boolean selectcombo = false;
     List<FoodItem> pickedMeals = new ArrayList<FoodItem>();
-    long idCombo = 1;
+    //long idCombo = 1;
     Random rand = new Random();
     int customerId = rand.nextInt(100);
     Sting date = new Sting(new Timestamp(System.currentTimeMillis()));
 
 //--------------------------------Pick meals------------------------------
-    default List<FoodItem> pickMeals(List<FoodItem> meals, long[] itemsId) throws IOException {
-        //Class<FoodItem> NClass = FoodItem.class;
-        //List<FoodItem> data = getAll(NClass);
-        FoodItem combo;
-        if (selectcombo)
-        {
-            combo = selectCombo(idCombo);
-            pickedMeals.add(combo);//we add all items combo in the list
-        }
-        for(int i = 0; i < itemsId.length ; i++) {
+    default List<FoodItem> pickMeals(long[] itemsId) throws IOException {//selectec combo flag depends on user, if he choose the combo the flag is true
+        Class<FoodItem> NClass = FoodItem.class;
+        List<FoodItem> meals = getAll(NClass);
+        for(int i = 0; i < itemsId.length ; i++) {//check if exist in stock
             pickedMeals.add(meals.get((int)itemsId[i]));
         }
         return pickedMeals;
     }
 //--------------------------------Select combo------------------------------
-    default FoodItem selectCombo(long idCombo) throws IOException {//Our combo is now a FoodItem
-        ComboMeals combo= getComboMealsById(idCombo);
-        Double comboPrice = 100.0;
-        FoodItem comboAsItem = new FoodItem(idCombo, combo.getName(), comboPrice, "FirstCombo", 4, true);
-
-        return comboAsItem;
+    default List<FoodItem> selectCombo(long idCombo) throws IOException {//Our combo is now a FoodItem
+        //ComboMeals combo= getComboMealsById(idCombo);
+        Class<FoodItem> NClass = FoodItem.class;
+        List<FoodItem> meals = getAll(NClass);
+        List<FoodItem> items = new ArrayList<>();
+        if (idCombo == 0){
+            items.add(meals.get(2));
+            items.add(meals.get(5));
+            items.add(meals.get(6));
+            items.add(meals.get(7));
+        }
+        if (idCombo == 2){
+            items.add(meals.get(3));
+            items.add(meals.get(2));
+            items.add(meals.get(1));
+            items.add(meals.get(0));
+        }
+        return items;
     }
 //--------------------------------Make changes to Order------------------------------
 
@@ -426,14 +432,11 @@ Order order
 boolean isApproved
 
 Может выполняться только при условии, что OrderStatus= PRE
-//Do we have to change the meals values?
+//Do we have to change the meals values? what king of changes do we need?
     * */
     default Order makeChangesToOrder(Order order, List<FoodItem> meals, boolean add){//true add, false delte
 
-        order.setTotalCost((long)100);
-        //order.setPupilId();
-        if(order.getStatus() == OrderStatus.PRE)
-            order.setStatus(OrderStatus.APPROV);
+        //TODO change method
         return order;
     }
 //--------------------------------Cancel Order--------------------------------------
@@ -468,28 +471,104 @@ StringBuffer orderHistory
 либо
 NullPointerException e, e.getMessage()
 
-
+when we create the order, where is the pupilID?
 * */
     default StringBuffer viewOrderHistory(Integer id) throws IOException {
         Class<Order> NClass = Order.class;
         List<Order> data = getAll(NClass);
-        log.info("Read Order");
-        Optional<Order> opt = data.stream().filter(t -> t.getPupilId() == id).findFirst();
+        log.info("View order history");
+        Optional<Order> opt = data.stream().filter(t -> t.getPupilId() == id).findFirst();//TODO find all
         if (opt.isPresent())
-            return new StringBuffer(opt.toString());
+            return new StringBuffer(opt.toString());//TODO check!!!
         else
-            log.error("Order with id = " + id + " not found");
+            log.error("History with id = " + id + " not found");
         return null;
     }
 
 //--------------------------------Add combo-----------------------------------------
+/*
+* Добавить комбо-меню (т.е. список блюд) на конкретную дату
+Входные данные:
+Double date, List<FoodItem> meals
+Возвращаемое значение:
+boolean isAddated
+* */
+    default boolean addCombo(Double date, List<FoodItem> meals){
+        Boolean isAddated = false;
+        //Where this have to be added??? we can change the description only, not the combo elements
 
+        return isAddated;
+    }//TODO is not necesary
 //--------------------------------Edit Combo-----------------------------------------
+    /*
+    * Изменить комбо-меню (т.е. список блюд) на конкретной дате
+Входные данные:
+ComboMeals comboMeals
+Возвращаемое значение:
+boolean isUpdated
+    * */
+    default ComboMeals editCombo(ComboMeals comboMeals){
+        Boolean isUpdated = false;
+        //Change the elements of combo
 
+        return isUpdated;
+    }
 //--------------------------------Create Report--------------------------------------
-
+/*
+* Просмотр списка заказов за определённый период 
+Входные данные:
+Double startPeriod, Double endPeriod,  OrderStatus status
+Возвращаемое значение:
+Возвращаемое значение: 
+StringBuffer report 
+либо
+NullPointerException e, e.getMessage()
+* */
+    default StringBuffer createReport(double startPeriod, double endPeriod, OrderStatus status) throws IOException {
+        Class<Order> NClass = Order.class;
+        List<Order> data = getAll(NClass);
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        log.info("Read Order");
+        Optional<Order> opt = data.stream().filter(t -> t.getDate() == timestamp).findFirst();
+        if (opt.isPresent())
+            return new StringBuffer(opt.toString());
+        else
+            log.error("Wrong time interval");
+        return null;
+    }
+    
 //--------------------------------Approv Order---------------------------------------
+/*
+* Подтверждение заказа. Подтверждаются только заказы со статусом status=PRE.
+ В прецендент включен прецендент calculate Total Cost, где  происходит подсчет итоговой стоимости (totalCost), и статус обновляется до APPROVED
+
+Входные данные:
+Order order, Double totalCost
+* */
+    default Order approvOrder(Order order){//true add, false delte
+
+    order.setTotalCost((long)calculateTotalCost(order));
+    //order.setPupilId();
+    if(order.getStatus() == OrderStatus.PRE)
+        order.setStatus(OrderStatus.APPROV);
+    return order;
+    }
 
 //--------------------------------Calculate Total Cost---------------------------------
+    /*
+    * Подсчет итоговой стоимости блюд в зависимости от количества этого блюда в заказах и наличия дополнительных скидок (бесплатное питание у школьников, скидки от профсоюза у работников)
 
+Входные параметры: Order order
+Возвращаемое значение:
+Double orderCost
+    * */
+
+    default double calculateTotalCost() throws IOException {
+        Class<Order> NClass = Order.class;
+        List<Order> data = getAll(NClass);
+        double orderCost = 0;
+        for(int i = 0; i < order.getMeals().)
+            //TODO dont count combo elements
+        return orderCost;
+    }
 }

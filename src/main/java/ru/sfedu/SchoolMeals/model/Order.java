@@ -72,6 +72,7 @@ public class Order {
   public List<FoodItem> getMeals() {
     return meals;
   }
+
   /**
    * Set the value of id
    * @param newVar the new value of id
