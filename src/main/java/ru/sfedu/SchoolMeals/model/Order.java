@@ -65,6 +65,16 @@ public class Order {
   //
   // Accessor methods
   //
+
+  /**
+   * Set the list of meals
+   * @param meals the new list of meals
+   */
+
+  public void setMeals (List<FoodItem> meals) {
+    this.meals = meals;
+  }
+
   /**
    * Get the llist of meals
    *  @return the value of meals

@@ -358,7 +358,7 @@ public interface IDataProvider {
         Class<Puiple> NClass = Puiple.class;
         List<Puiple> data = getAll(NClass);
         log.info("Read Puiple");
-        Optional<Puiple> opt = data.stream().filter(t -> t.getId() == id).findFirst();
+        Optional<Puiple> opt = data.stream().filter(t -> t.getId() == id).findAny();
         if (opt.isPresent())
             return opt.get();
         else
@@ -373,37 +373,59 @@ public interface IDataProvider {
 
 
 //--------------------------------Create  Order------------------------------
-    //preliminar order till all orders finish
-    //Meals represen all available meals
-    //Date is the date when user choose option Create Order
-    //Customer Id, who is our customer??
-    //itensId for selectComobo and pickedMeals
+    /**
+     * Create order
+     * @return Order order
+     */
     default Order createOrder(Integer customerId, Sting date,  long[] itemsId, boolean selectcombo) throws IOException {
         List<FoodItem> orderedMeals;
-        //long[] itemsId = new long[0];///the numbers from console
-        log.info("Order created ");
+        if(!selectcombo)
+            orderedMeals =  pickMeals(itemsId);
+        else
+            orderedMeals = selectCombo(itemsId[0]);
         Order order = new Order(customerId, date, orderedMeals);
-        order.setStatus(OrderStatus.PRE);
+        if(order != null){
+            log.info("Order created ");
+            order.setStatus(OrderStatus.PRE);
+        }
+        else
+            log.error("Order was not created, check for errors");
         return  order;
     }
 
-    boolean selectcombo = false;
-    List<FoodItem> pickedMeals = new ArrayList<FoodItem>();
-    //long idCombo = 1;
+
+
     Random rand = new Random();
     int customerId = rand.nextInt(100);
     Sting date = new Sting(new Timestamp(System.currentTimeMillis()));
 
 //--------------------------------Pick meals------------------------------
-    default List<FoodItem> pickMeals(long[] itemsId) throws IOException {//selectec combo flag depends on user, if he choose the combo the flag is true
-        Class<FoodItem> NClass = FoodItem.class;
-        List<FoodItem> meals = getAll(NClass);
-        for(int i = 0; i < itemsId.length ; i++) {//check if exist in stock
-            pickedMeals.add(meals.get((int)itemsId[i]));
+    /**
+     * pick the desired meals from the global list
+     * @return List<FoodItem> pickedMeals
+     */
+    default List<FoodItem> pickMeals(long[] itemsId) throws IOException {
+        List<FoodItem> pickedMeals = new ArrayList<>();
+        FoodItem item;
+        for (long l : itemsId) {//check if exist in stock
+            item = getFoodItemById(l);
+            if (item == null)
+                log.error("Item was not added to order, item don't exist");
+            else if (!item.getInStock()){
+                log.error("Item was not added to order, is not in stock");
+            }
+            else {
+                pickedMeals.add(item);
+                log.info("Item " + item.getItemName_() + "added to order succesfully.");
+            }
         }
         return pickedMeals;
     }
 //--------------------------------Select combo------------------------------
+    /**
+     * pick the combo meals
+     * @return List of meals
+     */
     default List<FoodItem> selectCombo(long idCombo) throws IOException {//Our combo is now a FoodItem
         //ComboMeals combo= getComboMealsById(idCombo);
         Class<FoodItem> NClass = FoodItem.class;
@@ -424,38 +446,47 @@ public interface IDataProvider {
         return items;
     }
 //--------------------------------Make changes to Order------------------------------
-
-    /*ержден
-Входные данные:
-Order order
-Возвращаемое значение:
-boolean isApproved
-
-Может выполняться только при условии, что OrderStatus= PRE
-//Do we have to change the meals values? what king of changes do we need?
-    * */
-    default Order makeChangesToOrder(Order order, List<FoodItem> meals, boolean add){//true add, false delte
-
-        //TODO change method
+    /**
+     * Change an order
+     * @return Order with updated list of meals
+     */
+    default Order makeChangesToOrder(Order order, long[] itemsId, boolean add) throws IOException {//true add, false delete
+        List<FoodItem> pickedMeals = order.getMeals();
+        FoodItem item;
+        for (long l : itemsId) {//check if exist in stock
+            item = getFoodItemById(l);
+            if (item == null)
+                log.error("Item with Id: " + l + " don't exist");
+            else if (!item.getInStock()){
+                log.error("Item with Id: " + l + " is not in stock");
+            }
+            else if (add){
+                pickedMeals.add(item);
+                log.info("Item " + item.getItemName_() + "added to order succesfully.");
+            }
+            else{
+                pickedMeals.remove(item);
+                log.info("Item " + item.getItemName_() + "removed from order succesfully.");
+            }
+        }
+        order.setMeals(pickedMeals);
         return order;
     }
 //--------------------------------Cancel Order--------------------------------------
-/*
-* Возможность отменить заказ, пока он не был подтвержден
-Входные данные:
-Order order
-Возвращаемое значение:
-boolean isCanceled
-
-Может выполняться только при условии, что OrderStatus= PRE
-* */
+    /**
+     * Cancel an order
+     * @return true if succesfully canceled
+     */
     default boolean cancelOrder(Order order) throws IOException {
         boolean isCanceled = false;
         if(order.getStatus() == OrderStatus.PRE)
         {
             deleteOrder(order.getId());
+            log.info("Order with Id: " + order.getId() + " canceled succesfully.");
             isCanceled = true;
+            return isCanceled;
         }
+        log.error("Order with Id: " + order.getId() + " was not canceled.");
         return isCanceled;
     }
 
@@ -485,20 +516,6 @@ when we create the order, where is the pupilID?
         return null;
     }
 
-//--------------------------------Add combo-----------------------------------------
-/*
-* Добавить комбо-меню (т.е. список блюд) на конкретную дату
-Входные данные:
-Double date, List<FoodItem> meals
-Возвращаемое значение:
-boolean isAddated
-* */
-    default boolean addCombo(Double date, List<FoodItem> meals){
-        Boolean isAddated = false;
-        //Where this have to be added??? we can change the description only, not the combo elements
-
-        return isAddated;
-    }//TODO is not necesary
 //--------------------------------Edit Combo-----------------------------------------
     /*
     * Изменить комбо-меню (т.е. список блюд) на конкретной дате
