@@ -21,6 +21,15 @@ public class DataProviderDBTest extends TestBase {
     private static final String DB_CREATE="db_create";
     private static Logger log = LogManager.getLogger(DataProviderDB.class);
     private Connection connection;
+
+    @Override
+    public IDataProvider getiDataProvider() {
+        return new DataProviderDB();
+    }
+
+    @Override
+    public void cleanBeforeRun() {}
+    /*
     @Override
     public IDataProvider getiDataProvider() {
         return new DataProviderDB();
@@ -43,5 +52,5 @@ public class DataProviderDBTest extends TestBase {
             log.fatal(throwables);
             System.exit(1);
         }
-            }
+            }*/
 }

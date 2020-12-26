@@ -39772,3 +39772,442 @@ Message: Premature end of file.
 2020-12-26 03:21:52 INFO  IDataProvider:470 - Item Kotleta2 removed from order succesfully.
 2020-12-26 03:21:52 INFO  IDataProvider:197 - Read FoodItem
 2020-12-26 03:21:52 INFO  IDataProvider:470 - Item Kasha2   removed from order succesfully.
+2020-12-26 11:28:29 DEBUG TestBase:102 - -----deleteStaffTest--------------
+2020-12-26 11:28:29 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:28:30 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:28:30 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:28:30 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:28:32 DEBUG TestBase:226 - -----deleteComboMeals--------------
+2020-12-26 11:28:32 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:28:32 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:28:32 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:28:32 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:28:32 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:28:33 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:28:33 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:28:33 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:28:33 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:28:33 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:28:33 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:28:34 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:28:35 DEBUG TestBase:128 - -----deletePuipleTest--------------
+2020-12-26 11:28:35 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:28:35 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:28:36 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:28:36 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:28:37 DEBUG TestBase:165 - -----writeAndUpdateFoodItemTest--------------
+2020-12-26 11:28:38 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:28:38 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:28:38 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:28:38 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:28:38 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:28:39 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:28:39 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:28:39 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:28:39 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:28:39 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:28:39 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:28:39 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:28:40 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:28:41 DEBUG TestBase:88 - -----writeAndUpdateStaffTest--------------
+2020-12-26 11:28:41 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:28:42 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:28:42 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:28:42 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:28:42 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:28:42 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:28:43 DEBUG TestBase:76 - -----deleteOrderTest--------------
+2020-12-26 11:28:44 FATAL DataProviderDB:208 - Writing is not possible. Database error
+2020-12-26 11:28:44 FATAL DataProviderDB:209 - org.postgresql.util.PSQLException: ERROR: column "date" is of type timestamp without time zone but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 74
+2020-12-26 11:29:42 DEBUG TestBase:102 - -----deleteStaffTest--------------
+2020-12-26 11:29:42 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:29:43 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:29:43 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:29:43 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:29:45 DEBUG TestBase:226 - -----deleteComboMeals--------------
+2020-12-26 11:29:45 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:29:45 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:29:45 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:29:45 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:29:46 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:29:46 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:29:46 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:29:46 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:29:46 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:29:46 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:29:47 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:29:47 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:29:48 DEBUG TestBase:128 - -----deletePuipleTest--------------
+2020-12-26 11:29:49 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:29:49 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:29:49 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:29:49 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:29:51 DEBUG TestBase:165 - -----writeAndUpdateFoodItemTest--------------
+2020-12-26 11:29:51 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:29:51 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:29:51 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:29:51 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:29:52 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:29:52 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:29:52 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:29:52 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:29:52 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:29:52 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:29:52 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:29:53 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:29:53 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:29:54 DEBUG TestBase:88 - -----writeAndUpdateStaffTest--------------
+2020-12-26 11:29:55 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:29:55 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:29:55 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:29:55 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:29:56 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:29:56 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:29:59 DEBUG TestBase:76 - -----deleteOrderTest--------------
+2020-12-26 11:29:59 FATAL DataProviderDB:208 - Writing is not possible. Database error
+2020-12-26 11:29:59 FATAL DataProviderDB:209 - org.postgresql.util.PSQLException: ERROR: column "date" is of type timestamp without time zone but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 74
+2020-12-26 11:30:21 DEBUG TestBase:76 - -----deleteOrderTest--------------
+2020-12-26 11:30:21 FATAL DataProviderDB:208 - Writing is not possible. Database error
+2020-12-26 11:30:21 FATAL DataProviderDB:209 - org.postgresql.util.PSQLException: ERROR: column "date" is of type timestamp without time zone but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 74
+2020-12-26 11:30:52 DEBUG TestBase:102 - -----deleteStaffTest--------------
+2020-12-26 11:30:52 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:30:53 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:30:53 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:30:53 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:30:54 DEBUG TestBase:226 - -----deleteComboMeals--------------
+2020-12-26 11:30:55 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:30:55 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:30:55 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:30:55 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:30:55 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:30:55 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:30:55 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:30:56 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:30:56 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:30:56 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:30:56 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:30:56 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:30:58 DEBUG TestBase:128 - -----deletePuipleTest--------------
+2020-12-26 11:30:58 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:30:58 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:30:59 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:30:59 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:31:00 DEBUG TestBase:165 - -----writeAndUpdateFoodItemTest--------------
+2020-12-26 11:31:00 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:31:01 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:31:01 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:31:01 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:31:02 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:31:02 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:31:02 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:31:02 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:31:02 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:31:02 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:31:02 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:31:02 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:31:03 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:31:04 DEBUG TestBase:88 - -----writeAndUpdateStaffTest--------------
+2020-12-26 11:31:04 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:31:05 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:31:05 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:31:05 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:31:05 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:31:05 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:31:06 DEBUG TestBase:76 - -----deleteOrderTest--------------
+2020-12-26 11:31:07 FATAL DataProviderDB:208 - Writing is not possible. Database error
+2020-12-26 11:31:07 FATAL DataProviderDB:209 - org.postgresql.util.PSQLException: ERROR: column "date" is of type timestamp without time zone but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 74
+2020-12-26 11:36:31 DEBUG TestBase:101 - -----deleteStaffTest--------------
+2020-12-26 11:36:31 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:36:32 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:36:32 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:36:32 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:36:34 DEBUG TestBase:225 - -----deleteComboMeals--------------
+2020-12-26 11:36:34 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:36:34 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:36:34 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:36:34 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:36:34 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:36:35 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:36:35 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:36:35 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:36:35 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:36:35 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:36:36 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:36:36 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:36:37 DEBUG TestBase:127 - -----deletePuipleTest--------------
+2020-12-26 11:36:37 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:36:38 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:36:38 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:36:38 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:36:40 DEBUG TestBase:164 - -----writeAndUpdateFoodItemTest--------------
+2020-12-26 11:36:40 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:36:40 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:36:40 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:36:40 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:36:40 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:36:41 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:36:41 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:36:41 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:36:41 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:36:41 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:36:41 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:36:41 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:36:42 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:36:43 DEBUG TestBase:87 - -----writeAndUpdateStaffTest--------------
+2020-12-26 11:36:43 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:36:43 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:36:43 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:36:44 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:36:44 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:36:44 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:36:45 DEBUG TestBase:75 - -----deleteOrderTest--------------
+2020-12-26 11:36:45 FATAL DataProviderDB:208 - Writing is not possible. Database error
+2020-12-26 11:36:45 FATAL DataProviderDB:209 - org.postgresql.util.PSQLException: ERROR: column "date" is of type timestamp without time zone but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 74
+2020-12-26 11:37:34 DEBUG TestBase:101 - -----deleteStaffTest--------------
+2020-12-26 11:37:35 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:37:35 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:37:35 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:37:35 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:37:37 DEBUG TestBase:225 - -----deleteComboMeals--------------
+2020-12-26 11:37:37 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:37:37 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:37:37 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:37:37 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:37:38 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:37:38 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:37:38 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:37:38 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:37:38 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:37:38 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:37:39 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:37:39 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:37:40 DEBUG TestBase:127 - -----deletePuipleTest--------------
+2020-12-26 11:37:41 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:37:41 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:37:41 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:37:41 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:37:43 DEBUG TestBase:164 - -----writeAndUpdateFoodItemTest--------------
+2020-12-26 11:37:43 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:37:43 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:37:43 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:37:43 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:37:43 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:37:44 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:37:44 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:37:44 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:37:44 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:37:44 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:37:44 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:37:44 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:37:45 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:37:46 DEBUG TestBase:87 - -----writeAndUpdateStaffTest--------------
+2020-12-26 11:37:46 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:37:46 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:37:47 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:37:47 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:37:47 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:37:47 INFO  IDataProvider:308 - Read Staff
+2020-12-26 11:37:48 DEBUG TestBase:75 - -----deleteOrderTest--------------
+2020-12-26 11:37:49 FATAL DataProviderDB:208 - Writing is not possible. Database error
+2020-12-26 11:37:49 FATAL DataProviderDB:209 - org.postgresql.util.PSQLException: ERROR: column "date" is of type timestamp without time zone but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 74
+2020-12-26 11:39:21 DEBUG TestBase:101 - -----deleteStaffTest--------------
+2020-12-26 11:39:21 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:39:21 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:39:22 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:39:22 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:39:23 DEBUG TestBase:225 - -----deleteComboMeals--------------
+2020-12-26 11:39:23 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:39:23 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:39:23 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:39:23 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:39:23 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:39:24 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:39:24 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:39:24 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:39:24 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:39:24 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:39:24 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:39:25 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:39:25 DEBUG TestBase:127 - -----deletePuipleTest--------------
+2020-12-26 11:39:26 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:39:26 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:39:26 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:39:26 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:39:27 DEBUG TestBase:164 - -----writeAndUpdateFoodItemTest--------------
+2020-12-26 11:39:27 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:39:28 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:39:28 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:39:28 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:39:29 DEBUG TestBase:87 - -----writeAndUpdateStaffTest--------------
+2020-12-26 11:39:29 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:39:30 DEBUG TestBase:75 - -----deleteOrderTest--------------
+2020-12-26 11:39:30 FATAL DataProviderDB:208 - Writing is not possible. Database error
+2020-12-26 11:39:30 FATAL DataProviderDB:209 - org.postgresql.util.PSQLException: ERROR: column "date" is of type timestamp without time zone but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 74
+2020-12-26 11:46:01 DEBUG TestBase:101 - -----deleteStaffTest--------------
+2020-12-26 11:46:01 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:46:02 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:46:02 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:46:02 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:46:03 DEBUG TestBase:225 - -----deleteComboMeals--------------
+2020-12-26 11:46:03 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:46:03 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:46:03 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:46:04 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:46:04 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:46:04 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:46:04 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:46:04 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:46:04 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:46:04 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:46:05 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:46:05 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:46:06 DEBUG TestBase:127 - -----deletePuipleTest--------------
+2020-12-26 11:46:06 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:46:06 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:46:06 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:46:07 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:46:07 DEBUG TestBase:164 - -----writeAndUpdateFoodItemTest--------------
+2020-12-26 11:46:08 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:46:08 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:46:08 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:46:08 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:46:09 DEBUG TestBase:87 - -----writeAndUpdateStaffTest--------------
+2020-12-26 11:46:09 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:46:10 DEBUG TestBase:75 - -----deleteOrderTest--------------
+2020-12-26 11:46:10 FATAL DataProviderDB:208 - Writing is not possible. Database error
+2020-12-26 11:46:10 FATAL DataProviderDB:209 - org.postgresql.util.PSQLException: ERROR: column "date" is of type timestamp without time zone but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 74
+2020-12-26 11:46:49 DEBUG TestBase:101 - -----deleteStaffTest--------------
+2020-12-26 11:46:49 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:46:50 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:46:50 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:46:50 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:46:51 DEBUG TestBase:225 - -----deleteComboMeals--------------
+2020-12-26 11:46:51 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:46:51 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:46:52 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:46:52 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:46:52 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:46:52 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:46:52 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:46:52 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:46:53 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:46:53 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:46:53 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:46:53 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:46:54 DEBUG TestBase:127 - -----deletePuipleTest--------------
+2020-12-26 11:46:54 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:46:55 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:46:55 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:46:55 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:46:56 DEBUG TestBase:164 - -----writeAndUpdateFoodItemTest--------------
+2020-12-26 11:46:56 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:46:56 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:46:56 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:46:57 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:46:57 DEBUG TestBase:87 - -----writeAndUpdateStaffTest--------------
+2020-12-26 11:46:58 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:46:58 DEBUG TestBase:75 - -----deleteOrderTest--------------
+2020-12-26 11:46:58 FATAL DataProviderDB:208 - Writing is not possible. Database error
+2020-12-26 11:46:58 FATAL DataProviderDB:209 - org.postgresql.util.PSQLException: ERROR: column "date" is of type timestamp without time zone but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 74
+2020-12-26 11:48:19 DEBUG TestBase:101 - -----deleteStaffTest--------------
+2020-12-26 11:48:19 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:48:19 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:48:20 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:48:20 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:48:21 DEBUG TestBase:225 - -----deleteComboMeals--------------
+2020-12-26 11:48:21 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:48:21 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:48:21 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:48:21 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:48:22 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:48:22 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:48:22 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:48:22 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:48:22 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:48:22 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:48:23 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:48:23 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:48:24 DEBUG TestBase:127 - -----deletePuipleTest--------------
+2020-12-26 11:48:24 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:48:24 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:48:24 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:48:24 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:48:25 DEBUG TestBase:164 - -----writeAndUpdateFoodItemTest--------------
+2020-12-26 11:48:25 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:48:26 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:48:26 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:48:26 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:48:27 DEBUG TestBase:87 - -----writeAndUpdateStaffTest--------------
+2020-12-26 11:48:27 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:48:28 DEBUG TestBase:75 - -----deleteOrderTest--------------
+2020-12-26 11:48:28 DEBUG TestBase:101 - -----deleteStaffTest--------------
+2020-12-26 11:48:28 FATAL DataProviderDB:208 - Writing is not possible. Database error
+2020-12-26 11:48:28 FATAL DataProviderDB:209 - org.postgresql.util.PSQLException: ERROR: column "date" is of type timestamp without time zone but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 74
+2020-12-26 11:48:28 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:48:28 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:48:29 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:48:29 INFO  IDataProvider:297 - Delete Staff 
+2020-12-26 11:48:29 DEBUG TestBase:225 - -----deleteComboMeals--------------
+2020-12-26 11:48:30 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:48:30 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:48:30 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:48:30 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:48:30 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:48:31 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:48:31 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:48:31 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:48:31 INFO  IDataProvider:197 - Read FoodItem
+2020-12-26 11:48:31 INFO  IDataProvider:45 - Write ComboMeals
+2020-12-26 11:48:31 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:48:32 INFO  IDataProvider:61 - Delete ComboMeals 
+2020-12-26 11:48:32 DEBUG TestBase:127 - -----deletePuipleTest--------------
+2020-12-26 11:48:33 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:48:33 INFO  IDataProvider:336 - Write Puiple
+2020-12-26 11:48:33 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:48:33 INFO  IDataProvider:352 - Delete Puiple 
+2020-12-26 11:48:34 DEBUG TestBase:164 - -----writeAndUpdateFoodItemTest--------------
+2020-12-26 11:48:34 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:48:35 INFO  IDataProvider:101 - Write FoodCategory
+2020-12-26 11:48:35 INFO  IDataProvider:133 - Read FoodCategory
+2020-12-26 11:48:35 INFO  IDataProvider:166 - Write FoodItem
+2020-12-26 11:48:37 DEBUG TestBase:87 - -----writeAndUpdateStaffTest--------------
+2020-12-26 11:48:37 INFO  IDataProvider:281 - Write Staff
+2020-12-26 11:48:39 DEBUG TestBase:75 - -----deleteOrderTest--------------
+2020-12-26 11:48:39 FATAL DataProviderDB:208 - Writing is not possible. Database error
+2020-12-26 11:48:39 FATAL DataProviderDB:209 - org.postgresql.util.PSQLException: ERROR: column "date" is of type timestamp without time zone but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 74
+2020-12-26 12:23:16 DEBUG SchoolClient:32 - <ConstructorName>[0]: starting application.........
+2020-12-26 12:23:16 DEBUG SchoolClient:37 - <ConstructorName>[0]: starting application.........
+2020-12-26 12:23:16 ERROR SchoolClient:95 - Launching the application...
+2020-12-26 12:23:16 DEBUG SchoolClient:96 - Operating System: Linux 5.4.0-58-generic
+2020-12-26 12:23:16 INFO  SchoolClient:98 - JRE: 11.0.9.1
+2020-12-26 12:23:16 INFO  SchoolClient:99 - Java Launched From: /usr/lib/jvm/java-11-openjdk-amd64
+2020-12-26 12:23:16 INFO  SchoolClient:100 - Class Path: /home/danny/Desktop/ProfiRu/Java_Food/target/classes:/home/danny/.m2/repository/org/apache/maven/plugins/maven-jar-plugin/3.0.2/maven-jar-plugin-3.0.2.jar:/home/danny/.m2/repository/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar:/home/danny/.m2/repository/org/apache/maven/maven-model/3.0/maven-model-3.0.jar:/home/danny/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar:/home/danny/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar:/home/danny/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar:/home/danny/.m2/repository/org/apache/maven/maven-core/3.0/maven-core-3.0.jar:/home/danny/.m2/repository/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar:/home/danny/.m2/repository/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar:/home/danny/.m2/repository/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar:/home/danny/.m2/repository/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar:/home/danny/.m2/repository/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar:/home/danny/.m2/repository/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar:/home/danny/.m2/repository/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar:/home/danny/.m2/repository/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar:/home/danny/.m2/repository/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar:/home/danny/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar:/home/danny/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar:/home/danny/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar:/home/danny/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar:/home/danny/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:/home/danny/.m2/repository/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar:/home/danny/.m2/repository/org/apache/maven/maven-archiver/3.1.1/maven-archiver-3.1.1.jar:/home/danny/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.0.1/maven-shared-utils-3.0.1.jar:/home/danny/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/danny/.m2/repository/org/codehaus/plexus/plexus-archiver/3.4/plexus-archiver-3.4.jar:/home/danny/.m2/repository/org/codehaus/plexus/plexus-io/2.7.1/plexus-io-2.7.1.jar:/home/danny/.m2/repository/org/apache/commons/commons-compress/1.11/commons-compress-1.11.jar:/home/danny/.m2/repository/org/iq80/snappy/snappy/0.4/snappy-0.4.jar:/home/danny/.m2/repository/org/tukaani/xz/1.5/xz-1.5.jar:/home/danny/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar:/home/danny/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar:/home/danny/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.jar:/home/danny/.m2/repository/com/opencsv/opencsv/4.5/opencsv-4.5.jar:/home/danny/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/home/danny/.m2/repository/org/apache/commons/commons-text/1.3/commons-text-1.3.jar:/home/danny/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar:/home/danny/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/danny/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/danny/.m2/repository/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.jar:/home/danny/.m2/repository/org/simpleframework/simple-xml/2.7.1/simple-xml-2.7.1.jar:/home/danny/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/home/danny/.m2/repository/stax/stax/1.2.0/stax-1.2.0.jar:/home/danny/.m2/repository/xpp3/xpp3/1.1.3.3/xpp3-1.1.3.3.jar:/home/danny/.m2/repository/org/postgresql/postgresql/42.2.6/postgresql-42.2.6.jar
+2020-12-26 12:23:16 INFO  SchoolClient:101 - Library Path: /usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2020-12-26 12:23:16 INFO  SchoolClient:102 - User Home Directory: /home/danny
+2020-12-26 12:23:16 INFO  SchoolClient:103 - User Working Directory: /home/danny/Desktop/ProfiRu/Java_Food
+2020-12-26 12:23:16 FATAL SchoolClient:104 - Test INFO logging.
+2020-12-26 12:23:16 FATAL SchoolClient:105 - SourceName
+2020-12-26 12:23:16 INFO  SchoolClient:106 - The value of ca90681b
+2020-12-26 12:23:16 INFO  SchoolClient:107 - 88937

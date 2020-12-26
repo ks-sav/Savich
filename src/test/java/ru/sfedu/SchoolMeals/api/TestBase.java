@@ -14,10 +14,9 @@ import static ru.sfedu.SchoolMeals.model.CustomerType.STAFF;
 import static ru.sfedu.SchoolMeals.model.OrderStatus.PRE;
 
 public abstract class TestBase {
+    public abstract IDataProvider getiDataProvider();
     public IDataProvider dp;
 
-    public abstract IDataProvider getiDataProvider();
-    //public abstract void setUpProperties();
     public abstract void cleanBeforeRun() throws IOException;
 
     @Before
