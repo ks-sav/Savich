@@ -2,6 +2,9 @@ package ru.sfedu.SchoolMeals.model;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 import java.sql.Timestamp;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -20,13 +23,13 @@ public class Order {
   @Attribute
   private long pupilId;
   @Attribute
-  private Timestamp date;
+  private String date;
+  @Attribute
+  private Timestamp dateTs;
   @Attribute
   private OrderStatus status;
   @Attribute
   private double totalCost;
-  @Attribute
-  private Sting dateOrder;
   @Attribute
   List<FoodItem> meals;
   @Attribute
@@ -42,16 +45,11 @@ public class Order {
   public Order(long id, long pupilId, Timestamp date, OrderStatus status, double totalCost) {
     this.id = id;
     this.pupilId = pupilId;
-    this.date = date;
+    this.dateTs = date;
+    this.date = date.toString();
     this.status = status;
     this.totalCost = totalCost;
 
-  }
-
-  public Order(Integer customerId, Sting date,  List<FoodItem> meals) {//constructor for preliminar order
-    this.id = customerId;
-    this.dateOrder = date;
-    this.meals = meals;
   }
 
   public Order(){
@@ -138,7 +136,7 @@ public class Order {
    * Set the value of date
    * @param newVar the new value of date
    */
-  public void setDate (Timestamp newVar) {
+  public void setDate (String newVar) {
     date = newVar;
   }
 
@@ -146,7 +144,7 @@ public class Order {
    * Get the value of date
    * @return the value of date
    */
-  public Timestamp getDate () {
+  public String getDate () {
     return date;
   }
 

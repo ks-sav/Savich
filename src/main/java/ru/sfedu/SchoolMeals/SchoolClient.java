@@ -9,7 +9,6 @@ import ru.sfedu.SchoolMeals.api.IDataProvider;
 import ru.sfedu.SchoolMeals.model.ComboMeals;
 import ru.sfedu.SchoolMeals.model.Customer;
 import ru.sfedu.SchoolMeals.model.FoodItem;
-import ru.sfedu.SchoolMeals.model.Sting;
 
 import java.io.Console;
 import java.io.IOException;
@@ -37,9 +36,8 @@ public class SchoolClient {
         dataProvider.initDataSource();
         long now = System.currentTimeMillis();
         Timestamp timestamp = new Timestamp(now);
-        Sting date = new Sting(timestamp);
 
-        dataProvider.createOrder(1, date, dataProvider.getAll(FoodItem.class));
+        //dataProvider.createOrder(1, date, dataProvider.getAll(FoodItem.class));
 
         logBasicSystemInfo();
         }

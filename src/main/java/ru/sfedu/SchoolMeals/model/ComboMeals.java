@@ -22,7 +22,7 @@ public class ComboMeals {
   @Attribute
   private long foodId;
   @Attribute
-  private long[] itemsId;
+  private long[] itemsId = new long[10];
 
   //
   // Constructors
@@ -47,7 +47,8 @@ public class ComboMeals {
   // Accessor methods
   //
 
-  public void setItemsId(long[] itemsId){this.itemsId = itemsId;}
+  public void setItemsId(long[] itemsId)
+  {this.itemsId = itemsId;}
 
   public long[] getItemsId(){return itemsId;}
 

@@ -8,6 +8,8 @@ import ru.sfedu.SchoolMeals.model.*;
 import java.awt.*;
 import java.io.IOException;
 import java.sql.Timestamp;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalTime;
 import java.util.*;
 import java.util.List;
@@ -19,6 +21,7 @@ public interface IDataProvider {
     void initDataSource() throws IOException;
     abstract <T> List<T> getAll(Class<T> tClass) throws IOException;
     abstract <T> void writeAll(Class<T> tClass, List<T> data) throws IOException;
+    public Map<Long, Order> allOrders = new HashMap<Long, Order>();
 
     //----------------------- CRUD for ComboMeals-----------------------------
     /**
@@ -372,34 +375,37 @@ public interface IDataProvider {
      */
     default List<Puiple> getAllPuiple() throws IOException {return getAll(Puiple.class);}
 
-
+    /**
+     * Get a Timestamp date from String
+     * @return Timestamp
+     */
+    default Timestamp StringToTimestamp(String date) throws ParseException {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss.SSS");
+        Date parsedDate = dateFormat.parse(date);
+        return new Timestamp(parsedDate.getTime());
+    }
 //--------------------------------Create Order------------------------------
     /**
      * Create order
      * @return Order order
      */
-    default Order createOrder(Integer customerId, Sting date,  long[] itemsId, boolean selectcombo) throws IOException {
+    default Order createOrder(Integer customerId, String date,  long[] itemsId, boolean selectcombo) throws IOException, ParseException {
         List<FoodItem> orderedMeals;
+
+        Order order = new Order(customerId, customerId, StringToTimestamp(date), OrderStatus.PRE, 0.0);
         if(!selectcombo)
             orderedMeals =  pickMeals(itemsId);
         else
             orderedMeals = selectCombo(itemsId[0]);
-        Order order = new Order(customerId, date, orderedMeals);
+        order.setMeals(orderedMeals);
         order.setCombo(selectcombo);
-        if(order != null){
-            log.info("Order created ");
-            order.setStatus(OrderStatus.PRE);
-        }
-        else
-            log.error("Order was not created, check for errors");
+        saveOrder(order);
+        allOrders.put(order.getId(), order);
+        log.info("Order created ");
         return  order;
     }
 
 
-
-    Random rand = new Random();
-    int customerId = rand.nextInt(100);
-    Sting date = new Sting(new Timestamp(System.currentTimeMillis()));
 
 //--------------------------------Pick meals------------------------------
     /**
@@ -508,11 +514,10 @@ public interface IDataProvider {
 //--------------------------------Edit Combo-----------------------------------------
     /**
      * Update the food items of a combo
-     * @return boolean with true if update
+     * @return updated combo
      */
-    default boolean editCombo(Integer comboId, long[] itemsId) throws IOException {
+    default ComboMeals editCombo(ComboMeals comboMeals, long[] itemsId) throws IOException {
         boolean isUpdated = false;
-        ComboMeals comboMeals = getComboMealsById(comboId);
         if (comboMeals!= null && itemsId != null){
             comboMeals.setItemsId(itemsId);
             log.info("Combo " + comboMeals.getName() + " succesfully updated");
@@ -520,27 +525,30 @@ public interface IDataProvider {
         }
         else
             log.info("Unable to update this combo");
-        return isUpdated;
+        return comboMeals;
     }
 //--------------------------------Create Report--------------------------------------
     /**
      * Create report of all order in an specific period
      * @return StringBuffer with report information
      */
-    default StringBuffer createReport(Timestamp startPeriod, Timestamp endPeriod, OrderStatus status) throws IOException {
+    default StringBuffer createReport(String startPeriod, String endPeriod, OrderStatus status) throws IOException, ParseException {
         Class<Order> NClass = Order.class;
         List<Order> data = getAll(NClass);
+        Timestamp start = StringToTimestamp(startPeriod);
+        Timestamp end = StringToTimestamp(endPeriod);
         StringBuffer buf = new StringBuffer();
-        Optional<Order> opt = data.stream().filter(t -> t.getDate().after(startPeriod) && t.getDate().before(endPeriod)).findFirst();
-        if (!opt.isPresent())
-        {
+        int i = 0;
+        for(Order order: data) {
+            Timestamp orderData = StringToTimestamp(order.getDate());
+            if(order.getStatus() == status && orderData.after(start) && orderData.before(end)){
+                buf.append(order.toString()).append('\n');
+                i++;
+            }
+        }
+        if(i == 0){
             log.error("There are not orders in this time period");
             return null;
-        }
-        for(Order order : data)
-        {
-            if(order.getStatus() == status && order.getDate().after(startPeriod) && order.getDate().before(endPeriod))
-                buf.append(order.toString());
         }
         log.info("Report created");
         return buf;
@@ -561,7 +569,8 @@ public interface IDataProvider {
     }
     else
         log.error("Order with Id: " + order.getId() + "  is alreay aprroved");
-
+    //deleteOrder(order.getId());
+    saveOrder(order);
     return order;
     }
 
@@ -578,19 +587,18 @@ public interface IDataProvider {
         Class<Order> NClass = Order.class;
         List<Order> data = getAll(NClass);
         List<FoodItem> allItemsForDisccount = new ArrayList<>();
+        Map<Long, Order> map = allOrders;
         for(Order ord : data){
-            if(!ord.getCombo()){
+            ord = allOrders.get(ord.getId());
+            if(!ord.getCombo()){//TODO TODAYS DATA
                 allItemsForDisccount.addAll(ord.getMeals());
             }
-        }
-        for(FoodItem meal : allItemsForDisccount){
-            meal.setPrice(meal.getPrice() - meal.getPrice()*Collections.frequency(allItemsForDisccount, meal)/100);
         }
         double cost = 0;
         for(FoodItem meal : order.getMeals())
         {
             if(!order.getCombo())
-                meal.setPrice(meal.getPrice() - meal.getPrice()*Collections.frequency(allItemsForDisccount, meal)/100);
+                meal.setPrice(meal.getPrice() - meal.getPrice()*(Collections.frequency(allItemsForDisccount, meal)-1)/100);
             cost = cost + meal.getPrice();
         }
         log.info("Cost for order with Id: " + order.getId() + " succesfully calculated.");
